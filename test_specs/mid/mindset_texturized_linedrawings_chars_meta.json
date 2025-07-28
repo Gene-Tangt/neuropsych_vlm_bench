@@ -1,0 +1,170 @@
+{
+    "stage": "mid",
+    "process": "robustness_across_image_cues",
+    "task": "mindset_texturized_linedrawings_chars",
+    "task_type": "naming",
+    "num_stim": "one",
+    "prompt": "Here's a task. Could you please name the item in this image? Please provide your answer in {}.",
+    "trials": [
+        {
+            "trial": "trial_001",
+            "images": {"target":["datasets/mid/mindset_texturized_linedrawings_chars/texturized_char_African_crocodile_0a59e2f5.png"]},
+            "answer_key": "crocodile"
+        },
+        {
+            "trial": "trial_002",
+            "images": {"target":["datasets/mid/mindset_texturized_linedrawings_chars/texturized_char_airship_1febc05e.png"]},
+            "answer_key": "airship"
+        },
+        {
+            "trial": "trial_003",
+            "images": {"target":["datasets/mid/mindset_texturized_linedrawings_chars/texturized_char_armadillo_6eb0ea49.png"]},
+            "answer_key": "armadillo"
+        },
+        {
+            "trial": "trial_004",
+            "images": {"target":["datasets/mid/mindset_texturized_linedrawings_chars/texturized_char_banana_7005736b.png"]},
+            "answer_key": "banana"
+        },
+        {
+            "trial": "trial_005",
+            "images": {"target":["datasets/mid/mindset_texturized_linedrawings_chars/texturized_char_beer_bottle_5f371c0a.png"]},
+            "answer_key": "beer bottle"
+        },
+        {
+            "trial": "trial_006",
+            "images": {"target":["datasets/mid/mindset_texturized_linedrawings_chars/texturized_char_bow_tie_7a988dc7.png"]},
+            "answer_key": "bow tie"
+        },
+        {
+            "trial": "trial_007",
+            "images": {"target":["datasets/mid/mindset_texturized_linedrawings_chars/texturized_char_bullfrog_7da23cc5.png"]},
+            "answer_key": "bullfrog"
+        },
+        {
+            "trial": "trial_008",
+            "images": {"target":["datasets/mid/mindset_texturized_linedrawings_chars/texturized_char_cello_00a55817.png"]},
+            "answer_key": "cello"
+        },
+        {
+            "trial": "trial_009",
+            "images": {"target":["datasets/mid/mindset_texturized_linedrawings_chars/texturized_char_coffee_mug_a609150c.png"]},
+            "answer_key": "coffee mug"
+        },
+        {
+            "trial": "trial_010",
+            "images": {"target":["datasets/mid/mindset_texturized_linedrawings_chars/texturized_char_dragonfly_0bffd810.png"]},
+            "answer_key": "dragonfly"
+        },
+        {
+            "trial": "trial_011",
+            "images": {"target":["datasets/mid/mindset_texturized_linedrawings_chars/texturized_char_hare_0c7b8f6f.png"]},
+            "answer_key": "hare"
+        },
+        {
+            "trial": "trial_012",
+            "images": {"target":["datasets/mid/mindset_texturized_linedrawings_chars/texturized_char_ibex_e1a6dd83.png"]},
+            "answer_key": "ibex"
+        },
+        {
+            "trial": "trial_013",
+            "images": {"target":["datasets/mid/mindset_texturized_linedrawings_chars/texturized_char_ice_bear_0e7cb7a7.png"]},
+            "answer_key": "ice bear"
+        },
+        {
+            "trial": "trial_014",
+            "images": {"target":["datasets/mid/mindset_texturized_linedrawings_chars/texturized_char_jigsaw_puzzle_ea128fff.png"]},
+            "answer_key": "jigsaw puzzle"
+        },
+        {
+            "trial": "trial_015",
+            "images": {"target":["datasets/mid/mindset_texturized_linedrawings_chars/texturized_char_lawn_mower_1d969443.png"]},
+            "answer_key": "lawn mower"
+        },
+        {
+            "trial": "trial_016",
+            "images": {"target":["datasets/mid/mindset_texturized_linedrawings_chars/texturized_char_lion_0b0cc85d.png"]},
+            "answer_key": "lion"
+        },
+        {
+            "trial": "trial_017",
+            "images": {"target":["datasets/mid/mindset_texturized_linedrawings_chars/texturized_char_llama_2ba99bd5.png"]},
+            "answer_key": "llama"
+        },
+        {
+            "trial": "trial_018",
+            "images": {"target":["datasets/mid/mindset_texturized_linedrawings_chars/texturized_char_lynx_1fde5a86.png"]},
+            "answer_key": "lynx"
+        },
+        {
+            "trial": "trial_019",
+            "images": {"target":["datasets/mid/mindset_texturized_linedrawings_chars/texturized_char_paintbrush_cb882024.png"]},
+            "answer_key": "paintbrush"
+        },
+        {
+            "trial": "trial_020",
+            "images": {"target":["datasets/mid/mindset_texturized_linedrawings_chars/texturized_char_peacock_0e39982b.png"]},
+            "answer_key": "peacock"
+        },
+        {
+            "trial": "trial_021",
+            "images": {"target":["datasets/mid/mindset_texturized_linedrawings_chars/texturized_char_pretzel_da64c75c.png"]},
+            "answer_key": "pretzel"
+        },
+        {
+            "trial": "trial_022",
+            "images": {"target":["datasets/mid/mindset_texturized_linedrawings_chars/texturized_char_revolver_01ba6d81.png"]},
+            "answer_key": "revolver"
+        },
+        {
+            "trial": "trial_023",
+            "images": {"target":["datasets/mid/mindset_texturized_linedrawings_chars/texturized_char_running_shoe_00e44497.png"]},
+            "answer_key": "running shoe"
+        },
+        {
+            "trial": "trial_024",
+            "images": {"target":["datasets/mid/mindset_texturized_linedrawings_chars/texturized_char_sewing_machine_e8ee67ed.png"]},
+            "answer_key": "sewing machine"
+        },
+        {
+            "trial": "trial_025",
+            "images": {"target":["datasets/mid/mindset_texturized_linedrawings_chars/texturized_char_snail_01e8c3cc.png"]},
+            "answer_key": "snail"
+        },
+        {
+            "trial": "trial_026",
+            "images": {"target":["datasets/mid/mindset_texturized_linedrawings_chars/texturized_char_space_shuttle_b20f9e5c.png"]},
+            "answer_key": "space shuttle"
+        },
+        {
+            "trial": "trial_027",
+            "images": {"target":["datasets/mid/mindset_texturized_linedrawings_chars/texturized_char_standard_poodle_1c9f16f7.png"]},
+            "answer_key": "poodle"
+        },
+        {
+            "trial": "trial_028",
+            "images": {"target":["datasets/mid/mindset_texturized_linedrawings_chars/texturized_char_sulphur_butterfly_0dbc8a39.png"]},
+            "answer_key": "butterfly"
+        },
+        {
+            "trial": "trial_029",
+            "images": {"target":["datasets/mid/mindset_texturized_linedrawings_chars/texturized_char_tiger_ffdbcc77.png"]},
+            "answer_key": "tiger"
+        },
+        {
+            "trial": "trial_030",
+            "images": {"target":["datasets/mid/mindset_texturized_linedrawings_chars/texturized_char_trombone_6a99b846.png"]},
+            "answer_key": "trombone"
+        },
+        {
+            "trial": "trial_031",
+            "images": {"target":["datasets/mid/mindset_texturized_linedrawings_chars/texturized_char_white_wolf_0b61cb88.png"]},
+            "answer_key": "white wolf"
+        },
+        {
+            "trial": "trial_032",
+            "images": {"target":["datasets/mid/mindset_texturized_linedrawings_chars/texturized_char_zebra_7a254d7a.png"]},
+            "answer_key": "zebra"
+        }
+    ]
+}

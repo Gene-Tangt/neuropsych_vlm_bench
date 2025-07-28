@@ -1,0 +1,162 @@
+{
+    "stage": "low",
+    "process": "simple_element_judgements",
+    "task": "borb_line_length_comparison",
+    "task_type": "same_different",
+    "num_stim": "two",
+    "prompt": "This is a task. In this task you will tell me if these two lines are the same length or not. Answer with only 'same' or 'different'. Please put your final answer in {}.",
+    "trials": [
+        {
+            "trial": "trial_001",
+            "images": {"options":["datasets/low/borb_line_length_comparison/trial_001/A.png", "datasets/low/borb_line_length_comparison/trial_001/B.png"]},
+            "answer_key": "different"
+        },
+        {
+            "trial": "trial_002",
+            "images": {"options":["datasets/low/borb_line_length_comparison/trial_002/A.png", "datasets/low/borb_line_length_comparison/trial_002/B.png"]},
+            "answer_key": "same"
+        },
+        {
+            "trial": "trial_003",
+            "images": {"options":["datasets/low/borb_line_length_comparison/trial_003/A.png", "datasets/low/borb_line_length_comparison/trial_003/B.png"]},
+            "answer_key": "same"
+        },
+        {
+            "trial": "trial_004",
+            "images": {"options":["datasets/low/borb_line_length_comparison/trial_004/A.png", "datasets/low/borb_line_length_comparison/trial_004/B.png"]},
+            "answer_key": "different"
+        },
+        {
+            "trial": "trial_005",
+            "images": {"options":["datasets/low/borb_line_length_comparison/trial_005/A.png", "datasets/low/borb_line_length_comparison/trial_005/B.png"]},
+            "answer_key": "different"
+        },
+        {
+            "trial": "trial_006",
+            "images": {"options":["datasets/low/borb_line_length_comparison/trial_006/A.png", "datasets/low/borb_line_length_comparison/trial_006/B.png"]},
+            "answer_key": "same"
+        },
+        {
+            "trial": "trial_007",
+            "images": {"options":["datasets/low/borb_line_length_comparison/trial_007/A.png", "datasets/low/borb_line_length_comparison/trial_007/B.png"]},
+            "answer_key": "different"
+        },
+        {
+            "trial": "trial_008",
+            "images": {"options":["datasets/low/borb_line_length_comparison/trial_008/A.png", "datasets/low/borb_line_length_comparison/trial_008/B.png"]},
+            "answer_key": "same"
+        },
+        {
+            "trial": "trial_009",
+            "images": {"options":["datasets/low/borb_line_length_comparison/trial_009/A.png", "datasets/low/borb_line_length_comparison/trial_009/B.png"]},
+            "answer_key": "different"
+        },
+        {
+            "trial": "trial_010",
+            "images": {"options":["datasets/low/borb_line_length_comparison/trial_010/A.png", "datasets/low/borb_line_length_comparison/trial_010/B.png"]},
+            "answer_key": "same"
+        },
+        {
+            "trial": "trial_011",
+            "images": {"options":["datasets/low/borb_line_length_comparison/trial_011/A.png", "datasets/low/borb_line_length_comparison/trial_011/B.png"]},
+            "answer_key": "same"
+        },
+        {
+            "trial": "trial_012",
+            "images": {"options":["datasets/low/borb_line_length_comparison/trial_012/A.png", "datasets/low/borb_line_length_comparison/trial_012/B.png"]},
+            "answer_key": "different"
+        },
+        {
+            "trial": "trial_013",
+            "images": {"options":["datasets/low/borb_line_length_comparison/trial_013/A.png", "datasets/low/borb_line_length_comparison/trial_013/B.png"]},
+            "answer_key": "same"
+        },
+        {
+            "trial": "trial_014",
+            "images": {"options":["datasets/low/borb_line_length_comparison/trial_014/A.png", "datasets/low/borb_line_length_comparison/trial_014/B.png"]},
+            "answer_key": "different"
+        },
+        {
+            "trial": "trial_015",
+            "images": {"options":["datasets/low/borb_line_length_comparison/trial_015/A.png", "datasets/low/borb_line_length_comparison/trial_015/B.png"]},
+            "answer_key": "different"
+        },
+        {
+            "trial": "trial_016",
+            "images": {"options":["datasets/low/borb_line_length_comparison/trial_016/A.png", "datasets/low/borb_line_length_comparison/trial_016/B.png"]},
+            "answer_key": "different"
+        },
+        {
+            "trial": "trial_017",
+            "images": {"options":["datasets/low/borb_line_length_comparison/trial_017/A.png", "datasets/low/borb_line_length_comparison/trial_017/B.png"]},
+            "answer_key": "same"
+        },
+        {
+            "trial": "trial_018",
+            "images": {"options":["datasets/low/borb_line_length_comparison/trial_018/A.png", "datasets/low/borb_line_length_comparison/trial_018/B.png"]},
+            "answer_key": "different"
+        },
+        {
+            "trial": "trial_019",
+            "images": {"options":["datasets/low/borb_line_length_comparison/trial_019/A.png", "datasets/low/borb_line_length_comparison/trial_019/B.png"]},
+            "answer_key": "same"
+        },
+        {
+            "trial": "trial_020",
+            "images": {"options":["datasets/low/borb_line_length_comparison/trial_020/A.png", "datasets/low/borb_line_length_comparison/trial_020/B.png"]},
+            "answer_key": "same"
+        },
+        {
+            "trial": "trial_021",
+            "images": {"options":["datasets/low/borb_line_length_comparison/trial_021/A.png", "datasets/low/borb_line_length_comparison/trial_021/B.png"]},
+            "answer_key": "different"
+        },
+        {
+            "trial": "trial_022",
+            "images": {"options":["datasets/low/borb_line_length_comparison/trial_022/A.png", "datasets/low/borb_line_length_comparison/trial_022/B.png"]},
+            "answer_key": "same"
+        },
+        {
+            "trial": "trial_023",
+            "images": {"options":["datasets/low/borb_line_length_comparison/trial_023/A.png", "datasets/low/borb_line_length_comparison/trial_023/B.png"]},
+            "answer_key": "same"
+        },
+        {
+            "trial": "trial_024",
+            "images": {"options":["datasets/low/borb_line_length_comparison/trial_024/A.png", "datasets/low/borb_line_length_comparison/trial_024/B.png"]},
+            "answer_key": "different"
+        },
+        {
+            "trial": "trial_025",
+            "images": {"options":["datasets/low/borb_line_length_comparison/trial_025/A.png", "datasets/low/borb_line_length_comparison/trial_025/B.png"]},
+            "answer_key": "same"
+        },
+        {
+            "trial": "trial_026",
+            "images": {"options":["datasets/low/borb_line_length_comparison/trial_026/A.png", "datasets/low/borb_line_length_comparison/trial_026/B.png"]},
+            "answer_key": "different"
+        },
+        {
+            "trial": "trial_027",
+            "images": {"options":["datasets/low/borb_line_length_comparison/trial_027/A.png", "datasets/low/borb_line_length_comparison/trial_027/B.png"]},
+            "answer_key": "different"
+        },
+        {
+            "trial": "trial_028",
+            "images": {"options":["datasets/low/borb_line_length_comparison/trial_028/A.png", "datasets/low/borb_line_length_comparison/trial_028/B.png"]},
+            "answer_key": "different"
+        },
+        {
+            "trial": "trial_029",
+            "images": {"options":["datasets/low/borb_line_length_comparison/trial_029/A.png", "datasets/low/borb_line_length_comparison/trial_029/B.png"]},
+            "answer_key": "same"
+        },
+        {
+            "trial": "trial_030",
+            "images": {"options":["datasets/low/borb_line_length_comparison/trial_030/A.png", "datasets/low/borb_line_length_comparison/trial_030/B.png"]},
+            "answer_key": "same"
+        }
+
+    
+    ]
+}

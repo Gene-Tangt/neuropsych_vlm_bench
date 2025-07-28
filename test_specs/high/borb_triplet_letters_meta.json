@@ -1,0 +1,190 @@
+{
+    "stage": "high",
+    "process": "straightforward_visual_recognition",
+    "task": "borb_triplet_letters",
+    "task_type": "naming",
+    "num_stim": "one",
+    "prompt": "This is a task. Please name all the letters in the picture. Please put your final answer in {} for example, {ABC}.",
+    "trials": [
+        {
+            "trial": "trial_001",
+            "images": {"target":["datasets/high/borb_triplet_letters/Triplets_s100_001.png"]},
+            "answer_key": "EJA"
+        },
+        {
+            "trial": "trial_002",
+            "images": {"target":["datasets/high/borb_triplet_letters/Triplets_s100_002.png"]},
+            "answer_key": "YRX"
+        },
+        {
+            "trial": "trial_003",
+            "images": {"target":["datasets/high/borb_triplet_letters/Triplets_s100_003.png"]},
+            "answer_key": "GFT"
+        },
+        {
+            "trial": "trial_004",
+            "images": {"target":["datasets/high/borb_triplet_letters/Triplets_s100_004.png"]},
+            "answer_key": "HEC"
+        },
+        {
+            "trial": "trial_005",
+            "images": {"target":["datasets/high/borb_triplet_letters/Triplets_s100_005.png"]},
+            "answer_key": "FHS"
+        },
+        {
+            "trial": "trial_006",
+            "images": {"target":["datasets/high/borb_triplet_letters/Triplets_s100_006.png"]},
+            "answer_key": "LSZ"
+        },
+        {
+            "trial": "trial_007",
+            "images": {"target":["datasets/high/borb_triplet_letters/Triplets_s100_007.png"]},
+            "answer_key": "IRZ"
+        },
+        {
+            "trial": "trial_008",
+            "images": {"target":["datasets/high/borb_triplet_letters/Triplets_s100_008.png"]},
+            "answer_key": "WPA"
+        },
+        {
+            "trial": "trial_009",
+            "images": {"target":["datasets/high/borb_triplet_letters/Triplets_s100_009.png"]},
+            "answer_key": "CML"
+        },
+        {
+            "trial": "trial_010",
+            "images": {"target":["datasets/high/borb_triplet_letters/Triplets_s100_010.png"]},
+            "answer_key": "HUE"
+        },
+        {
+            "trial": "trial_011",
+            "images": {"target":["datasets/high/borb_triplet_letters/Triplets_s100_011.png"]},
+            "answer_key": "VDL"
+        },
+        {
+            "trial": "trial_012",
+            "images": {"target":["datasets/high/borb_triplet_letters/Triplets_s100_012.png"]},
+            "answer_key": "NBA"
+        },
+        {
+            "trial": "trial_013",
+            "images": {"target":["datasets/high/borb_triplet_letters/Triplets_s100_013.png"]},
+            "answer_key": "VMU"
+        },
+        {
+            "trial": "trial_014",
+            "images": {"target":["datasets/high/borb_triplet_letters/Triplets_s100_014.png"]},
+            "answer_key": "JUW"
+        },
+        {
+            "trial": "trial_015",
+            "images": {"target":["datasets/high/borb_triplet_letters/Triplets_s100_015.png"]},
+            "answer_key": "KUB"
+        },
+        {
+            "trial": "trial_016",
+            "images": {"target":["datasets/high/borb_triplet_letters/Triplets_s100_016.png"]},
+            "answer_key": "WSU"
+        },
+        {
+            "trial": "trial_017",
+            "images": {"target":["datasets/high/borb_triplet_letters/Triplets_s100_017.png"]},
+            "answer_key": "OEM"
+        },
+        {
+            "trial": "trial_018",
+            "images": {"target":["datasets/high/borb_triplet_letters/Triplets_s100_018.png"]},
+            "answer_key": "NQV"
+        },
+        {
+            "trial": "trial_019",
+            "images": {"target":["datasets/high/borb_triplet_letters/Triplets_s100_019.png"]},
+            "answer_key": "FMO"
+        },
+        {
+            "trial": "trial_020",
+            "images": {"target":["datasets/high/borb_triplet_letters/Triplets_s100_020.png"]},
+            "answer_key": "SXY"
+        },
+        {
+            "trial": "trial_021",
+            "images": {"target":["datasets/high/borb_triplet_letters/Triplets_s100_021.png"]},
+            "answer_key": "NHM"
+        },
+        {
+            "trial": "trial_022",
+            "images": {"target":["datasets/high/borb_triplet_letters/Triplets_s100_022.png"]},
+            "answer_key": "STE"
+        },
+        {
+            "trial": "trial_023",
+            "images": {"target":["datasets/high/borb_triplet_letters/Triplets_s100_023.png"]},
+            "answer_key": "VKU"
+        },
+        {
+            "trial": "trial_024",
+            "images": {"target":["datasets/high/borb_triplet_letters/Triplets_s100_024.png"]},
+            "answer_key": "EHK"
+        },
+        {
+            "trial": "trial_025",
+            "images": {"target":["datasets/high/borb_triplet_letters/Triplets_s100_025.png"]},
+            "answer_key": "FBN"
+        },
+        {
+            "trial": "trial_026",
+            "images": {"target":["datasets/high/borb_triplet_letters/Triplets_s100_026.png"]},
+            "answer_key": "DHS"
+        },
+        {
+            "trial": "trial_027",
+            "images": {"target":["datasets/high/borb_triplet_letters/Triplets_s100_027.png"]},
+            "answer_key": "SFM"
+        },
+        {
+            "trial": "trial_028",
+            "images": {"target":["datasets/high/borb_triplet_letters/Triplets_s100_028.png"]},
+            "answer_key": "TEX"
+        },
+        {
+            "trial": "trial_029",
+            "images": {"target":["datasets/high/borb_triplet_letters/Triplets_s100_029.png"]},
+            "answer_key": "VSG"
+        },
+        {
+            "trial": "trial_030",
+            "images": {"target":["datasets/high/borb_triplet_letters/Triplets_s100_030.png"]},
+            "answer_key": "DWF"
+        },
+        {
+            "trial": "trial_031",
+            "images": {"target":["datasets/high/borb_triplet_letters/Triplets_s100_031.png"]},
+            "answer_key": "BXZ"
+        },
+        {
+            "trial": "trial_032",
+            "images": {"target":["datasets/high/borb_triplet_letters/Triplets_s100_032.png"]},
+            "answer_key": "LJZ"
+        },
+        {
+            "trial": "trial_033",
+            "images": {"target":["datasets/high/borb_triplet_letters/Triplets_s100_033.png"]},
+            "answer_key": "JOK"
+        },
+        {
+            "trial": "trial_034",
+            "images": {"target":["datasets/high/borb_triplet_letters/Triplets_s100_034.png"]},
+            "answer_key": "MYS"
+        },
+        {
+            "trial": "trial_035",
+            "images": {"target":["datasets/high/borb_triplet_letters/Triplets_s100_035.png"]},
+            "answer_key": "WIZ"
+        },
+        {
+            "trial": "trial_036",
+            "images": {"target":["datasets/high/borb_triplet_letters/Triplets_s100_036.png"]},
+            "answer_key": "MQO"
+        }
+    ]
+}

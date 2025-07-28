@@ -1,0 +1,310 @@
+{
+    "stage": "mid",
+    "process": "figure_judgement",
+    "task": "mindset_geometric_elements_comparison",
+    "task_type": "same_different",
+    "num_stim": "one",
+    "prompt": "Here's a task. There are two items randomly placed in the image. The two items can be either the same or different. Your task is to tell me whether the two items in the image are of the same or different. Please provide one final answer, even if you are unsure. Please provide your answer in {}.",
+    "trials": [
+        {
+            "trial": "trial_001",
+            "images": {"target":["datasets/mid/mindset_geometric_elements_comparison/same_diff_001_2adba423.png"]},
+            "answer_key": "different"
+        },
+        {
+            "trial": "trial_002",
+            "images": {"target":["datasets/mid/mindset_geometric_elements_comparison/same_diff_002_3a4b8b20.png"]},
+            "answer_key": "same"
+        },
+        {
+            "trial": "trial_003",
+            "images": {"target":["datasets/mid/mindset_geometric_elements_comparison/same_diff_003_4fb3e9c1.png"]},
+            "answer_key": "different"
+        },
+        {
+            "trial": "trial_004",
+            "images": {"target":["datasets/mid/mindset_geometric_elements_comparison/same_diff_004_4fb9dff5.png"]},
+            "answer_key": "same"
+        },
+        {
+            "trial": "trial_005",
+            "images": {"target":["datasets/mid/mindset_geometric_elements_comparison/same_diff_005_05d90b53.png"]},
+            "answer_key": "different"
+        },
+        {
+            "trial": "trial_006",
+            "images": {"target":["datasets/mid/mindset_geometric_elements_comparison/same_diff_006_6d3d907c.png"]},
+            "answer_key": "different"
+        },
+        {
+            "trial": "trial_007",
+            "images": {"target":["datasets/mid/mindset_geometric_elements_comparison/same_diff_007_6ffb5a36.png"]},
+            "answer_key": "different"
+        },
+        {
+            "trial": "trial_008",
+            "images": {"target":["datasets/mid/mindset_geometric_elements_comparison/same_diff_008_7dae8622.png"]},
+            "answer_key": "different"
+        },
+        {
+            "trial": "trial_009",
+            "images": {"target":["datasets/mid/mindset_geometric_elements_comparison/same_diff_009_7e2aa3e0.png"]},
+            "answer_key": "same"
+        },
+        {
+            "trial": "trial_010",
+            "images": {"target":["datasets/mid/mindset_geometric_elements_comparison/same_diff_010_8a624adb.png"]},
+            "answer_key": "different"
+        },
+        {
+            "trial": "trial_011",
+            "images": {"target":["datasets/mid/mindset_geometric_elements_comparison/same_diff_011_8c56e75f.png"]},
+            "answer_key": "same"
+        },
+        {
+            "trial": "trial_012",
+            "images": {"target":["datasets/mid/mindset_geometric_elements_comparison/same_diff_012_9f85887f.png"]},
+            "answer_key": "same"
+        },
+        {
+            "trial": "trial_013",
+            "images": {"target":["datasets/mid/mindset_geometric_elements_comparison/same_diff_013_014e07d7.png"]},
+            "answer_key": "same"
+        },
+        {
+            "trial": "trial_014",
+            "images": {"target":["datasets/mid/mindset_geometric_elements_comparison/same_diff_014_26d21b66.png"]},
+            "answer_key": "same"
+        },
+        {
+            "trial": "trial_015",
+            "images": {"target":["datasets/mid/mindset_geometric_elements_comparison/same_diff_015_39bb1bcf.png"]},
+            "answer_key": "different"
+        },
+        {
+            "trial": "trial_016",
+            "images": {"target":["datasets/mid/mindset_geometric_elements_comparison/same_diff_016_55fcec60.png"]},
+            "answer_key": "same"
+        },
+        {
+            "trial": "trial_017",
+            "images": {"target":["datasets/mid/mindset_geometric_elements_comparison/same_diff_017_62afd54f.png"]},
+            "answer_key": "different"
+        },
+        {
+            "trial": "trial_018",
+            "images": {"target":["datasets/mid/mindset_geometric_elements_comparison/same_diff_018_65fe17d3.png"]},
+            "answer_key": "same"
+        },
+        {
+            "trial": "trial_019",
+            "images": {"target":["datasets/mid/mindset_geometric_elements_comparison/same_diff_019_66e26647.png"]},
+            "answer_key": "same"
+        },
+        {
+            "trial": "trial_020",
+            "images": {"target":["datasets/mid/mindset_geometric_elements_comparison/same_diff_020_70dd8073.png"]},
+            "answer_key": "same"
+        },
+        {
+            "trial": "trial_021",
+            "images": {"target":["datasets/mid/mindset_geometric_elements_comparison/same_diff_021_82c25608.png"]},
+            "answer_key": "different"
+        },
+        {
+            "trial": "trial_022",
+            "images": {"target":["datasets/mid/mindset_geometric_elements_comparison/same_diff_022_95a5ca87.png"]},
+            "answer_key": "different"
+        },
+        {
+            "trial": "trial_023",
+            "images": {"target":["datasets/mid/mindset_geometric_elements_comparison/same_diff_023_0152fa26.png"]},
+            "answer_key": "different"
+        },
+        {
+            "trial": "trial_024",
+            "images": {"target":["datasets/mid/mindset_geometric_elements_comparison/same_diff_024_540addb4.png"]},
+            "answer_key": "different"
+        },
+        {
+            "trial": "trial_025",
+            "images": {"target":["datasets/mid/mindset_geometric_elements_comparison/same_diff_025_2090a8df.png"]},
+            "answer_key": "different"
+        },
+        {
+            "trial": "trial_026",
+            "images": {"target":["datasets/mid/mindset_geometric_elements_comparison/same_diff_026_2447d798.png"]},
+            "answer_key": "same"
+        },
+        {
+            "trial": "trial_027",
+            "images": {"target":["datasets/mid/mindset_geometric_elements_comparison/same_diff_027_5725ca17.png"]},
+            "answer_key": "different"
+        },
+        {
+            "trial": "trial_028",
+            "images": {"target":["datasets/mid/mindset_geometric_elements_comparison/same_diff_028_6460f70a.png"]},
+            "answer_key": "different"
+        },
+        {
+            "trial": "trial_029",
+            "images": {"target":["datasets/mid/mindset_geometric_elements_comparison/same_diff_029_71480ddc.png"]},
+            "answer_key": "different"
+        },
+        {
+            "trial": "trial_030",
+            "images": {"target":["datasets/mid/mindset_geometric_elements_comparison/same_diff_030_72892bc1.png"]},
+            "answer_key": "same"
+        },
+        {
+            "trial": "trial_031",
+            "images": {"target":["datasets/mid/mindset_geometric_elements_comparison/same_diff_031_183333f7.png"]},
+            "answer_key": "same"
+        },
+        {
+            "trial": "trial_032",
+            "images": {"target":["datasets/mid/mindset_geometric_elements_comparison/same_diff_032_561140ec.png"]},
+            "answer_key": "same"
+        },
+        {
+            "trial": "trial_033",
+            "images": {"target":["datasets/mid/mindset_geometric_elements_comparison/same_diff_033_a97bfe68.png"]},
+            "answer_key": "same"
+        },
+        {
+            "trial": "trial_034",
+            "images": {"target":["datasets/mid/mindset_geometric_elements_comparison/same_diff_034_a895aac3.png"]},
+            "answer_key": "same"
+        },
+        {
+            "trial": "trial_035",
+            "images": {"target":["datasets/mid/mindset_geometric_elements_comparison/same_diff_035_a2924f82.png"]},
+            "answer_key": "same"
+        },
+        {
+            "trial": "trial_036",
+            "images": {"target":["datasets/mid/mindset_geometric_elements_comparison/same_diff_036_ab489db4.png"]},
+            "answer_key": "different"
+        },
+        {
+            "trial": "trial_037",
+            "images": {"target":["datasets/mid/mindset_geometric_elements_comparison/same_diff_037_ab32078c.png"]},
+            "answer_key": "same"
+        },
+        {
+            "trial": "trial_038",
+            "images": {"target":["datasets/mid/mindset_geometric_elements_comparison/same_diff_038_ad454be8.png"]},
+            "answer_key": "same"
+        },
+        {
+            "trial": "trial_039",
+            "images": {"target":["datasets/mid/mindset_geometric_elements_comparison/same_diff_039_b78e6499.png"]},
+            "answer_key": "same"
+        },
+        {
+            "trial": "trial_040",
+            "images": {"target":["datasets/mid/mindset_geometric_elements_comparison/same_diff_040_b252016b.png"]},
+            "answer_key": "different"
+        },
+        {
+            "trial": "trial_041",
+            "images": {"target":["datasets/mid/mindset_geometric_elements_comparison/same_diff_041_bf9ec128.png"]},
+            "answer_key": "same"
+        },
+        {
+            "trial": "trial_042",
+            "images": {"target":["datasets/mid/mindset_geometric_elements_comparison/same_diff_042_c0b40880.png"]},
+            "answer_key": "different"
+        },
+        {
+            "trial": "trial_043",
+            "images": {"target":["datasets/mid/mindset_geometric_elements_comparison/same_diff_043_c337df91.png"]},
+            "answer_key": "different"
+        },
+        {
+            "trial": "trial_044",
+            "images": {"target":["datasets/mid/mindset_geometric_elements_comparison/same_diff_044_cb67f5b3.png"]},
+            "answer_key": "different"
+        },
+        {
+            "trial": "trial_045",
+            "images": {"target":["datasets/mid/mindset_geometric_elements_comparison/same_diff_045_cd415122.png"]},
+            "answer_key": "different"
+        },
+        {
+            "trial": "trial_046",
+            "images": {"target":["datasets/mid/mindset_geometric_elements_comparison/same_diff_046_d0aea413.png"]},
+            "answer_key": "same"
+        },
+        {
+            "trial": "trial_047",
+            "images": {"target":["datasets/mid/mindset_geometric_elements_comparison/same_diff_047_d3b3edd6.png"]},
+            "answer_key": "same"
+        },
+        {
+            "trial": "trial_048",
+            "images": {"target":["datasets/mid/mindset_geometric_elements_comparison/same_diff_048_d9fc6cd9.png"]},
+            "answer_key": "same"
+        },
+        {
+            "trial": "trial_049",
+            "images": {"target":["datasets/mid/mindset_geometric_elements_comparison/same_diff_049_d91e6fb6.png"]},
+            "answer_key": "same"
+        },
+        {
+            "trial": "trial_050",
+            "images": {"target":["datasets/mid/mindset_geometric_elements_comparison/same_diff_050_d942a1e8.png"]},
+            "answer_key": "same"
+        },
+        {
+            "trial": "trial_051",
+            "images": {"target":["datasets/mid/mindset_geometric_elements_comparison/same_diff_051_d4037e90.png"]},
+            "answer_key": "different"
+        },
+        {
+            "trial": "trial_052",
+            "images": {"target":["datasets/mid/mindset_geometric_elements_comparison/same_diff_052_e0f3bf93.png"]},
+            "answer_key": "different"
+        },
+        {
+            "trial": "trial_053",
+            "images": {"target":["datasets/mid/mindset_geometric_elements_comparison/same_diff_053_e118f5e0.png"]},
+            "answer_key": "same"
+        },
+        {
+            "trial": "trial_054",
+            "images": {"target":["datasets/mid/mindset_geometric_elements_comparison/same_diff_054_e391f213.png"]},
+            "answer_key": "different"
+        },
+        {
+            "trial": "trial_055",
+            "images": {"target":["datasets/mid/mindset_geometric_elements_comparison/same_diff_055_e6479b12.png"]},
+            "answer_key": "different"
+        },
+        {
+            "trial": "trial_056",
+            "images": {"target":["datasets/mid/mindset_geometric_elements_comparison/same_diff_056_e2185745.png"]},
+            "answer_key": "same"
+        },
+        {
+            "trial": "trial_057",
+            "images": {"target":["datasets/mid/mindset_geometric_elements_comparison/same_diff_057_.png"]},
+            "answer_key": "different"
+        },
+        {
+            "trial": "trial_058",
+            "images": {"target":["datasets/mid/mindset_geometric_elements_comparison/same_diff_058_f74ca6ec.png"]},
+            "answer_key": "different"
+        },
+        {
+            "trial": "trial_059",
+            "images": {"target":["datasets/mid/mindset_geometric_elements_comparison/same_diff_059_f564d023.png"]},
+            "answer_key": "same"
+        },
+        {
+            "trial": "trial_060",
+            "images": {"target":["datasets/mid/mindset_geometric_elements_comparison/same_diff_060_fd97d8e0.png"]},
+            "answer_key": "different"
+        }
+    ]
+}

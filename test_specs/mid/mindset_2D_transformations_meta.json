@@ -1,0 +1,361 @@
+{
+    "stage": "mid",
+    "process": "view_invariance",
+    "task": "mindset_2D_transformations",
+    "task_type": "naming",
+    "num_stim": "one",
+    "prompt": "Here's a task. Could you please name the item in this image? Please provide your answer in {}.",
+    "trials": [
+        {
+            "trial": "trial_001",
+            "images": {"target":["datasets/mid/mindset_2D_transformations/2d_African_crocodile_043867f1.png"]},
+            "answer_key": "crocodile"
+        },
+        {
+            "trial": "trial_002",
+            "images": {"target":["datasets/mid/mindset_2D_transformations/2d_African_crocodile_c1bd76ef.png"]},
+            "answer_key": "crocodile"
+        },
+        {
+            "trial": "trial_003",
+            "images": {"target":["datasets/mid/mindset_2D_transformations/2d_airship_91bd111b.png"]},
+            "answer_key": "airship"
+        },
+        {
+            "trial": "trial_004",
+            "images": {"target":["datasets/mid/mindset_2D_transformations/2d_airship_a31e5f20.png"]},
+            "answer_key": "airship"
+        },
+        {
+            "trial": "trial_005",
+            "images": {"target":["datasets/mid/mindset_2D_transformations/2d_armadillo_5326dc70.png"]},
+            "answer_key": "armadillo"
+        },
+        {
+            "trial": "trial_006",
+            "images": {"target":["datasets/mid/mindset_2D_transformations/2d_armadillo_c9b8c7c7.png"]},
+            "answer_key": "armadillo"
+        },
+        {
+            "trial": "trial_007",
+            "images": {"target":["datasets/mid/mindset_2D_transformations/2d_banana_24509e84.png"]},
+            "answer_key": "banana"
+        },
+        {
+            "trial": "trial_008",
+            "images": {"target":["datasets/mid/mindset_2D_transformations/2d_banana_de4a9052.png"]},
+            "answer_key": "banana"
+        },
+        {
+            "trial": "trial_009",
+            "images": {"target":["datasets/mid/mindset_2D_transformations/2d_beer_bottle_52d73040.png"]},
+            "answer_key": "beer bottle"
+        },
+        {
+            "trial": "trial_010",
+            "images": {"target":["datasets/mid/mindset_2D_transformations/2d_beer_bottle_8774deff.png"]},
+            "answer_key": "beer bottle"
+        },
+        {
+            "trial": "trial_011",
+            "images": {"target":["datasets/mid/mindset_2D_transformations/2d_bow_tie_26576ed3.png"]},
+            "answer_key": "bow tie"
+        },
+        {
+            "trial": "trial_012",
+            "images": {"target":["datasets/mid/mindset_2D_transformations/2d_bow_tie_894e9078.png"]},
+            "answer_key": "bow tie"
+        },
+        {
+            "trial": "trial_013",
+            "images": {"target":["datasets/mid/mindset_2D_transformations/2d_bullfrog_4c9f94d0.png"]},
+            "answer_key": "bullfrog"
+        },
+        {
+            "trial": "trial_014",
+            "images": {"target":["datasets/mid/mindset_2D_transformations/2d_bullfrog_fb8ce5f7.png"]},
+            "answer_key": "bullfrog"
+        },
+        {
+            "trial": "trial_015",
+            "images": {"target":["datasets/mid/mindset_2D_transformations/2d_cello_ac5a94e1.png"]},
+            "answer_key": "cello"
+        },
+        {
+            "trial": "trial_016",
+            "images": {"target":["datasets/mid/mindset_2D_transformations/2d_cello_d1c93e06.png"]},
+            "answer_key": "cello"
+        },
+        {
+            "trial": "trial_017",
+            "images": {"target":["datasets/mid/mindset_2D_transformations/2d_coffee_mug_33f3c07f.png"]},
+            "answer_key": "coffee mug"
+        },
+        {
+            "trial": "trial_018",
+            "images": {"target":["datasets/mid/mindset_2D_transformations/2d_coffee_mug_88552f98.png"]},
+            "answer_key": "coffee mug"
+        },
+        {
+            "trial": "trial_019",
+            "images": {"target":["datasets/mid/mindset_2D_transformations/2d_dragonfly_65d94ecf.png"]},
+            "answer_key": "dragonfly"
+        },
+        {
+            "trial": "trial_020",
+            "images": {"target":["datasets/mid/mindset_2D_transformations/2d_dragonfly_662efc60.png"]},
+            "answer_key": "dragonfly"
+        },
+        {
+            "trial": "trial_021",
+            "images": {"target":["datasets/mid/mindset_2D_transformations/2d_hammer_c106312e.png"]},
+            "answer_key": "hammer"
+        },
+        {
+            "trial": "trial_022",
+            "images": {"target":["datasets/mid/mindset_2D_transformations/2d_hammer_fd274b6e.png"]},
+            "answer_key": "hammer"
+        },
+        {
+            "trial": "trial_023",
+            "images": {"target":["datasets/mid/mindset_2D_transformations/2d_hare_a0f5cead.png"]},
+            "answer_key": "hare"
+        },
+        {
+            "trial": "trial_024",
+            "images": {"target":["datasets/mid/mindset_2D_transformations/2d_hare_cca059da.png"]},
+            "answer_key": "hare"
+        },
+        {
+            "trial": "trial_025",
+            "images": {"target":["datasets/mid/mindset_2D_transformations/2d_ibex_0f0795fb.png"]},
+            "answer_key": "ibex"
+        },
+        {
+            "trial": "trial_026",
+            "images": {"target":["datasets/mid/mindset_2D_transformations/2d_ibex_b5fcd36a.png"]},
+            "answer_key": "ibex"
+        },
+        {
+            "trial": "trial_027",
+            "images": {"target":["datasets/mid/mindset_2D_transformations/2d_ice_bear_46783dc6.png"]},
+            "answer_key": "ice bear"
+        },
+        {
+            "trial": "trial_028",
+            "images": {"target":["datasets/mid/mindset_2D_transformations/2d_ice_bear_affa04f5.png"]},
+            "answer_key": "ice bear"
+        },
+        {
+            "trial": "trial_029",
+            "images": {"target":["datasets/mid/mindset_2D_transformations/2d_jigsaw_puzzle_508b38f4.png"]},
+            "answer_key": "jigsaw puzzle"
+        },
+        {
+            "trial": "trial_030",
+            "images": {"target":["datasets/mid/mindset_2D_transformations/2d_jigsaw_puzzle_63b19429.png"]},
+            "answer_key": "jigsaw puzzle"
+        },
+        {
+            "trial": "trial_031",
+            "images": {"target":["datasets/mid/mindset_2D_transformations/2d_king_penguin_c200c2e3.png"]},
+            "answer_key": "king penguin"
+        },
+        {
+            "trial": "trial_032",
+            "images": {"target":["datasets/mid/mindset_2D_transformations/2d_king_penguin_ddc4c52c.png"]},
+            "answer_key": "king penguin"
+        },
+        {
+            "trial": "trial_033",
+            "images": {"target":["datasets/mid/mindset_2D_transformations/2d_lawn_mower_11704eb4.png"]},
+            "answer_key": "lawn mower"
+        },
+        {
+            "trial": "trial_034",
+            "images": {"target":["datasets/mid/mindset_2D_transformations/2d_lawn_mower_60d7dc5f.png"]},
+            "answer_key": "lawn mower"
+        },
+        {
+            "trial": "trial_035",
+            "images": {"target":["datasets/mid/mindset_2D_transformations/2d_lion_24061c10.png"]},
+            "answer_key": "lion"
+        },
+        {
+            "trial": "trial_036",
+            "images": {"target":["datasets/mid/mindset_2D_transformations/2d_lion_f971e905.png"]},
+            "answer_key": "lion"
+        },
+        {
+            "trial": "trial_037",
+            "images": {"target":["datasets/mid/mindset_2D_transformations/2d_llama_dd6bc68d.png"]},
+            "answer_key": "llama"
+        },
+        {
+            "trial": "trial_038",
+            "images": {"target":["datasets/mid/mindset_2D_transformations/2d_llama_df9a3f5c.png"]},
+            "answer_key": "llama"
+        },
+        {
+            "trial": "trial_039",
+            "images": {"target":["datasets/mid/mindset_2D_transformations/2d_lynx_57c1c274.png"]},
+            "answer_key": "lynx"
+        },
+        {
+            "trial": "trial_040",
+            "images": {"target":["datasets/mid/mindset_2D_transformations/2d_lynx_80d02359.png"]},
+            "answer_key": "lynx"
+        },
+        {
+            "trial": "trial_041",
+            "images": {"target":["datasets/mid/mindset_2D_transformations/2d_paintbrush_921cc50f.png"]},
+            "answer_key": "paintbrush"
+        },
+        {
+            "trial": "trial_042",
+            "images": {"target":["datasets/mid/mindset_2D_transformations/2d_paintbrush_cbf60e29.png"]},
+            "answer_key": "paintbrush"
+        },
+        {
+            "trial": "trial_043",
+            "images": {"target":["datasets/mid/mindset_2D_transformations/2d_peacock_7d9dd31f.png"]},
+            "answer_key": "peacock"
+        },
+        {
+            "trial": "trial_044",
+            "images": {"target":["datasets/mid/mindset_2D_transformations/2d_peacock_b0a37c44.png"]},
+            "answer_key": "peacock"
+        },
+        {
+            "trial": "trial_045",
+            "images": {"target":["datasets/mid/mindset_2D_transformations/2d_pretzel_879410e9.png"]},
+            "answer_key": "pretzel"
+        },
+        {
+            "trial": "trial_046",
+            "images": {"target":["datasets/mid/mindset_2D_transformations/2d_pretzel_e1b54bf5.png"]},
+            "answer_key": "pretzel"
+        },
+        {
+            "trial": "trial_047",
+            "images": {"target":["datasets/mid/mindset_2D_transformations/2d_revolver_34322398.png"]},
+            "answer_key": "revolver"
+        },
+        {
+            "trial": "trial_048",
+            "images": {"target":["datasets/mid/mindset_2D_transformations/2d_revolver_840a694e.png"]},
+            "answer_key": "revolver"
+        },
+        {
+            "trial": "trial_049",
+            "images": {"target":["datasets/mid/mindset_2D_transformations/2d_running_shoe_6e25425b.png"]},
+            "answer_key": "running shoe"
+        },
+        {
+            "trial": "trial_050",
+            "images": {"target":["datasets/mid/mindset_2D_transformations/2d_running_shoe_b81e9b10.png"]},
+            "answer_key": "running shoe"
+        },
+        {
+            "trial": "trial_051",
+            "images": {"target":["datasets/mid/mindset_2D_transformations/2d_sewing_machine_3b336b7a.png"]},
+            "answer_key": "sewing machine"
+        },
+        {
+            "trial": "trial_052",
+            "images": {"target":["datasets/mid/mindset_2D_transformations/2d_sewing_machine_3ebefaca.png"]},
+            "answer_key": "sewing machine"
+        },
+        {
+            "trial": "trial_053",
+            "images": {"target":["datasets/mid/mindset_2D_transformations/2d_snail_91c8a69c.png"]},
+            "answer_key": "snail"
+        },
+        {
+            "trial": "trial_054",
+            "images": {"target":["datasets/mid/mindset_2D_transformations/2d_snail_28608fd7.png"]},
+            "answer_key": "snail"
+        },
+        {
+            "trial": "trial_055",
+            "images": {"target":["datasets/mid/mindset_2D_transformations/2d_space_shuttle_1e749f41.png"]},
+            "answer_key": "space shuttle"
+        },
+        {
+            "trial": "trial_056",
+            "images": {"target":["datasets/mid/mindset_2D_transformations/2d_space_shuttle_39b1adc1.png"]},
+            "answer_key": "space shuttle"
+        },
+        {
+            "trial": "trial_057",
+            "images": {"target":["datasets/mid/mindset_2D_transformations/2d_standard_poodle_91855ed6.png"]},
+            "answer_key": "poodle"
+        },
+        {
+            "trial": "trial_058",
+            "images": {"target":["datasets/mid/mindset_2D_transformations/2d_standard_poodle_c676f0dc.png"]},
+            "answer_key": "poodle"
+        },
+        {
+            "trial": "trial_059",
+            "images": {"target":["datasets/mid/mindset_2D_transformations/2d_sulphur_butterfly_9261648b.png"]},
+            "answer_key": "butterfly"
+        },
+        {
+            "trial": "trial_060",
+            "images": {"target":["datasets/mid/mindset_2D_transformations/2d_sulphur_butterfly_e6e6b7ae.png"]},
+            "answer_key": "butterfly"
+        },
+        {
+            "trial": "trial_061",
+            "images": {"target":["datasets/mid/mindset_2D_transformations/2d_teapot_4265b1a8.png"]},
+            "answer_key": "teapot"
+        },
+        {
+            "trial": "trial_062",
+            "images": {"target":["datasets/mid/mindset_2D_transformations/2d_teapot_f4f9f2d2.png"]},
+            "answer_key": "teapot"
+        },
+        {
+            "trial": "trial_063",
+            "images": {"target":["datasets/mid/mindset_2D_transformations/2d_tiger_a4d60c91.png"]},
+            "answer_key": "tiger"
+        },
+        {
+            "trial": "trial_064",
+            "images": {"target":["datasets/mid/mindset_2D_transformations/2d_tiger_d94350b1.png"]},
+            "answer_key": "tiger"
+        },
+        {
+            "trial": "trial_065",
+            "images": {"target":["datasets/mid/mindset_2D_transformations/2d_toucan_3d507787.png"]},
+            "answer_key": "toucan"
+        },
+        {
+            "trial": "trial_066",
+            "images": {"target":["datasets/mid/mindset_2D_transformations/2d_toucan_05031862.png"]},
+            "answer_key": "toucan"
+        },
+        {
+            "trial": "trial_067",
+            "images": {"target":["datasets/mid/mindset_2D_transformations/2d_trombone_09297823.png"]},
+            "answer_key": "trombone"
+        },
+        {
+            "trial": "trial_068",
+            "images": {"target":["datasets/mid/mindset_2D_transformations/2d_trombone_09297823.png"]},
+            "answer_key": "trombone"
+        },
+        {
+            "trial": "trial_069",
+            "images": {"target":["datasets/mid/mindset_2D_transformations/2d_zebra_078a0cae.png"]},
+            "answer_key": "zebra"
+        },
+        {
+            "trial": "trial_070",
+            "images": {"target":["datasets/mid/mindset_2D_transformations/2d_zebra_743f1af0.png"]},
+            "answer_key": "zebra"
+        }
+    ]
+}
+    

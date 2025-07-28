@@ -1,0 +1,211 @@
+{
+    "stage": "low",
+    "process": "simple_element_judgements",
+    "task": "borb_position_of_gap",
+    "task_type": "same_different",
+    "num_stim": "two",
+    "prompt": "This is a task. In this task you will tell me if the gap in these two circles is in the same position or not. Answer with only 'same' or 'different'. Please put your final answer in {}.",
+    "trials": [
+        {
+            "trial": "trial_001",
+            "images": {"options":["datasets/low/borb_position_of_gap/trial_001/A.png", "datasets/low/borb_position_of_gap/trial_001/B.png"]},
+            "answer_key": "different"
+        },
+        {
+            "trial": "trial_002",
+            "images": {"options":["datasets/low/borb_position_of_gap/trial_002/A.png", "datasets/low/borb_position_of_gap/trial_002/B.png"]},
+            "answer_key": "same"
+        },
+        {
+            "trial": "trial_003",
+            "images": {"options":["datasets/low/borb_position_of_gap/trial_003/A.png", "datasets/low/borb_position_of_gap/trial_003/B.png"]},
+            "answer_key": "same"
+        },
+        {
+            "trial": "trial_004",
+            "images": {"options":["datasets/low/borb_position_of_gap/trial_004/A.png", "datasets/low/borb_position_of_gap/trial_004/B.png"]},
+            "answer_key": "different"
+        },
+        {
+            "trial": "trial_005",
+            "images": {"options":["datasets/low/borb_position_of_gap/trial_005/A.png", "datasets/low/borb_position_of_gap/trial_005/B.png"]},
+            "answer_key": "same"
+        },
+        {
+            "trial": "trial_006",
+            "images": {"options":["datasets/low/borb_position_of_gap/trial_006/A.png", "datasets/low/borb_position_of_gap/trial_006/B.png"]},
+            "answer_key": "different"
+        },
+        {
+            "trial": "trial_007",
+            "images": {"options":["datasets/low/borb_position_of_gap/trial_007/A.png", "datasets/low/borb_position_of_gap/trial_007/B.png"]},
+            "answer_key": "different"
+        },
+        {
+            "trial": "trial_008",
+            "images": {"options":["datasets/low/borb_position_of_gap/trial_008/A.png", "datasets/low/borb_position_of_gap/trial_008/B.png"]},
+            "answer_key": "same"
+        },
+        {
+            "trial": "trial_009",
+            "images": {"options":["datasets/low/borb_position_of_gap/trial_009/A.png", "datasets/low/borb_position_of_gap/trial_009/B.png"]},
+            "answer_key": "same"
+        },
+        {
+            "trial": "trial_010",
+            "images": {"options":["datasets/low/borb_position_of_gap/trial_010/A.png", "datasets/low/borb_position_of_gap/trial_010/B.png"]},
+            "answer_key": "same"
+        },
+        {
+            "trial": "trial_011",
+            "images": {"options":["datasets/low/borb_position_of_gap/trial_011/A.png", "datasets/low/borb_position_of_gap/trial_011/B.png"]},
+            "answer_key": "different"
+        },
+        {
+            "trial": "trial_012",
+            "images": {"options":["datasets/low/borb_position_of_gap/trial_012/A.png", "datasets/low/borb_position_of_gap/trial_012/B.png"]},
+            "answer_key": "same"
+        },
+        {
+            "trial": "trial_013",
+            "images": {"options":["datasets/low/borb_position_of_gap/trial_013/A.png", "datasets/low/borb_position_of_gap/trial_013/B.png"]},
+            "answer_key": "different"
+        },
+        {
+            "trial": "trial_014",
+            "images": {"options":["datasets/low/borb_position_of_gap/trial_014/A.png", "datasets/low/borb_position_of_gap/trial_014/B.png"]},
+            "answer_key": "different"
+        },
+        {
+            "trial": "trial_015",
+            "images": {"options":["datasets/low/borb_position_of_gap/trial_015/A.png", "datasets/low/borb_position_of_gap/trial_015/B.png"]},
+            "answer_key": "same"
+        },
+        {
+            "trial": "trial_016",
+            "images": {"options":["datasets/low/borb_position_of_gap/trial_016/A.png", "datasets/low/borb_position_of_gap/trial_016/B.png"]},
+            "answer_key": "different"
+        },
+        {
+            "trial": "trial_017",
+            "images": {"options":["datasets/low/borb_position_of_gap/trial_017/A.png", "datasets/low/borb_position_of_gap/trial_017/B.png"]},
+            "answer_key": "same"
+        },
+        {
+            "trial": "trial_018",
+            "images": {"options":["datasets/low/borb_position_of_gap/trial_018/A.png", "datasets/low/borb_position_of_gap/trial_018/B.png"]},
+            "answer_key": "different"
+        },
+        {
+            "trial": "trial_019",
+            "images": {"options":["datasets/low/borb_position_of_gap/trial_019/A.png", "datasets/low/borb_position_of_gap/trial_019/B.png"]},
+            "answer_key": "different"
+        },
+        {
+            "trial": "trial_020",
+            "images": {"options":["datasets/low/borb_position_of_gap/trial_020/A.png", "datasets/low/borb_position_of_gap/trial_020/B.png"]},
+            "answer_key": "same"
+        },
+        {
+            "trial": "trial_021",
+            "images": {"options":["datasets/low/borb_position_of_gap/trial_021/A.png", "datasets/low/borb_position_of_gap/trial_021/B.png"]},
+            "answer_key": "same"
+        },
+        {
+            "trial": "trial_022",
+            "images": {"options":["datasets/low/borb_position_of_gap/trial_022/A.png", "datasets/low/borb_position_of_gap/trial_022/B.png"]},
+            "answer_key": "same"
+        },
+        {
+            "trial": "trial_023",
+            "images": {"options":["datasets/low/borb_position_of_gap/trial_023/A.png", "datasets/low/borb_position_of_gap/trial_023/B.png"]},
+            "answer_key": "different"
+        },
+        {
+            "trial": "trial_024",
+            "images": {"options":["datasets/low/borb_position_of_gap/trial_024/A.png", "datasets/low/borb_position_of_gap/trial_024/B.png"]},
+            "answer_key": "different"
+        },
+        {
+            "trial": "trial_025",
+            "images": {"options":["datasets/low/borb_position_of_gap/trial_025/A.png", "datasets/low/borb_position_of_gap/trial_025/B.png"]},
+            "answer_key": "different"
+        },
+        {
+            "trial": "trial_026",
+            "images": {"options":["datasets/low/borb_position_of_gap/trial_026/A.png", "datasets/low/borb_position_of_gap/trial_026/B.png"]},
+            "answer_key": "different"
+        },
+        {
+            "trial": "trial_027",
+            "images": {"options":["datasets/low/borb_position_of_gap/trial_027/A.png", "datasets/low/borb_position_of_gap/trial_027/B.png"]},
+            "answer_key": "different"
+        },
+        {
+            "trial": "trial_028",
+            "images": {"options":["datasets/low/borb_position_of_gap/trial_028/A.png", "datasets/low/borb_position_of_gap/trial_028/B.png"]},
+            "answer_key": "same"
+        },
+        {
+            "trial": "trial_029",
+            "images": {"options":["datasets/low/borb_position_of_gap/trial_029/A.png", "datasets/low/borb_position_of_gap/trial_029/B.png"]},
+            "answer_key": "different"
+        },
+        {
+            "trial": "trial_030",
+            "images": {"options":["datasets/low/borb_position_of_gap/trial_030/A.png", "datasets/low/borb_position_of_gap/trial_030/B.png"]},
+            "answer_key": "same"
+        },
+        {
+            "trial": "trial_031",
+            "images": {"options":["datasets/low/borb_position_of_gap/trial_031/A.png", "datasets/low/borb_position_of_gap/trial_031/B.png"]},
+            "answer_key": "same"
+        },
+        {
+            "trial": "trial_032",
+            "images": {"options":["datasets/low/borb_position_of_gap/trial_032/A.png", "datasets/low/borb_position_of_gap/trial_032/B.png"]},
+            "answer_key": "different"
+        },
+        {
+            "trial": "trial_033",
+            "images": {"options":["datasets/low/borb_position_of_gap/trial_033/A.png", "datasets/low/borb_position_of_gap/trial_033/B.png"]},
+            "answer_key": "different"
+        },
+        {
+            "trial": "trial_034",
+            "images": {"options":["datasets/low/borb_position_of_gap/trial_034/A.png", "datasets/low/borb_position_of_gap/trial_034/B.png"]},
+            "answer_key": "same"
+        },
+        {
+            "trial": "trial_035",
+            "images": {"options":["datasets/low/borb_position_of_gap/trial_035/A.png", "datasets/low/borb_position_of_gap/trial_035/B.png"]},
+            "answer_key": "different"
+        },
+        {
+            "trial": "trial_036",
+            "images": {"options":["datasets/low/borb_position_of_gap/trial_036/A.png", "datasets/low/borb_position_of_gap/trial_036/B.png"]},
+            "answer_key": "same"
+        },
+        {
+            "trial": "trial_037",
+            "images": {"options":["datasets/low/borb_position_of_gap/trial_037/A.png", "datasets/low/borb_position_of_gap/trial_037/B.png"]},
+            "answer_key": "same"
+        },
+        {
+            "trial": "trial_038",
+            "images": {"options":["datasets/low/borb_position_of_gap/trial_038/A.png", "datasets/low/borb_position_of_gap/trial_038/B.png"]},
+            "answer_key": "same"
+        },
+        {
+            "trial": "trial_039",
+            "images": {"options":["datasets/low/borb_position_of_gap/trial_039/A.png", "datasets/low/borb_position_of_gap/trial_039/B.png"]},
+            "answer_key": "different"
+        },
+        {
+            "trial": "trial_040",
+            "images": {"options":["datasets/low/borb_position_of_gap/trial_040/A.png", "datasets/low/borb_position_of_gap/trial_040/B.png"]},
+            "answer_key": "same"
+        }
+    ]
+}
+

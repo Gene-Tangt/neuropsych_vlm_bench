@@ -1,0 +1,38 @@
+{
+
+"exact_match_tasks": ["borb_orientation",
+                                "borb_line_length_comparison",
+                                "borb_size_comparison",
+                                "borb_position_of_gap",
+                                "mindset_weber_law",
+                                "left_embedded_figures",
+                                "mindset_NAP_vs_MP_2D_lines",
+                                "mindset_NAP_vs_MP_3D_geons",
+                                "mindset_amodal_completion",
+                                "mindset_decomposition", 
+                                "mindset_geometric_elements_comparison",
+                                "mindset_relational_vs_coordinate",
+                                "mindset_texturized_blobs",
+                                "mindset_viewpoint_invariance"],
+
+"naming_tasks": ["mindset_2D_transformations",
+                                "mindset_dotted_linedrawings",
+                                "mindset_global_change_linedrawings_fragmented",
+                                "mindset_global_change_linedrawings_frankenstein",
+                                "mindset_global_change_silhouettes_fragmented",
+                                "mindset_global_change_silhouettes_frankenstein",
+                                "mindset_segmented_images",
+                                "mindset_texturized_linedrawings_chars",
+                                "mindset_texturized_linedrawings_lines",
+                                "borb_triplet_letters",
+                                "mindset_global_change_linedrawings_original",
+                                "mindset_global_change_silhouettes_original",
+                                "mindset_linedrawings",
+                                "mindset_silhouettes"],
+
+"overlapping_letters": ["borb_overlapped_letters"],
+"overlapping_shapes": ["borb_overlapped_shapes"],
+"borb_triplet_shapes": ["borb_triplet_shapes"]
+
+                            
+}

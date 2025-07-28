@@ -1,0 +1,64 @@
+{
+    "stage": "mid",
+    "process": "property_biases",
+    "task": "mindset_relational_vs_coordinate",
+    "task_type": "match_to_sample",
+    "num_stim": "three",
+    "prompt": "Here's a task. I will present you with three pictures. The first one is the target/reference image. The following two are the options. Your task is to choose which of the options most closely resembles the target/reference image. Please provide one final answer even if you are unsure. Please provide your answer in {}. For example, if you choose option 1, please provide your answer as {1}.",
+    "trials": [
+        {
+            "trial": "trial_001",
+            "images": {
+                "target":["datasets/mid/mindset_relational_vs_coordinate/trial_000/1_base.png"],
+                "option_1":["datasets/mid/mindset_relational_vs_coordinate/trial_000/a1_coordinate.png"],
+                "option_2":["datasets/mid/mindset_relational_vs_coordinate/trial_000/b1_relation.png"]
+            },
+            "answer_key": "1"
+        },
+        {
+            "trial": "trial_002",
+            "images": {
+                "target":["datasets/mid/mindset_relational_vs_coordinate/trial_001/2_base.png"],
+                "option_1":["datasets/mid/mindset_relational_vs_coordinate/trial_001/a2_relation.png"],
+                "option_2":["datasets/mid/mindset_relational_vs_coordinate/trial_001/b2_coordinate.png"]
+            },
+            "answer_key": "2"
+        },
+        {
+            "trial": "trial_003",
+            "images": {
+                "target":["datasets/mid/mindset_relational_vs_coordinate/trial_002/3_base.png"],
+                "option_1":["datasets/mid/mindset_relational_vs_coordinate/trial_002/a3_coordinate.png"],
+                "option_2":["datasets/mid/mindset_relational_vs_coordinate/trial_002/b3_relation.png"]
+            },
+            "answer_key": "1"
+        },
+        {
+            "trial": "trial_004",
+            "images": {
+                "target":["datasets/mid/mindset_relational_vs_coordinate/trial_003/4_base.png"],
+                "option_1":["datasets/mid/mindset_relational_vs_coordinate/trial_003/a4_coordinate.png"],
+                "option_2":["datasets/mid/mindset_relational_vs_coordinate/trial_003/b4_relation.png"]
+            },
+            "answer_key": "1"
+        },
+        {
+            "trial": "trial_005",
+            "images": {
+                "target":["datasets/mid/mindset_relational_vs_coordinate/trial_004/5_base.png"],
+                "option_1":["datasets/mid/mindset_relational_vs_coordinate/trial_004/a5_relation.png"],
+                "option_2":["datasets/mid/mindset_relational_vs_coordinate/trial_004/b5_coordinate.png"]
+            },
+            "answer_key": "2"
+        },
+        {
+            "trial": "trial_006",
+            "images": {
+                "target":["datasets/mid/mindset_relational_vs_coordinate/trial_005/6_base.png"],
+                "option_1":["datasets/mid/mindset_relational_vs_coordinate/trial_005/a6_coordinate.png"],
+                "option_2":["datasets/mid/mindset_relational_vs_coordinate/trial_005/b6_relation.png"]
+            },
+            "answer_key": "1"
+        }
+    ]
+}

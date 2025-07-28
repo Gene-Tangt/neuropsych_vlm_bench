@@ -1,0 +1,190 @@
+{
+    "stage": "mid",
+    "process": "occlusion_and_overlap",
+    "task": "borb_overlapped_shapes",
+    "task_type": "naming",
+    "num_stim": "one",
+    "prompt": "This is a task. Please name all the items in the picture. Please list put your final answer in {} in this format {itemA, itemB, itemC}.",
+    "trials": [
+        {
+            "trial": "trial_001",
+            "images": {"target":["datasets/mid/borb_overlapped_shapes/Oshapes_r70_s100_001.png"]},
+            "answer_key": ["plus", "pentagon", "triangle"]
+        },
+        {
+            "trial": "trial_002",
+            "images": {"target":["datasets/mid/borb_overlapped_shapes/Oshapes_r70_s100_002.png"]},
+            "answer_key": ["square", "triangle", "circle"]
+        },
+        {
+            "trial": "trial_003",
+            "images": {"target":["datasets/mid/borb_overlapped_shapes/Oshapes_r70_s100_003.png"]},
+            "answer_key": ["square", "triangle", "circle"]
+        },
+        {
+            "trial": "trial_004",
+            "images": {"target":["datasets/mid/borb_overlapped_shapes/Oshapes_r70_s100_004.png"]},
+            "answer_key": ["plus", "cross", "triangle"]
+        },
+        {
+            "trial": "trial_005",
+            "images": {"target":["datasets/mid/borb_overlapped_shapes/Oshapes_r70_s100_005.png"]},
+            "answer_key": ["pentagon", "cross", "hexagon"]
+        },
+        {
+            "trial": "trial_006",
+            "images": {"target":["datasets/mid/borb_overlapped_shapes/Oshapes_r70_s100_006.png"]},
+            "answer_key": ["square", "cross", "plus"]
+        },
+        {
+            "trial": "trial_007",
+            "images": {"target":["datasets/mid/borb_overlapped_shapes/Oshapes_r70_s100_007.png"]},
+            "answer_key": ["plus", "hexagon", "triangle"]
+        },
+        {
+            "trial": "trial_008",
+            "images": {"target":["datasets/mid/borb_overlapped_shapes/Oshapes_r70_s100_008.png"]},
+            "answer_key": ["pentagon", "plus", "triangle"]
+        },
+        {
+            "trial": "trial_009",
+            "images": {"target":["datasets/mid/borb_overlapped_shapes/Oshapes_r70_s100_009.png"]},
+            "answer_key": ["square", "plus", "triangle"]
+        },
+        {
+            "trial": "trial_010",
+            "images": {"target":["datasets/mid/borb_overlapped_shapes/Oshapes_r70_s100_010.png"]},
+            "answer_key": ["pentagon", "square", "cross"]
+        },
+        {
+            "trial": "trial_011",
+            "images": {"target":["datasets/mid/borb_overlapped_shapes/Oshapes_r70_s100_011.png"]},
+            "answer_key": ["plus", "cross", "hexagon"]
+        },
+        {
+            "trial": "trial_012",
+            "images": {"target":["datasets/mid/borb_overlapped_shapes/Oshapes_r70_s100_012.png"]},
+            "answer_key": ["plus", "square", "pentagon"]
+        },
+        {
+            "trial": "trial_013",
+            "images": {"target":["datasets/mid/borb_overlapped_shapes/Oshapes_r70_s100_013.png"]},
+            "answer_key": ["plus", "square", "cross"]
+        },
+        {
+            "trial": "trial_014",
+            "images": {"target":["datasets/mid/borb_overlapped_shapes/Oshapes_r70_s100_014.png"]},
+            "answer_key": ["cross", "triangle", "pentagon"]
+        },
+        {
+            "trial": "trial_015",
+            "images": {"target":["datasets/mid/borb_overlapped_shapes/Oshapes_r70_s100_015.png"]},
+            "answer_key": ["hexagon", "square", "pentagon"]
+        },
+        {
+            "trial": "trial_016",
+            "images": {"target":["datasets/mid/borb_overlapped_shapes/Oshapes_r70_s100_016.png"]},
+            "answer_key": ["pentagon", "hexagon", "triangle"]
+        },
+        {
+            "trial": "trial_017",
+            "images": {"target":["datasets/mid/borb_overlapped_shapes/Oshapes_r70_s100_017.png"]},
+            "answer_key": ["plus", "triangle", "pentagon"]
+        },
+        {
+            "trial": "trial_018",
+            "images": {"target":["datasets/mid/borb_overlapped_shapes/Oshapes_r70_s100_018.png"]},
+            "answer_key": ["pentagon", "plus", "square"]
+        },
+        {
+            "trial": "trial_019",
+            "images": {"target":["datasets/mid/borb_overlapped_shapes/Oshapes_r70_s100_019.png"]},
+            "answer_key": ["triangle", "hexagon", "cross"]
+        },
+        {
+            "trial": "trial_020",
+            "images": {"target":["datasets/mid/borb_overlapped_shapes/Oshapes_r70_s100_020.png"]},
+            "answer_key": ["triangle", "cross", "square"]
+        },
+        {
+            "trial": "trial_021",
+            "images": {"target":["datasets/mid/borb_overlapped_shapes/Oshapes_r70_s100_021.png"]},
+            "answer_key": ["plus", "triangle", "square"]
+        },
+        {
+            "trial": "trial_022",
+            "images": {"target":["datasets/mid/borb_overlapped_shapes/Oshapes_r70_s100_022.png"]},
+            "answer_key": ["cross", "triangle", "square"]
+        },
+        {
+            "trial": "trial_023",
+            "images": {"target":["datasets/mid/borb_overlapped_shapes/Oshapes_r70_s100_023.png"]},
+            "answer_key": ["hexagon", "plus", "cross"]
+        },
+        {
+            "trial": "trial_024",
+            "images": {"target":["datasets/mid/borb_overlapped_shapes/Oshapes_r70_s100_024.png"]},
+            "answer_key": ["hexagon", "pentagon", "square"]
+        },
+        {
+            "trial": "trial_025",
+            "images": {"target":["datasets/mid/borb_overlapped_shapes/Oshapes_r70_s100_025.png"]},
+            "answer_key": ["triangle", "square", "cross"]
+        },
+        {
+            "trial": "trial_026",
+            "images": {"target":["datasets/mid/borb_overlapped_shapes/Oshapes_r70_s100_026.png"]},
+            "answer_key": ["square", "cross", "triangle"]
+        },
+        {
+            "trial": "trial_027",
+            "images": {"target":["datasets/mid/borb_overlapped_shapes/Oshapes_r70_s100_027.png"]},
+            "answer_key": ["triangle", "pentagon", "plus"]
+        },
+        {
+            "trial": "trial_028",
+            "images": {"target":["datasets/mid/borb_overlapped_shapes/Oshapes_r70_s100_028.png"]},
+            "answer_key": ["pentagon", "cross", "triangle"]
+        },
+        {
+            "trial": "trial_029",
+            "images": {"target":["datasets/mid/borb_overlapped_shapes/Oshapes_r70_s100_029.png"]},
+            "answer_key": ["triangle", "cross", "pentagon"]
+        },
+        {
+            "trial": "trial_030",
+            "images": {"target":["datasets/mid/borb_overlapped_shapes/Oshapes_r70_s100_030.png"]},
+            "answer_key": ["triangle", "plus", "pentagon"]
+        },
+        {
+            "trial": "trial_031",
+            "images": {"target":["datasets/mid/borb_overlapped_shapes/Oshapes_r70_s100_031.png"]},
+            "answer_key": ["plus", "triangle", "square"]
+        },
+        {
+            "trial": "trial_032",
+            "images": {"target":["datasets/mid/borb_overlapped_shapes/Oshapes_r70_s100_032.png"]},
+            "answer_key": ["hexagon", "pentagon", "square"]
+        },
+        {
+            "trial": "trial_033",
+            "images": {"target":["datasets/mid/borb_overlapped_shapes/Oshapes_r70_s100_033.png"]},
+            "answer_key": ["hexagon", "square", "pentagon"]
+        },
+        {
+            "trial": "trial_034",
+            "images": {"target":["datasets/mid/borb_overlapped_shapes/Oshapes_r70_s100_034.png"]},
+            "answer_key": ["pentagon", "hexagon", "cross"]
+        },
+        {
+            "trial": "trial_035",
+            "images": {"target":["datasets/mid/borb_overlapped_shapes/Oshapes_r70_s100_035.png"]},
+            "answer_key": ["square", "hexagon", "pentagon"]
+        },
+        {
+            "trial": "trial_036",
+            "images": {"target":["datasets/mid/borb_overlapped_shapes/Oshapes_r70_s100_036.png"]},
+            "answer_key": ["pentagon", "cross", "square"]
+        }
+    ]
+}

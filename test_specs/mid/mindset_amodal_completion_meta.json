@@ -1,0 +1,280 @@
+{
+    "stage": "mid",
+    "process": "property_biases",
+    "task": "mindset_amodal_completion",
+    "task_type": "match_to_sample",
+    "num_stim": "three",
+    "prompt": "Here's a task. I will present you with three pictures. The first one is the target/reference image. The following two are the options. Your task is to choose which of the options most closely resembles the target/reference image. Please provide one final answer even if you are unsure. Please provide your answer in {}. For example, if you choose option 1, please provide your answer as {1}.",
+    "trials": [
+        {
+            "trial": "trial_000",
+            "images": {
+                "target": ["datasets/mid/mindset_amodal_completion/trial_000/amodal_000.png"],
+                "option_1": ["datasets/mid/mindset_amodal_completion/trial_000/amodal_a000d.png"],
+                "option_2": ["datasets/mid/mindset_amodal_completion/trial_000/amodal_b000n.png"]
+            },
+            "answer_key": "2"
+        },
+        {
+            "trial": "trial_001",
+            "images": {
+                "target": ["datasets/mid/mindset_amodal_completion/trial_001/amodal_001.png"],
+                "option_1": ["datasets/mid/mindset_amodal_completion/trial_001/amodal_a001n.png"],
+                "option_2": ["datasets/mid/mindset_amodal_completion/trial_001/amodal_b001d.png"]
+            },
+            "answer_key": "1"
+        },
+        {
+            "trial": "trial_002",
+            "images": {
+                "target": ["datasets/mid/mindset_amodal_completion/trial_002/amodal_002.png"],
+                "option_1": ["datasets/mid/mindset_amodal_completion/trial_002/amodal_a002d.png"],
+                "option_2": ["datasets/mid/mindset_amodal_completion/trial_002/amodal_b002n.png"]
+            },
+            "answer_key": "2"
+        },
+        {
+            "trial": "trial_003",
+            "images": {
+                "target": ["datasets/mid/mindset_amodal_completion/trial_003/amodal_003.png"],
+                "option_1": ["datasets/mid/mindset_amodal_completion/trial_003/amodal_a003n.png"],
+                "option_2": ["datasets/mid/mindset_amodal_completion/trial_003/amodal_b003d.png"]
+            },
+            "answer_key": "1"
+        },
+        {
+            "trial": "trial_004",
+            "images": {
+                "target": ["datasets/mid/mindset_amodal_completion/trial_004/amodal_004.png"],
+                "option_1": ["datasets/mid/mindset_amodal_completion/trial_004/amodal_a004d.png"],
+                "option_2": ["datasets/mid/mindset_amodal_completion/trial_004/amodal_b004n.png"]
+            },
+            "answer_key": "2"
+        },
+        {
+            "trial": "trial_005",
+            "images": {
+                "target": ["datasets/mid/mindset_amodal_completion/trial_005/amodal_005.png"],
+                "option_1": ["datasets/mid/mindset_amodal_completion/trial_005/amodal_a005d.png"],
+                "option_2": ["datasets/mid/mindset_amodal_completion/trial_005/amodal_b005n.png"]
+            },
+            "answer_key": "2"
+        },
+        {
+            "trial": "trial_006",
+            "images": {
+                "target": ["datasets/mid/mindset_amodal_completion/trial_006/amodal_006.png"],
+                "option_1": ["datasets/mid/mindset_amodal_completion/trial_006/amodal_a006n.png"],
+                "option_2": ["datasets/mid/mindset_amodal_completion/trial_006/amodal_b006d.png"]
+            },
+            "answer_key": "1"
+        },
+        {
+            "trial": "trial_007",
+            "images": {
+                "target": ["datasets/mid/mindset_amodal_completion/trial_007/amodal_007.png"],
+                "option_1": ["datasets/mid/mindset_amodal_completion/trial_007/amodal_a007n.png"],
+                "option_2": ["datasets/mid/mindset_amodal_completion/trial_007/amodal_b007d.png"]
+            },
+            "answer_key": "1"
+        },
+        {
+            "trial": "trial_008",
+            "images": {
+                "target": ["datasets/mid/mindset_amodal_completion/trial_008/amodal_008.png"],
+                "option_1": ["datasets/mid/mindset_amodal_completion/trial_008/amodal_a008n.png"],
+                "option_2": ["datasets/mid/mindset_amodal_completion/trial_008/amodal_b008d.png"]
+            },
+            "answer_key": "1"
+        },
+        {
+            "trial": "trial_009",
+            "images": {
+                "target": ["datasets/mid/mindset_amodal_completion/trial_009/amodal_009.png"],
+                "option_1": ["datasets/mid/mindset_amodal_completion/trial_009/amodal_a009n.png"],
+                "option_2": ["datasets/mid/mindset_amodal_completion/trial_009/amodal_b009d.png"]
+            },
+            "answer_key": "1"
+        },
+        {
+            "trial": "trial_010",
+            "images": {
+                "target": ["datasets/mid/mindset_amodal_completion/trial_010/amodal_010.png"],
+                "option_1": ["datasets/mid/mindset_amodal_completion/trial_010/amodal_a010d.png"],
+                "option_2": ["datasets/mid/mindset_amodal_completion/trial_010/amodal_b010n.png"]
+            },
+            "answer_key": "2"
+        },
+        {
+            "trial": "trial_011",
+            "images": {
+                "target": ["datasets/mid/mindset_amodal_completion/trial_011/amodal_011.png"],
+                "option_1": ["datasets/mid/mindset_amodal_completion/trial_011/amodal_a011n.png"],
+                "option_2": ["datasets/mid/mindset_amodal_completion/trial_011/amodal_b011d.png"]
+            },
+            "answer_key": "1"
+        },
+        {
+            "trial": "trial_012",
+            "images": {
+                "target": ["datasets/mid/mindset_amodal_completion/trial_012/amodal_012.png"],
+                "option_1": ["datasets/mid/mindset_amodal_completion/trial_012/amodal_a012n.png"],
+                "option_2": ["datasets/mid/mindset_amodal_completion/trial_012/amodal_b012d.png"]
+            },
+            "answer_key": "1"
+        },
+        {
+            "trial": "trial_013",
+            "images": {
+                "target": ["datasets/mid/mindset_amodal_completion/trial_013/amodal_013.png"],
+                "option_1": ["datasets/mid/mindset_amodal_completion/trial_013/amodal_a013n.png"],
+                "option_2": ["datasets/mid/mindset_amodal_completion/trial_013/amodal_b013d.png"]
+            },
+            "answer_key": "1"
+        },
+        {
+            "trial": "trial_014",
+            "images": {
+                "target": ["datasets/mid/mindset_amodal_completion/trial_014/amodal_014.png"],
+                "option_1": ["datasets/mid/mindset_amodal_completion/trial_014/amodal_a014n.png"],
+                "option_2": ["datasets/mid/mindset_amodal_completion/trial_014/amodal_b014d.png"]
+            },
+            "answer_key": "1"
+        },
+        {
+            "trial": "trial_015",
+            "images": {
+                "target": ["datasets/mid/mindset_amodal_completion/trial_015/amodal_015.png"],
+                "option_1": ["datasets/mid/mindset_amodal_completion/trial_015/amodal_a015d.png"],
+                "option_2": ["datasets/mid/mindset_amodal_completion/trial_015/amodal_b015n.png"]
+            },
+            "answer_key": "2"
+        },
+        {
+            "trial": "trial_016",
+            "images": {
+                "target": ["datasets/mid/mindset_amodal_completion/trial_016/amodal_016.png"],
+                "option_1": ["datasets/mid/mindset_amodal_completion/trial_016/amodal_a016n.png"],
+                "option_2": ["datasets/mid/mindset_amodal_completion/trial_016/amodal_b016d.png"]
+            },
+            "answer_key": "1"
+        },
+        {
+            "trial": "trial_017",
+            "images": {
+                "target": ["datasets/mid/mindset_amodal_completion/trial_017/amodal_017.png"],
+                "option_1": ["datasets/mid/mindset_amodal_completion/trial_017/amodal_a017d.png"],
+                "option_2": ["datasets/mid/mindset_amodal_completion/trial_017/amodal_b017n.png"]
+            },
+            "answer_key": "2"
+        },
+        {
+            "trial": "trial_018",
+            "images": {
+                "target": ["datasets/mid/mindset_amodal_completion/trial_018/amodal_018.png"],
+                "option_1": ["datasets/mid/mindset_amodal_completion/trial_018/amodal_a018d.png"],
+                "option_2": ["datasets/mid/mindset_amodal_completion/trial_018/amodal_b018n.png"]
+            },
+            "answer_key": "2"
+        },
+        {
+            "trial": "trial_019",
+            "images": {
+                "target": ["datasets/mid/mindset_amodal_completion/trial_019/amodal_019.png"],
+                "option_1": ["datasets/mid/mindset_amodal_completion/trial_019/amodal_a019d.png"],
+                "option_2": ["datasets/mid/mindset_amodal_completion/trial_019/amodal_b019n.png"]
+            },
+            "answer_key": "2"
+        },
+        {
+            "trial": "trial_020",
+            "images": {
+                "target": ["datasets/mid/mindset_amodal_completion/trial_020/amodal_020.png"],
+                "option_1": ["datasets/mid/mindset_amodal_completion/trial_020/amodal_a020n.png"],
+                "option_2": ["datasets/mid/mindset_amodal_completion/trial_020/amodal_b020d.png"]
+            },
+            "answer_key": "1"
+        },
+        {
+            "trial": "trial_021",
+            "images": {
+                "target": ["datasets/mid/mindset_amodal_completion/trial_021/amodal_021.png"],
+                "option_1": ["datasets/mid/mindset_amodal_completion/trial_021/amodal_a021d.png"],
+                "option_2": ["datasets/mid/mindset_amodal_completion/trial_021/amodal_b021n.png"]
+            },
+            "answer_key": "2"
+        },
+        {
+            "trial": "trial_022",
+            "images": {
+                "target": ["datasets/mid/mindset_amodal_completion/trial_022/amodal_022.png"],
+                "option_1": ["datasets/mid/mindset_amodal_completion/trial_022/amodal_a022d.png"],
+                "option_2": ["datasets/mid/mindset_amodal_completion/trial_022/amodal_b022n.png"]
+            },
+            "answer_key": "2"
+        },
+        {
+            "trial": "trial_023",
+            "images": {
+                "target": ["datasets/mid/mindset_amodal_completion/trial_023/amodal_023.png"],
+                "option_1": ["datasets/mid/mindset_amodal_completion/trial_023/amodal_a023n.png"],
+                "option_2": ["datasets/mid/mindset_amodal_completion/trial_023/amodal_b023d.png"]
+            },
+            "answer_key": "1"
+        },
+        {
+            "trial": "trial_024",
+            "images": {
+                "target": ["datasets/mid/mindset_amodal_completion/trial_024/amodal_024.png"],
+                "option_1": ["datasets/mid/mindset_amodal_completion/trial_024/amodal_a024d.png"],
+                "option_2": ["datasets/mid/mindset_amodal_completion/trial_024/amodal_b024n.png"]
+            },
+            "answer_key": "2"
+        },
+        {
+            "trial": "trial_025",
+            "images": {
+                "target": ["datasets/mid/mindset_amodal_completion/trial_025/amodal_025.png"],
+                "option_1": ["datasets/mid/mindset_amodal_completion/trial_025/amodal_a025d.png"],
+                "option_2": ["datasets/mid/mindset_amodal_completion/trial_025/amodal_b025n.png"]
+            },
+            "answer_key": "2"
+        },
+        {
+            "trial": "trial_026",
+            "images": {
+                "target": ["datasets/mid/mindset_amodal_completion/trial_026/amodal_026.png"],
+                "option_1": ["datasets/mid/mindset_amodal_completion/trial_026/amodal_a026n.png"],
+                "option_2": ["datasets/mid/mindset_amodal_completion/trial_026/amodal_b026d.png"]
+            },
+            "answer_key": "1"
+        },
+        {
+            "trial": "trial_027",
+            "images": {
+                "target": ["datasets/mid/mindset_amodal_completion/trial_027/amodal_027.png"],
+                "option_1": ["datasets/mid/mindset_amodal_completion/trial_027/amodal_a027d.png"],
+                "option_2": ["datasets/mid/mindset_amodal_completion/trial_027/amodal_b027n.png"]
+            },
+            "answer_key": "2"
+        },
+        {
+            "trial": "trial_028",
+            "images": {
+                "target": ["datasets/mid/mindset_amodal_completion/trial_028/amodal_028.png"],
+                "option_1": ["datasets/mid/mindset_amodal_completion/trial_028/amodal_a028n.png"],
+                "option_2": ["datasets/mid/mindset_amodal_completion/trial_028/amodal_b028d.png"]
+            },
+            "answer_key": "1"
+        },
+        {
+            "trial": "trial_029",
+            "images": {
+                "target": ["datasets/mid/mindset_amodal_completion/trial_029/amodal_029.png"],
+                "option_1": ["datasets/mid/mindset_amodal_completion/trial_029/amodal_a029n.png"],
+                "option_2": ["datasets/mid/mindset_amodal_completion/trial_029/amodal_b029d.png"]
+            },
+            "answer_key": "1"
+        }
+    ]
+}

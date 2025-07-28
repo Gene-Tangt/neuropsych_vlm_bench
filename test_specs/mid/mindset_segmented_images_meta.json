@@ -1,0 +1,370 @@
+{
+    "stage": "mid",
+    "process": "robustness_across_image_cues",
+    "task": "mindset_segmented_images",
+    "task_type": "naming",
+    "num_stim": "one",
+    "prompt": "Here's a task. Could you please name the item in this image? Please provide your answer in {}.",
+    "trials": [
+        {
+            "trial": "trial_001",
+            "images": {"target":["datasets/mid/mindset_segmented_images/del_African_crocodile.png"]},
+            "answer_key": "crocodile"
+        },
+        {
+            "trial": "trial_002",
+            "images": {"target":["datasets/mid/mindset_segmented_images/del_airship.png"]},
+            "answer_key": "airship"
+        },
+        {
+            "trial": "trial_003",
+            "images": {"target":["datasets/mid/mindset_segmented_images/del_armadillo.png"]},
+            "answer_key": "armadillo"
+        },
+        {
+            "trial": "trial_004",
+            "images": {"target":["datasets/mid/mindset_segmented_images/del_banana.png"]},
+            "answer_key": "banana"
+        },
+        {
+            "trial": "trial_005",
+            "images": {"target":["datasets/mid/mindset_segmented_images/del_beer_bottle.png"]},
+            "answer_key": "beer bottle"
+        },
+        {
+            "trial": "trial_006",
+            "images": {"target":["datasets/mid/mindset_segmented_images/del_bow_tie.png"]},
+            "answer_key": "bow tie"
+        },
+        {
+            "trial": "trial_007",
+            "images": {"target":["datasets/mid/mindset_segmented_images/del_bullfrog.png"]},
+            "answer_key": "bullfrog"
+        },
+        {
+            "trial": "trial_008",
+            "images": {"target":["datasets/mid/mindset_segmented_images/del_cello.png"]},
+            "answer_key": "cello"
+        },
+        {
+            "trial": "trial_009",
+            "images": {"target":["datasets/mid/mindset_segmented_images/del_coffee_mug.png"]},
+            "answer_key": "coffee mug"
+        },
+        {
+            "trial": "trial_010",
+            "images": {"target":["datasets/mid/mindset_segmented_images/del_dragonfly.png"]},
+            "answer_key": "dragonfly"
+        },
+        {
+            "trial": "trial_011",
+            "images": {"target":["datasets/mid/mindset_segmented_images/del_hammer.png"]},
+            "answer_key": "hammer"
+        },
+        {
+            "trial": "trial_012",
+            "images": {"target":["datasets/mid/mindset_segmented_images/del_hare.png"]},
+            "answer_key": "hare"
+        },
+        {
+            "trial": "trial_013",
+            "images": {"target":["datasets/mid/mindset_segmented_images/del_ibex.png"]},
+            "answer_key": "ibex"
+        },
+        {
+            "trial": "trial_014",
+            "images": {"target":["datasets/mid/mindset_segmented_images/del_ice_bear.png"]},
+            "answer_key": "ice bear"
+        },
+        {
+            "trial": "trial_015",
+            "images": {"target":["datasets/mid/mindset_segmented_images/del_jigsaw_puzzle.png"]},
+            "answer_key": "jigsaw puzzle"
+        },
+        {
+            "trial": "trial_016",
+            "images": {"target":["datasets/mid/mindset_segmented_images/del_king_penguin.png"]},
+            "answer_key": "king penguin"
+        },
+        {
+            "trial": "trial_017",
+            "images": {"target":["datasets/mid/mindset_segmented_images/del_lawn_mower.png"]},
+            "answer_key": "lawn mower"
+        },
+        {
+            "trial": "trial_018",
+            "images": {"target":["datasets/mid/mindset_segmented_images/del_lion.png"]},
+            "answer_key": "lion"
+        },
+        {
+            "trial": "trial_019",
+            "images": {"target":["datasets/mid/mindset_segmented_images/del_llama.png"]},
+            "answer_key": "llama"
+        },
+        {
+            "trial": "trial_020",
+            "images": {"target":["datasets/mid/mindset_segmented_images/del_lynx.png"]},
+            "answer_key": "lynx"
+        },
+        {
+            "trial": "trial_021",
+            "images": {"target":["datasets/mid/mindset_segmented_images/del_paintbrush.png"]},
+            "answer_key": "paintbrush"
+        },
+        {
+            "trial": "trial_022",
+            "images": {"target":["datasets/mid/mindset_segmented_images/del_peacock.png"]},
+            "answer_key": "peacock"
+        },
+        {
+            "trial": "trial_023",
+            "images": {"target":["datasets/mid/mindset_segmented_images/del_pretzel.png"]},
+            "answer_key": "pretzel"
+        },
+        {
+            "trial": "trial_024",
+            "images": {"target":["datasets/mid/mindset_segmented_images/del_revolver.png"]},
+            "answer_key": "revolver"
+        },
+        {
+            "trial": "trial_025",
+            "images": {"target":["datasets/mid/mindset_segmented_images/del_running_shoe.png"]},
+            "answer_key": "running shoe"
+        },
+        {
+            "trial": "trial_026",
+            "images": {"target":["datasets/mid/mindset_segmented_images/del_sewing_machine.png"]},
+            "answer_key": "sewing machine"
+        },
+        {
+            "trial": "trial_027",
+            "images": {"target":["datasets/mid/mindset_segmented_images/del_snail.png"]},
+            "answer_key": "snail"
+        },
+        {
+            "trial": "trial_028",
+            "images": {"target":["datasets/mid/mindset_segmented_images/del_space_shuttle.png"]},
+            "answer_key": "space shuttle"
+        },
+        {
+            "trial": "trial_029",
+            "images": {"target":["datasets/mid/mindset_segmented_images/del_standard_poodle.png"]},
+            "answer_key": "poodle"
+        },
+        {
+            "trial": "trial_030",
+            "images": {"target":["datasets/mid/mindset_segmented_images/del_sulphur_butterfly.png"]},
+            "answer_key": "butterfly"
+        },
+        {
+            "trial": "trial_031",
+            "images": {"target":["datasets/mid/mindset_segmented_images/del_teapot.png"]},
+            "answer_key": "teapot"
+        },
+        {
+            "trial": "trial_032",
+            "images": {"target":["datasets/mid/mindset_segmented_images/del_tiger.png"]},
+            "answer_key": "tiger"
+        },
+        {
+            "trial": "trial_033",
+            "images": {"target":["datasets/mid/mindset_segmented_images/del_toucan.png"]},
+            "answer_key": "toucan"
+        },
+        {
+            "trial": "trial_034",
+            "images": {"target":["datasets/mid/mindset_segmented_images/del_trombone.png"]},
+            "answer_key": "trombone"
+        },
+        {
+            "trial": "trial_035",
+            "images": {"target":["datasets/mid/mindset_segmented_images/del_white_wolf.png"]},
+            "answer_key": "white wolf"
+        },
+        {
+            "trial": "trial_036",
+            "images": {"target":["datasets/mid/mindset_segmented_images/del_zebra.png"]},
+            "answer_key": "zebra"
+        },
+        {
+            "trial": "trial_037",
+            "images": {"target":["datasets/mid/mindset_segmented_images/delcomp_African_crocodile.png"]},
+            "answer_key": "crocodile"
+        },
+        {
+            "trial": "trial_038",
+            "images": {"target":["datasets/mid/mindset_segmented_images/delcomp_airship.png"]},
+            "answer_key": "airship"
+        },
+        {
+            "trial": "trial_039",
+            "images": {"target":["datasets/mid/mindset_segmented_images/del_armadillo.png"]},
+            "answer_key": "armadillo"
+        },
+        {
+            "trial": "trial_040",
+            "images": {"target":["datasets/mid/mindset_segmented_images/delcomp_banana.png"]},
+            "answer_key": "banana"
+        },
+        {
+            "trial": "trial_041",
+            "images": {"target":["datasets/mid/mindset_segmented_images/delcomp_beer_bottle.png"]},
+            "answer_key": "beer bottle"
+        },
+        {
+            "trial": "trial_042",
+            "images": {"target":["datasets/mid/mindset_segmented_images/delcomp_bow_tie.png"]},
+            "answer_key": "bow tie"
+        },
+        {
+            "trial": "trial_043",
+            "images": {"target":["datasets/mid/mindset_segmented_images/delcomp_bullfrog.png"]},
+            "answer_key": "bullfrog"
+        },
+        {
+            "trial": "trial_044",
+            "images": {"target":["datasets/mid/mindset_segmented_images/delcomp_cello.png"]},
+            "answer_key": "cello"
+        },
+        {
+            "trial": "trial_045",
+            "images": {"target":["datasets/mid/mindset_segmented_images/delcomp_coffee_mug.png"]},
+            "answer_key": "coffee mug"
+        },
+        {
+            "trial": "trial_046",
+            "images": {"target":["datasets/mid/mindset_segmented_images/delcomp_dragonfly.png"]},
+            "answer_key": "dragonfly"
+        },
+        {
+            "trial": "trial_047",
+            "images": {"target":["datasets/mid/mindset_segmented_images/delcomp_hammer.png"]},
+            "answer_key": "hammer"
+        },
+        {
+            "trial": "trial_048",
+            "images": {"target":["datasets/mid/mindset_segmented_images/delcomp_hare.png"]},
+            "answer_key": "hare"
+        },
+        {
+            "trial": "trial_049",
+            "images": {"target":["datasets/mid/mindset_segmented_images/delcomp_ibex.png"]},
+            "answer_key": "ibex"
+        },
+        {
+            "trial": "trial_050",
+            "images": {"target":["datasets/mid/mindset_segmented_images/delcomp_ice_bear.png"]},
+            "answer_key": "ice bear"
+        },
+        {
+            "trial": "trial_051",
+            "images": {"target":["datasets/mid/mindset_segmented_images/delcomp_jigsaw_puzzle.png"]},
+            "answer_key": "jigsaw puzzle"
+        },
+        {
+            "trial": "trial_052",
+            "images": {"target":["datasets/mid/mindset_segmented_images/delcomp_king_penguin.png"]},
+            "answer_key": "king penguin"
+        },
+        {
+            "trial": "trial_053",
+            "images": {"target":["datasets/mid/mindset_segmented_images/delcomp_lawn_mower.png"]},
+            "answer_key": "lawn mower"
+        },
+        {
+            "trial": "trial_054",
+            "images": {"target":["datasets/mid/mindset_segmented_images/delcomp_lion.png"]},
+            "answer_key": "lion"
+        },
+        {
+            "trial": "trial_055",
+            "images": {"target":["datasets/mid/mindset_segmented_images/delcomp_llama.png"]},
+            "answer_key": "llama"
+        },
+        {
+            "trial": "trial_056",
+            "images": {"target":["datasets/mid/mindset_segmented_images/delcomp_lynx.png"]},
+            "answer_key": "lynx"
+        },
+        {
+            "trial": "trial_057",
+            "images": {"target":["datasets/mid/mindset_segmented_images/delcomp_paintbrush.png"]},
+            "answer_key": "paintbrush"
+        },
+        {
+            "trial": "trial_058",
+            "images": {"target":["datasets/mid/mindset_segmented_images/delcomp_peacock.png"]},
+            "answer_key": "peacock"
+        },
+        {
+            "trial": "trial_059",
+            "images": {"target":["datasets/mid/mindset_segmented_images/delcomp_pretzel.png"]},
+            "answer_key": "pretzel"
+        },
+        {
+            "trial": "trial_060",
+            "images": {"target":["datasets/mid/mindset_segmented_images/delcomp_revolver.png"]},
+            "answer_key": "revolver"
+        },
+        {
+            "trial": "trial_061",
+            "images": {"target":["datasets/mid/mindset_segmented_images/delcomp_running_shoe.png"]},
+            "answer_key": "running shoe"
+        },
+        {
+            "trial": "trial_062",
+            "images": {"target":["datasets/mid/mindset_segmented_images/delcomp_sewing_machine.png"]},
+            "answer_key": "sewing machine"
+        },
+        {
+            "trial": "trial_063",
+            "images": {"target":["datasets/mid/mindset_segmented_images/delcomp_snail.png"]},
+            "answer_key": "snail"
+        },
+        {
+            "trial": "trial_064",
+            "images": {"target":["datasets/mid/mindset_segmented_images/delcomp_space_shuttle.png"]},
+            "answer_key": "space shuttle"
+        },
+        {
+            "trial": "trial_065",
+            "images": {"target":["datasets/mid/mindset_segmented_images/delcomp_standard_poodle.png"]},
+            "answer_key": "poodle"
+        },
+        {
+            "trial": "trial_066",
+            "images": {"target":["datasets/mid/mindset_segmented_images/delcomp_sulphur_butterfly.png"]},
+            "answer_key": "butterfly"
+        },
+        {
+            "trial": "trial_067",
+            "images": {"target":["datasets/mid/mindset_segmented_images/delcomp_teapot.png"]},
+            "answer_key": "teapot"
+        },
+        {
+            "trial": "trial_068",
+            "images": {"target":["datasets/mid/mindset_segmented_images/delcomp_tiger.png"]},
+            "answer_key": "tiger"
+        },
+        {
+            "trial": "trial_069",
+            "images": {"target":["datasets/mid/mindset_segmented_images/delcomp_toucan.png"]},
+            "answer_key": "toucan"
+        },
+        {
+            "trial": "trial_070",
+            "images": {"target":["datasets/mid/mindset_segmented_images/delcomp_trombone.png"]},
+            "answer_key": "trombone"
+        },
+        {
+            "trial": "trial_071",
+            "images": {"target":["datasets/mid/mindset_segmented_images/delcomp_white_wolf.png"]},
+            "answer_key": "white wolf"
+        },
+        {
+            "trial": "trial_072",
+            "images": {"target":["datasets/mid/mindset_segmented_images/delcomp_zebra.png"]},
+            "answer_key": "zebra"
+        }
+    ]
+}

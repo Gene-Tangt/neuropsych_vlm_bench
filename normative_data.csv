@@ -1,0 +1,32 @@
+test_name	display_name	task_type	stage	subtask_grouping	full_score	chance_level_percent	normative_score	normative_SD	normative_percent
+borb_length_match	[BORB] Line length comparison	same_different	low	simple_element_judgement	30	50	26.9	1.6	89.66666667
+borb_size_match	[BORB] Size comparison	same_different	low	simple_element_judgement	30	50	27.3	2.4	91
+borb_orientation_match	[BORB] Parallel lines judgement	yes_no	low	simple_element_judgement	30	50	24.8	2.6	82.66666667
+borb_position_of_gap	[BORB] Gap position comparison	same_different	low	simple_element_judgement	40	50	35.1	4	87.75
+borb_triplet_letters	[BORB] Letters identification	naming	high	straightforward_visual_recognition	36	0.0057	34.60416667	5.030712412	96.12268519
+borb_overlapping_letters	[BORB] Overlapping letters identification	naming	mid	occlusion_and_overlap	36	0.0057	31.22916667	2.586705646	86.74768519
+borb_triplet_shapes	[BORB] Shapes identification	naming	high	straightforward_visual_recognition	36	0.1	30.33333333	7.768822944	84.25925926
+borb_overlapping_shapes	[BORB] Overlapping shapes identification	naming	mid	occlusion_and_overlap	36	0.1	28.60416667	7.701173117	79.45601852
+leuven_embedded_figure	[LEFT] Embedded figure matching	similarity_judgement	mid	figure_judgement	64	33	55.04	0.08	86
+mindset_amodal_completion	[MindSet] Occluded shape matching	similarity_judgement	mid	occlusion_and_overlap	30	50	3.41509434	7.674718642	11.3836478
+mindset_decomposition	[MindSet] Separated shape matching	similarity_judgement	mid	property_biases	30	50	26.35849057	7.288279156	87.86163522
+mindset_NAP_vs_MP_2D_lines	[MindSet] 2D property change matching	similarity_judgement	mid	property_biases	26	50	23.94339623	1.812510948	92.08998549
+mindset_NAP_vs_MP_3D_geons	[MindSet] 3D property change matching	similarity_judgement	mid	property_biases	22	50	20.30188679	1.803681125	92.2813036
+mindset_relational_vs_coordinate	[MindSet] Configuration change matching	similarity_judgement	mid	property_biases	6	50	5.416666667	1.088300125	90.27777778
+mindset_weber_law_total	[MindSet] Line length comparison	same_different	low	simple_element_judgement	40	50	35.24528302	2.360782631	88.11320755
+mindset_2d_transformation	[MindSet] Object naming (affine transform)	naming	mid	robustness_across_different_configurations	70	0.1	48.54716981	6.311058785	69.35309973
+mindset_dotted_linedrawings	[MindSet] Object naming (dotted outline)	naming	mid	robustness_across_image_cues	36	0.1	24.41509434	5.513737955	67.8197065
+mindset_global_change_linedrawings_original	[MindSet] GC Object naming (outline)	naming	high	straightforward_visual_recognition	36	0.1	25.47169811	3.360424501	70.75471698
+mindset_global_change_linedrawings_fragmented	[MindSet] GC Object naming (outline fragmented)	naming	mid	robustness_across_different_configurations	36	0.1	22.81132075	4.942191214	63.36477987
+mindset_global_change_linedrawings_frankenstein	[MindSet] GC Object naming (outline frankenstein)	naming	mid	robustness_across_different_configurations	36	0.1	24.39622642	3.649760912	67.7672956
+mindset_global_change_silhouettes_original	[MindSet] GC Object naming (silhouette)	naming	high	straightforward_visual_recognition	36	0.1	26.04166667	3.488329072	72.33796296
+mindset_global_change_silhouettes_fragmented	[MindSet] GC Object naming (silhouette fragmented)	naming	mid	robustness_across_different_configurations	36	0.1	24.10416667	4.754570403	66.95601852
+mindset_global_change_silhouettes_frankenstein	[MindSet] GC Object naming (silhouette frankenstein)	naming	mid	robustness_across_different_configurations	36	0.1	24.35416667	4.455403525	67.65046296
+mindset_linedrawings	[MindSet] Object naming (outline)	naming	high	straightforward_visual_recognition	36	0.1	27.16666667	2.853391661	75.46296296
+mindset_geometric_elements_comparison	[MindSet] Geometric elements comparison	same_different	mid	figure_judgement	60	0.5	50.95833333	3.052437696	84.93055556
+mindset_segmented_images	[MindSet] Object naming (partial outline)	naming	mid	robustness_across_image_cues	72	0.1	53.9375	5.555929361	74.91319444
+mindset_silhouettes	[MindSet] Object naming (silhouette)	naming	high	straightforward_visual_recognition	32	0.1	22.67924528	2.907375137	70.87264151
+mindset_texturized_blobs	[MindSet] Shape matching (texture-defined)	similarity_judgement	mid	robustness_across_image_cues	20	0.5	14.85416667	0.583079986	74.27083333
+mindset_texturized_linedrawings_char	[MindSet] Object naming (texture-defined chars)	naming	mid	robustness_across_image_cues	32	0.1	20.79245283	3.071948083	64.97641509
+mindset_texturized_linedrawings_lines	[MindSet] Object naming (texture-defined lines)	naming	mid	robustness_across_image_cues	32	0.1	23.08333333	2.819637319	72.13541667
+mindset_viewpoint_invariance	[MindSet] Object matching across views	similarity_judgement	high	8	32	0.5	29.625	2.833124732	92.578125

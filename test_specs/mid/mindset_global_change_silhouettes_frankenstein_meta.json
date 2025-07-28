@@ -1,0 +1,190 @@
+{
+    "stage": "mid",
+    "process": "robustness_across_different_configurations",
+    "task": "mindset_global_change_silhouettes_frankenstein",
+    "task_type": "naming",
+    "num_stim": "one",
+    "prompt": "Here's a task. Could you please name the item in this image? Please provide your answer in {}.",
+    "trials": [
+        {
+            "trial": "trial_001",
+            "images": {"target":["datasets/mid/mindset_global_change_silhouettes_frankenstein/silouettes_frankenstein_bear12_f552b611.png"]},
+            "answer_key": "bear"
+        },
+        {
+            "trial": "trial_002",
+            "images": {"target":["datasets/mid/mindset_global_change_silhouettes_frankenstein/silouettes_frankenstein_bear1_ed898099.png"]},
+            "answer_key": "bear"
+        },
+        {
+            "trial": "trial_003",
+            "images": {"target":["datasets/mid/mindset_global_change_silhouettes_frankenstein/silouettes_frankenstein_bear3_0ee453ed.png"]},
+            "answer_key": "bear"
+        },
+        {
+            "trial": "trial_004",
+            "images": {"target":["datasets/mid/mindset_global_change_silhouettes_frankenstein/silouettes_frankenstein_bear6_efdaaae6.png"]},
+            "answer_key": "bear"
+        },
+        {
+            "trial": "trial_005",
+            "images": {"target":["datasets/mid/mindset_global_change_silhouettes_frankenstein/silouettes_frankenstein_bunny21_6c6b0e5a.png"]},
+            "answer_key": "bunny"
+        },
+        {
+            "trial": "trial_006",
+            "images": {"target":["datasets/mid/mindset_global_change_silhouettes_frankenstein/silouettes_frankenstein_bunny29_97a2b96b.png"]},
+            "answer_key": "bunny"
+        },
+        {
+            "trial": "trial_007",
+            "images": {"target":["datasets/mid/mindset_global_change_silhouettes_frankenstein/silouettes_frankenstein_bunny3_babe514f.png"]},
+            "answer_key": "bunny"
+        },
+        {
+            "trial": "trial_008",
+            "images": {"target":["datasets/mid/mindset_global_change_silhouettes_frankenstein/silouettes_frankenstein_bunny4_7cb40f0f.png"]},
+            "answer_key": "bunny"
+        },
+        {
+            "trial": "trial_009",
+            "images": {"target":["datasets/mid/mindset_global_change_silhouettes_frankenstein/silouettes_frankenstein_cat13_9651824c.png"]},
+            "answer_key": "cat"
+        },
+        {
+            "trial": "trial_010",
+            "images": {"target":["datasets/mid/mindset_global_change_silhouettes_frankenstein/silouettes_frankenstein_cat15_ac85afa9.png"]},
+            "answer_key": "cat"
+        },
+        {
+            "trial": "trial_011",
+            "images": {"target":["datasets/mid/mindset_global_change_silhouettes_frankenstein/silouettes_frankenstein_cat20_92504697.png"]},
+            "answer_key": "cat"
+        },
+        {
+            "trial": "trial_012",
+            "images": {"target":["datasets/mid/mindset_global_change_silhouettes_frankenstein/silouettes_frankenstein_cat4_405040c8.png"]},
+            "answer_key": "cat"
+        },
+        {
+            "trial": "trial_013",
+            "images": {"target":["datasets/mid/mindset_global_change_silhouettes_frankenstein/silouettes_frankenstein_elephant11_03596d19.png"]},
+            "answer_key": "elephant"
+        },
+        {
+            "trial": "trial_014",
+            "images": {"target":["datasets/mid/mindset_global_change_silhouettes_frankenstein/silouettes_frankenstein_elephant29_7d474325.png"]},
+            "answer_key": "elephant"
+        },
+        {
+            "trial": "trial_015",
+            "images": {"target":["datasets/mid/mindset_global_change_silhouettes_frankenstein/silouettes_frankenstein_elephant3_1cee9126.png"]},
+            "answer_key": "elephant"
+        },
+        {
+            "trial": "trial_016",
+            "images": {"target":["datasets/mid/mindset_global_change_silhouettes_frankenstein/silouettes_frankenstein_elephant5_0f1a4870.png"]},
+            "answer_key": "elephant"
+        },
+        {
+            "trial": "trial_017",
+            "images": {"target":["datasets/mid/mindset_global_change_silhouettes_frankenstein/silouettes_frankenstein_frog10_02a3c04f.png"]},
+            "answer_key": "frog"
+        },
+        {
+            "trial": "trial_018",
+            "images": {"target":["datasets/mid/mindset_global_change_silhouettes_frankenstein/silouettes_frankenstein_frog18_5915bb1c.png"]},
+            "answer_key": "frog"
+        },
+        {
+            "trial": "trial_019",
+            "images": {"target":["datasets/mid/mindset_global_change_silhouettes_frankenstein/silouettes_frankenstein_frog1_78a43e59.png"]},
+            "answer_key": "frog"
+        },
+        {
+            "trial": "trial_020",
+            "images": {"target":["datasets/mid/mindset_global_change_silhouettes_frankenstein/silouettes_frankenstein_frog34_ba367b20.png"]},
+            "answer_key": "frog"
+        },
+        {
+            "trial": "trial_021",
+            "images": {"target":["datasets/mid/mindset_global_change_silhouettes_frankenstein/silouettes_frankenstein_lizard10_6b5161e4.png"]},
+            "answer_key": "lizard"
+        },
+        {
+            "trial": "trial_022",
+            "images": {"target":["datasets/mid/mindset_global_change_silhouettes_frankenstein/silouettes_frankenstein_lizard12_b477d1cf.png"]},
+            "answer_key": "lizard"
+        },
+        {
+            "trial": "trial_023",
+            "images": {"target":["datasets/mid/mindset_global_change_silhouettes_frankenstein/silouettes_frankenstein_lizard13_4f45bca7.png"]},
+            "answer_key": "lizard"
+        },
+        {
+            "trial": "trial_024",
+            "images": {"target":["datasets/mid/mindset_global_change_silhouettes_frankenstein/silouettes_frankenstein_lizard2_cb3c536e.png"]},
+            "answer_key": "lizard"
+        },
+        {
+            "trial": "trial_025",
+            "images": {"target":["datasets/mid/mindset_global_change_silhouettes_frankenstein/silouettes_frankenstein_tiger11_2af883a8.png"]},
+            "answer_key": "tiger"
+        },
+        {
+            "trial": "trial_026",
+            "images": {"target":["datasets/mid/mindset_global_change_silhouettes_frankenstein/silouettes_frankenstein_tiger13_211c6823.png"]},
+            "answer_key": "tiger"
+        },
+        {
+            "trial": "trial_027",
+            "images": {"target":["datasets/mid/mindset_global_change_silhouettes_frankenstein/silouettes_frankenstein_tiger1_bd52cacc.png"]},
+            "answer_key": "tiger"
+        },
+        {
+            "trial": "trial_028",
+            "images": {"target":["datasets/mid/mindset_global_change_silhouettes_frankenstein/silouettes_frankenstein_tiger2_c1924b10.png"]},
+            "answer_key": "tiger"
+        },
+        {
+            "trial": "trial_029",
+            "images": {"target":["datasets/mid/mindset_global_change_silhouettes_frankenstein/silouettes_frankenstein_turtle14_030104fe.png"]},
+            "answer_key": "turtle"
+        },
+        {
+            "trial": "trial_030",
+            "images": {"target":["datasets/mid/mindset_global_change_silhouettes_frankenstein/silouettes_frankenstein_turtle1_4e52e9b1.png"]},
+            "answer_key": "turtle"
+        },
+        {
+            "trial": "trial_031",
+            "images": {"target":["datasets/mid/mindset_global_change_silhouettes_frankenstein/silouettes_frankenstein_turtle20_2ef68715.png"]},
+            "answer_key": "turtle"
+        },
+        {
+            "trial": "trial_032",
+            "images": {"target":["datasets/mid/mindset_global_change_silhouettes_frankenstein/silouettes_frankenstein_turtle2_c2cf1197.png"]},
+            "answer_key": "turtle"
+        },
+        {
+            "trial": "trial_033",
+            "images": {"target":["datasets/mid/mindset_global_change_silhouettes_frankenstein/silouettes_frankenstein_wolf1_bdcd1281.png"]},
+            "answer_key": "wolf"
+        },
+        {
+            "trial": "trial_034",
+            "images": {"target":["datasets/mid/mindset_global_change_silhouettes_frankenstein/silouettes_frankenstein_wolf23_9192139b.png"]},
+            "answer_key": "wolf"
+        },
+        {
+            "trial": "trial_035",
+            "images": {"target":["datasets/mid/mindset_global_change_silhouettes_frankenstein/silouettes_frankenstein_wolf2_46aac3c8.png"]},
+            "answer_key": "wolf"
+        },
+        {
+            "trial": "trial_036",
+            "images": {"target":["datasets/mid/mindset_global_change_silhouettes_frankenstein/silouettes_frankenstein_wolf32_2bcc27bc.png"]},
+            "answer_key": "wolf"
+        }
+    ]
+}

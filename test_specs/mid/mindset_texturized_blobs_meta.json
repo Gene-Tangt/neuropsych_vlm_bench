@@ -1,0 +1,190 @@
+{
+    "stage": "mid",
+    "process": "robustness_across_image_cues",
+    "task": "mindset_texturized_blobs",
+    "task_type": "match_to_sample",
+    "num_stim": "three",
+    "prompt": "Here's a task. I will present you with three pictures. The first one is the target/reference image. The following two are the options. Your task is to choose which of the options most closely resembles the target/reference image. Please provide one final answer even if you are unsure. Please provide your answer in {}. For example, if you choose option 1, please provide your answer as {1}.",
+    "trials": [
+        {
+            "trial": "trial_000",
+            "images": {
+                "target": ["datasets/mid/mindset_texturized_blobs/trial_000/blob_0.png"],
+                "option_1": ["datasets/mid/mindset_texturized_blobs/trial_000/blob_0a.png"],
+                "option_2": ["datasets/mid/mindset_texturized_blobs/trial_000/blob_0b.png"]
+            },
+            "answer_key": "1"
+        },
+        {
+            "trial": "trial_001",
+            "images": {
+                "target": ["datasets/mid/mindset_texturized_blobs/trial_001/blob_1.png"],
+                "option_1": ["datasets/mid/mindset_texturized_blobs/trial_001/blob_1a.png"],
+                "option_2": ["datasets/mid/mindset_texturized_blobs/trial_001/blob_1b.png"]
+            },
+            "answer_key": "1"
+        },
+        {
+            "trial": "trial_002",
+            "images": {
+                "target": ["datasets/mid/mindset_texturized_blobs/trial_002/blob_2.png"],
+                "option_1": ["datasets/mid/mindset_texturized_blobs/trial_002/blob_2a.png"],
+                "option_2": ["datasets/mid/mindset_texturized_blobs/trial_002/blob_2b.png"]
+            },
+            "answer_key": "2"
+        },
+        {
+            "trial": "trial_003",
+            "images": {
+                "target": ["datasets/mid/mindset_texturized_blobs/trial_003/blob_3.png"],
+                "option_1": ["datasets/mid/mindset_texturized_blobs/trial_003/blob_3a.png"],
+                "option_2": ["datasets/mid/mindset_texturized_blobs/trial_003/blob_3b.png"]
+            },
+            "answer_key": "1"
+        },
+        {
+            "trial": "trial_004",
+            "images": {
+                "target": ["datasets/mid/mindset_texturized_blobs/trial_004/blob_4.png"],
+                "option_1": ["datasets/mid/mindset_texturized_blobs/trial_004/blob_4a.png"],
+                "option_2": ["datasets/mid/mindset_texturized_blobs/trial_004/blob_4b.png"]
+            },
+            "answer_key": "1"
+        },
+        {
+            "trial": "trial_005",
+            "images": {
+                "target": ["datasets/mid/mindset_texturized_blobs/trial_005/blob_5.png"],
+                "option_1": ["datasets/mid/mindset_texturized_blobs/trial_005/blob_5a.png"],
+                "option_2": ["datasets/mid/mindset_texturized_blobs/trial_005/blob_5b.png"]
+            },
+            "answer_key": "1"
+        },
+        {
+            "trial": "trial_006",
+            "images": {
+                "target": ["datasets/mid/mindset_texturized_blobs/trial_006/blob_6.png"],
+                "option_1": ["datasets/mid/mindset_texturized_blobs/trial_006/blob_6a.png"],
+                "option_2": ["datasets/mid/mindset_texturized_blobs/trial_006/blob_6b.png"]
+            },
+            "answer_key": "2"
+        },
+        {
+            "trial": "trial_007",
+            "images": {
+                "target": ["datasets/mid/mindset_texturized_blobs/trial_007/blob_7.png"],
+                "option_1": ["datasets/mid/mindset_texturized_blobs/trial_007/blob_7a.png"],
+                "option_2": ["datasets/mid/mindset_texturized_blobs/trial_007/blob_7b.png"]
+            },
+            "answer_key": "1"
+        },
+        {
+            "trial": "trial_008",
+            "images": {
+                "target": ["datasets/mid/mindset_texturized_blobs/trial_008/blob_8.png"],
+                "option_1": ["datasets/mid/mindset_texturized_blobs/trial_008/blob_8a.png"],
+                "option_2": ["datasets/mid/mindset_texturized_blobs/trial_008/blob_8b.png"]
+            },
+            "answer_key": "1"
+        },
+        {
+            "trial": "trial_009",
+            "images": {
+                "target": ["datasets/mid/mindset_texturized_blobs/trial_009/blob_9.png"],
+                "option_1": ["datasets/mid/mindset_texturized_blobs/trial_009/blob_9a.png"],
+                "option_2": ["datasets/mid/mindset_texturized_blobs/trial_009/blob_9b.png"]
+            },
+            "answer_key": "2"
+        },
+        {
+            "trial": "trial_010",
+            "images": {
+                "target": ["datasets/mid/mindset_texturized_blobs/trial_010/blob_10.png"],
+                "option_1": ["datasets/mid/mindset_texturized_blobs/trial_010/blob_10a.png"],
+                "option_2": ["datasets/mid/mindset_texturized_blobs/trial_010/blob_10b.png"]
+            },
+            "answer_key": "2"
+        },
+        {
+            "trial": "trial_011",
+            "images": {
+                "target": ["datasets/mid/mindset_texturized_blobs/trial_011/blob_11.png"],
+                "option_1": ["datasets/mid/mindset_texturized_blobs/trial_011/blob_11a.png"],
+                "option_2": ["datasets/mid/mindset_texturized_blobs/trial_011/blob_11b.png"]
+            },
+            "answer_key": "2"
+        },
+        {
+            "trial": "trial_012",
+            "images": {
+                "target": ["datasets/mid/mindset_texturized_blobs/trial_012/blob_12.png"],
+                "option_1": ["datasets/mid/mindset_texturized_blobs/trial_012/blob_12a.png"],
+                "option_2": ["datasets/mid/mindset_texturized_blobs/trial_012/blob_12b.png"]
+            },
+            "answer_key": "1"
+        },
+        {
+            "trial": "trial_013",
+            "images": {
+                "target": ["datasets/mid/mindset_texturized_blobs/trial_013/blob_13.png"],
+                "option_1": ["datasets/mid/mindset_texturized_blobs/trial_013/blob_13a.png"],
+                "option_2": ["datasets/mid/mindset_texturized_blobs/trial_013/blob_13b.png"]
+            },
+            "answer_key": "1"
+        },
+        {
+            "trial": "trial_014",
+            "images": {
+                "target": ["datasets/mid/mindset_texturized_blobs/trial_014/blob_14.png"],
+                "option_1": ["datasets/mid/mindset_texturized_blobs/trial_014/blob_14a.png"],
+                "option_2": ["datasets/mid/mindset_texturized_blobs/trial_014/blob_14b.png"]
+            },
+            "answer_key": "2"
+        },
+        {
+            "trial": "trial_015",
+            "images": {
+                "target": ["datasets/mid/mindset_texturized_blobs/trial_015/blob_15.png"],
+                "option_1": ["datasets/mid/mindset_texturized_blobs/trial_015/blob_15a.png"],
+                "option_2": ["datasets/mid/mindset_texturized_blobs/trial_015/blob_15b.png"]
+            },
+            "answer_key": "1"
+        },
+        {
+            "trial": "trial_016",
+            "images": {
+                "target": ["datasets/mid/mindset_texturized_blobs/trial_016/blob_16.png"],
+                "option_1": ["datasets/mid/mindset_texturized_blobs/trial_016/blob_16a.png"],
+                "option_2": ["datasets/mid/mindset_texturized_blobs/trial_016/blob_16b.png"]
+            },
+            "answer_key": "2"
+        },
+        {
+            "trial": "trial_017",
+            "images": {
+                "target": ["datasets/mid/mindset_texturized_blobs/trial_017/blob_17.png"],
+                "option_1": ["datasets/mid/mindset_texturized_blobs/trial_017/blob_17a.png"],
+                "option_2": ["datasets/mid/mindset_texturized_blobs/trial_017/blob_17b.png"]
+            },
+            "answer_key": "1"
+        },
+        {
+            "trial": "trial_018",
+            "images": {
+                "target": ["datasets/mid/mindset_texturized_blobs/trial_018/blob_18.png"],
+                "option_1": ["datasets/mid/mindset_texturized_blobs/trial_018/blob_18a.png"],
+                "option_2": ["datasets/mid/mindset_texturized_blobs/trial_018/blob_18b.png"]
+            },
+            "answer_key": "2"
+        },
+        {
+            "trial": "trial_019",
+            "images": {
+                "target": ["datasets/mid/mindset_texturized_blobs/trial_019/blob_19.png"],
+                "option_1": ["datasets/mid/mindset_texturized_blobs/trial_019/blob_19a.png"],
+                "option_2": ["datasets/mid/mindset_texturized_blobs/trial_019/blob_19b.png"]
+            },
+            "answer_key": "1"
+        }
+    ]
+}

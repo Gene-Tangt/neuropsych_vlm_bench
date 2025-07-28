@@ -1,0 +1,210 @@
+{
+    "stage": "low",
+    "process": "simple_element_judgements",
+    "task": "mindset_weber_law",
+    "task_type": "same_different",
+    "num_stim": "two",
+    "prompt": "This is a task. In this task you will tell me if these two lines are the same length or not. Answer with only 'same' or 'different'. Please put your final answer in {}.",
+    "trials": [
+        {
+            "trial": "trial_000",
+            "images": {"options":["datasets/low/mindset_weber_law/trial_000/l_280_55_5dfd59ea.png", "datasets/low/mindset_weber_law/trial_000/l_400_55_a5b98cb3.png"]},
+            "answer_key": "different"
+        },
+        {
+            "trial": "trial_001",
+            "images": {"options":["datasets/low/mindset_weber_law/trial_001/l_220_55_d7fc2398.png", "datasets/low/mindset_weber_law/trial_001/l_220_55_d7fc2398 - Copy.png"]},
+            "answer_key": "same"
+        },
+        {
+            "trial": "trial_002",
+            "images": {"options":["datasets/low/mindset_weber_law/trial_002/l_100_55_363b10de.png", "datasets/low/mindset_weber_law/trial_002/l_100_55_363b10de - Copy.png"]},
+            "answer_key": "same"
+        },
+        {
+            "trial": "trial_003",
+            "images": {"options":["datasets/low/mindset_weber_law/trial_003/l_400_55_a5b98cb3.png", "datasets/low/mindset_weber_law/trial_003/l_400_55_a5b98cb3 - Copy.png"]},
+            "answer_key": "same"
+        },
+        {
+            "trial": "trial_004",
+            "images": {"options":["datasets/low/mindset_weber_law/trial_004/l_200_55_2d8c6a11.png", "datasets/low/mindset_weber_law/trial_004/l_340_55_8c5e1a97.png"]},
+            "answer_key": "different"
+        },
+        {
+            "trial": "trial_005",
+            "images": {"options":["datasets/low/mindset_weber_law/trial_005/l_120_55_b14ba538.png", "datasets/low/mindset_weber_law/trial_005/l_120_55_b14ba538 - Copy.png"]},
+            "answer_key": "same"
+        },
+        {
+            "trial": "trial_006",
+            "images": {"options":["datasets/low/mindset_weber_law/trial_006/l_360_55_16de60d9.png", "datasets/low/mindset_weber_law/trial_006/l_360_55_16de60d9 - Copy.png"]},
+            "answer_key": "same"
+        },
+        {
+            "trial": "trial_007",
+            "images": {"options":["datasets/low/mindset_weber_law/trial_007/l_140_55_9d1fda58.png", "datasets/low/mindset_weber_law/trial_007/l_140_55_9d1fda58 - Copy.png"]},
+            "answer_key": "same"
+        },
+        {
+            "trial": "trial_008",
+            "images": {"options":["datasets/low/mindset_weber_law/trial_008/l_240_55_1c1f6c87.png", "datasets/low/mindset_weber_law/trial_008/l_280_55_5dfd59ea.png"]},
+            "answer_key": "different"
+        },
+        {
+            "trial": "trial_009",
+            "images": {"options":["datasets/low/mindset_weber_law/trial_009/l_340_55_8c5e1a97.png", "datasets/low/mindset_weber_law/trial_009/l_340_55_8c5e1a97 - Copy.png"]},
+            "answer_key": "same"
+        },
+        {
+            "trial": "trial_010",
+            "images": {"options":["datasets/low/mindset_weber_law/trial_010/l_120_55_b14ba538.png", "datasets/low/mindset_weber_law/trial_010/l_200_55_2d8c6a11.png"]},
+            "answer_key": "different"
+        },
+        {
+            "trial": "trial_011",
+            "images": {"options":["datasets/low/mindset_weber_law/trial_011/l_200_55_2d8c6a11.png", "datasets/low/mindset_weber_law/trial_011/l_200_55_2d8c6a11 - Copy.png"]},
+            "answer_key": "same"
+        },
+        {
+            "trial": "trial_012",
+            "images": {"options":["datasets/low/mindset_weber_law/trial_012/l_300_55_fbdbc07e.png", "datasets/low/mindset_weber_law/trial_012/l_300_55_fbdbc07e - Copy.png"]},
+            "answer_key": "same"
+        },
+        {
+            "trial": "trial_013",
+            "images": {"options":["datasets/low/mindset_weber_law/trial_013/l_140_55_9d1fda58.png", "datasets/low/mindset_weber_law/trial_013/l_240_55_1c1f6c87.png"]},
+            "answer_key": "different"
+        },
+        {
+            "trial": "trial_014",
+            "images": {"options":["datasets/low/mindset_weber_law/trial_014/l_400_55_a5b98cb3.png", "datasets/low/mindset_weber_law/trial_014/l_40_55_aaf919cd.png"]},
+            "answer_key": "different"
+        },
+        {
+            "trial": "trial_015",
+            "images": {"options":["datasets/low/mindset_weber_law/trial_015/l_160_55_c13626dc.png", "datasets/low/mindset_weber_law/trial_015/l_240_55_1c1f6c87.png"]},
+            "answer_key": "different"
+        },
+        {
+            "trial": "trial_016",
+            "images": {"options":["datasets/low/mindset_weber_law/trial_016/l_120_55_b14ba538.png", "datasets/low/mindset_weber_law/trial_016/l_280_55_5dfd59ea.png"]},
+            "answer_key": "different"
+        },
+        {
+            "trial": "trial_017",
+            "images": {"options":["datasets/low/mindset_weber_law/trial_017/l_220_55_d7fc2398.png", "datasets/low/mindset_weber_law/trial_017/l_60_55_79ed3837.png"]},
+            "answer_key": "different"
+        },
+        {
+            "trial": "trial_018",
+            "images": {"options":["datasets/low/mindset_weber_law/trial_018/l_260_55_913a6626.png", "datasets/low/mindset_weber_law/trial_018/l_260_55_913a6626 - Copy.png"]},
+            "answer_key": "same"
+        },
+        {
+            "trial": "trial_019",
+            "images": {"options":["datasets/low/mindset_weber_law/trial_019/l_280_55_5dfd59ea.png", "datasets/low/mindset_weber_law/trial_019/l_340_55_8c5e1a97.png"]},
+            "answer_key": "different"
+        },
+        {
+            "trial": "trial_020",
+            "images": {"options":["datasets/low/mindset_weber_law/trial_020/h_280_255_1af6b35e.png", "datasets/low/mindset_weber_law/trial_020/h_400_255_b284cf08.png"]},
+            "answer_key": "different"
+        },
+        {
+            "trial": "trial_021",
+            "images": {"options":["datasets/low/mindset_weber_law/trial_021/h_220_255_7b4645e9.png", "datasets/low/mindset_weber_law/trial_021/h_220_255_7b4645e9 - Copy.png"]},
+            "answer_key": "same"
+        },
+        {
+            "trial": "trial_022",
+            "images": {"options":["datasets/low/mindset_weber_law/trial_022/h_100_255_5e556334.png", "datasets/low/mindset_weber_law/trial_022/h_100_255_5e556334 - Copy.png"]},
+            "answer_key": "same"
+        },
+        {
+            "trial": "trial_023",
+            "images": {"options":["datasets/low/mindset_weber_law/trial_023/h_400_255_b284cf08.png", "datasets/low/mindset_weber_law/trial_023/h_400_255_b284cf08 - Copy.png"]},
+            "answer_key": "same"
+        },
+        {
+            "trial": "trial_024",
+            "images": {"options":["datasets/low/mindset_weber_law/trial_024/h_200_255_8074098c.png", "datasets/low/mindset_weber_law/trial_024/h_340_255_a7554a64.png"]},
+            "answer_key": "different"
+        },
+        {
+            "trial": "trial_025",
+            "images": {"options":["datasets/low/mindset_weber_law/trial_025/h_120_255_c1d00849.png", "datasets/low/mindset_weber_law/trial_025/h_120_255_c1d00849 - Copy.png"]},
+            "answer_key": "same"
+        },
+        {
+            "trial": "trial_026",
+            "images": {"options":["datasets/low/mindset_weber_law/trial_026/h_360_255_ba9c2021.png", "datasets/low/mindset_weber_law/trial_026/h_360_255_ba9c2021 - Copy.png"]},
+            "answer_key": "same"
+        },
+        {
+            "trial": "trial_027",
+            "images": {"options":["datasets/low/mindset_weber_law/trial_027/h_140_255_368a276d.png", "datasets/low/mindset_weber_law/trial_027/h_140_255_368a276d - Copy.png"]},
+            "answer_key": "same"
+        },
+        {
+            "trial": "trial_028",
+            "images": {"options":["datasets/low/mindset_weber_law/trial_028/h_240_255_f83266d9.png", "datasets/low/mindset_weber_law/trial_028/h_280_255_1af6b35e.png"]},
+            "answer_key": "different"
+        },
+        {
+            "trial": "trial_029",
+            "images": {"options":["datasets/low/mindset_weber_law/trial_029/h_340_255_a7554a64.png", "datasets/low/mindset_weber_law/trial_029/h_340_255_a7554a64 - Copy.png"]},
+            "answer_key": "same"
+        },
+        {
+            "trial": "trial_030",
+            "images": {"options":["datasets/low/mindset_weber_law/trial_030/h_120_255_c1d00849.png", "datasets/low/mindset_weber_law/trial_030/h_200_255_8074098c.png"]},
+            "answer_key": "different"
+        },
+        {
+            "trial": "trial_031",
+            "images": {"options":["datasets/low/mindset_weber_law/trial_031/h_200_255_8074098c.png", "datasets/low/mindset_weber_law/trial_031/h_200_255_8074098c - Copy.png"]},
+            "answer_key": "same"
+        },
+        {
+            "trial": "trial_032",
+            "images": {"options":["datasets/low/mindset_weber_law/trial_032/h_300_255_dc000c1b.png", "datasets/low/mindset_weber_law/trial_032/h_300_255_dc000c1b - Copy.png"]},
+            "answer_key": "same"
+        },
+        {
+            "trial": "trial_033",
+            "images": {"options":["datasets/low/mindset_weber_law/trial_033/h_140_255_368a276d.png", "datasets/low/mindset_weber_law/trial_033/h_240_255_f83266d9.png"]},
+            "answer_key": "different"
+        },
+        {
+            "trial": "trial_034",
+            "images": {"options":["datasets/low/mindset_weber_law/trial_034/h_400_255_b284cf08.png", "datasets/low/mindset_weber_law/trial_034/h_40_255_b1ff610f.png"]},
+            "answer_key": "different"
+        },
+        {
+            "trial": "trial_035",
+            "images": {"options":["datasets/low/mindset_weber_law/trial_035/h_160_255_ebafe48d.png", "datasets/low/mindset_weber_law/trial_035/h_240_255_f83266d9.png"]},
+            "answer_key": "different"
+        },
+        {
+            "trial": "trial_036",
+            "images": {"options":["datasets/low/mindset_weber_law/trial_036/h_120_255_c1d00849.png", "datasets/low/mindset_weber_law/trial_036/h_280_255_1af6b35e.png"]},
+            "answer_key": "different"
+        },
+        {
+            "trial": "trial_037",
+            "images": {"options":["datasets/low/mindset_weber_law/trial_037/h_220_255_7b4645e9.png", "datasets/low/mindset_weber_law/trial_037/h_60_255_c865d1e4.png"]},
+            "answer_key": "different"
+        },
+        {
+            "trial": "trial_038",
+            "images": {"options":["datasets/low/mindset_weber_law/trial_038/h_260_255_384ead1e.png", "datasets/low/mindset_weber_law/trial_038/h_260_255_384ead1e - Copy.png"]},
+            "answer_key": "same"
+        },
+        {
+            "trial": "trial_039",
+            "images": {"options":["datasets/low/mindset_weber_law/trial_039/h_280_255_1af6b35e.png", "datasets/low/mindset_weber_law/trial_039/h_340_255_a7554a64.png"]},
+            "answer_key": "different"
+        }
+    ]
+}

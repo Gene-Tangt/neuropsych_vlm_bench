@@ -1,0 +1,62 @@
+{
+
+        "shape_aliases": {
+          "square": ["square", "rectangle"],
+          "triangle": ["triangle"],
+          "pentagon": ["pentagon"],
+          "hexagon": ["hexagon"],
+          "plus": ["plus", "add", "+", "plus sign", "addition sign", "plus mark"],
+          "cross": ["cross", "x", "times", "multiply", "multiplication sign", "x mark", "letter x"]
+        },
+        
+        "object_aliases": {
+            "crocodile": ["african crocodile", "crocodile", "alligator", "gator", "croc"],
+            "airship": ["airship", "aircraft", "airplane", "aeroplane", "plane"],
+            "armadillo": ["armadillo"],
+            "banana": ["banana"],
+            "beer bottle": ["beer bottle", "bottle", "glass bottle", "beer"],
+            "bow tie": ["bow tie", "bow", "tie"],
+            "bullfrog": ["bullfrog", "frog", "toad"],
+            "cello": ["cello"],
+            "coffee mug": ["coffee mug", "mug", "coffee cup", "cup"],
+            "dragonfly": ["dragonfly", "damselfly"],
+            "hammer": ["hammer"],
+            "hare": ["hare", "rabbit", "bunny"],
+            "ibex": ["ibex", "goat"],
+            "ice bear": ["ice bear", "polar bear", "bear", "brown bear", "black bear", "grizzly bear"],
+            "jigsaw puzzle": ["jigsaw", "jigsaw puzzle", "puzzle piece", "puzzle", "jigsaw piece"],
+            "king penguin": ["king penguin", "penguin", "emperor penguin"],
+            "lawn mower": ["lawn mower", "mower"],
+            "lion": ["lion"],
+            "llama": ["llama", "alpaca"],
+            "lynx": ["lynx", "cat", "wild cat"],
+            "paintbrush": ["paintbrush", "brush"],
+            "peacock": ["peacock"],
+            "pretzel": ["pretzel"],
+            "revolver": ["revolver", "gun", "pistol", "hand gun"],
+            "running shoe": ["running shoe", "shoe", "sneaker", "trainer"],
+            "sewing machine": ["sewing machine"],
+            "snail": ["snail"],
+            "space shuttle": ["space shuttle", "rocketship", "rocket", "spaceship", "jet", "shuttle", "spacecraft", "space rocket"],
+            "poodle": ["poodle", "dog", "puppy"],
+            "butterfly": ["butterfly"],
+            "teapot": ["teapot", "kettle"],
+            "tiger": ["tiger"],
+            "toucan": ["toucan", "bird"],
+            "trombone": ["trombone"],
+            "white wolf": ["white wolf", "wolf"],
+            "zebra": ["zebra"],
+            "bear": ["ice bear", "polar bear", "bear", "brown bear", "black bear", "grizzly bear"],
+            "bunny": ["hare", "rabbit", "bunny"],
+            "cat": ["cat"],
+            "elephant": ["elephant"],
+            "frog": ["frog"],
+            "lizard": ["lizard", "chameleon", "iguana"],
+            "turtle": ["turtle", "tortoise"]
+        }
+
+
+
+
+
+}

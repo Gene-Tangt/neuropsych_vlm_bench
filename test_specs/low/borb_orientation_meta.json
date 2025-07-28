@@ -1,0 +1,132 @@
+{
+    "stage": "low",
+    "process": "simple_element_judgements",
+    "task": "borb_orientation",
+    "task_type": "yes_no",
+    "num_stim": "one",
+    "prompt": "This is a task. In this task you will tell me if these two lines are parallel or not. Answer with only 'yes' or 'no'. Please put your final answer in {}.",
+    "trials": [
+        {"trial": "trial_001",
+        "images": {"target":["datasets/low/borb_orientation/001.png"]},
+        "answer_key": "yes"
+        },
+        {"trial": "trial_002",
+            "images": {"target":["datasets/low/borb_orientation/002.png"]},
+            "answer_key": "no"
+        },
+        {"trial": "trial_003",
+            "images": {"target":["datasets/low/borb_orientation/003.png"]},
+            "answer_key": "yes"
+        },
+        {"trial": "trial_004",
+            "images": {"target":["datasets/low/borb_orientation/004.png"]},
+            "answer_key": "yes"
+        },
+        {"trial": "trial_005",
+            "images": {"target":["datasets/low/borb_orientation/005.png"]},
+            "answer_key": "no"
+        },
+        {"trial": "trial_006",
+            "images": {"target":["datasets/low/borb_orientation/006.png"]},
+            "answer_key": "yes"
+        },
+        {"trial": "trial_007",
+            "images": {"target":["datasets/low/borb_orientation/007.png"]},
+            "answer_key": "yes"
+        },
+        {"trial": "trial_008",
+            "images": {"target":["datasets/low/borb_orientation/008.png"]},
+            "answer_key": "no"
+        },
+        {"trial": "trial_009",
+            "images": {"target":["datasets/low/borb_orientation/009.png"]},
+            "answer_key": "no"
+        },
+        {"trial": "trial_010",
+            "images": {"target":["datasets/low/borb_orientation/010.png"]},
+            "answer_key": "yes"
+        },
+        {"trial": "trial_011",
+            "images": {"target":["datasets/low/borb_orientation/011.png"]},
+            "answer_key": "no"
+        },
+        {"trial": "trial_012",
+            "images": {"target":["datasets/low/borb_orientation/012.png"]},
+            "answer_key": "yes"
+        },
+        {"trial": "trial_013",
+            "images": {"target":["datasets/low/borb_orientation/013.png"]},
+            "answer_key": "yes"
+        },
+        {"trial": "trial_014",
+            "images": {"target":["datasets/low/borb_orientation/014.png"]},
+            "answer_key": "yes"
+        },
+        {"trial": "trial_015",
+            "images": {"target":["datasets/low/borb_orientation/015.png"]},
+            "answer_key": "no"
+        },
+        {"trial": "trial_016",
+            "images": {"target":["datasets/low/borb_orientation/016.png"]},
+            "answer_key": "no"
+        },
+        {"trial": "trial_017",
+            "images": {"target":["datasets/low/borb_orientation/017.png"]},
+            "answer_key": "yes"
+        },
+        {"trial": "trial_018",
+            "images": {"target":["datasets/low/borb_orientation/018.png"]},
+            "answer_key": "yes"
+        },
+        {"trial": "trial_019",
+            "images": {"target":["datasets/low/borb_orientation/019.png"]},
+            "answer_key": "yes"
+        },
+        {"trial": "trial_020",
+            "images": {"target":["datasets/low/borb_orientation/020.png"]},
+            "answer_key": "yes"
+        },
+        {"trial": "trial_021",
+            "images": {"target":["datasets/low/borb_orientation/021.png"]},
+            "answer_key": "no"
+        },
+        {"trial": "trial_022",
+            "images": {"target":["datasets/low/borb_orientation/022.png"]},
+            "answer_key": "no"
+        },
+        {"trial": "trial_023",
+            "images": {"target":["datasets/low/borb_orientation/023.png"]},
+            "answer_key": "no"
+        },
+        {"trial": "trial_024",
+            "images": {"target":["datasets/low/borb_orientation/024.png"]},
+            "answer_key": "yes"
+        },
+        {"trial": "trial_025",
+            "images": {"target":["datasets/low/borb_orientation/025.png"]},
+            "answer_key": "no"
+        },
+        {"trial": "trial_026",
+            "images": {"target":["datasets/low/borb_orientation/026.png"]},
+            "answer_key": "no"
+        },
+        {"trial": "trial_027",
+            "images": {"target":["datasets/low/borb_orientation/027.png"]},
+            "answer_key": "no"
+        },
+        {"trial": "trial_028",
+            "images": {"target":["datasets/low/borb_orientation/028.png"]},
+            "answer_key": "no"
+        },
+        {"trial": "trial_029",
+            "images": {"target":["datasets/low/borb_orientation/029.png"]},
+            "answer_key": "yes"
+        },
+        {"trial": "trial_030",
+            "images": {"target":["datasets/low/borb_orientation/030.png"]},
+            "answer_key": "no"
+        }
+    ]
+
+
+}

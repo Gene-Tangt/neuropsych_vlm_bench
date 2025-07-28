@@ -1,0 +1,234 @@
+{
+    "stage": "high",
+    "process": "viewpoint_invariance",
+    "task": "mindset_viewpoint_invariance",
+    "task_type": "match_to_sample",
+    "num_stim": "three",
+    "prompt": "Here's a task. I will present you with three pictures. The first one is the target/reference image. The following two are the options. One is an image of the exact same target viewed from a different angle, while the other is a different object. Your task is to choose which of the options is the same exact object as the target/reference image. Please provide one final answer, even if you are unsure. Please provide your answer in {}. For example, if you choose option 1, please provide your answer as {1}.",
+    "trials": [
+        {
+            "trial": "trial_000",
+            "images": {"target":["datasets/high/viewpoint_invariance/trial_000/viewpoint_0_apple1-035-315_67ca6901.png"],
+            "option_1":["datasets/high/viewpoint_invariance/trial_000/viewpoint_0a_apple1-045-000_c99923c6.png"],
+            "option_2":["datasets/high/viewpoint_invariance/trial_000/viewpoint_0b_apple5-045-000_2410e997.png"]},
+            "answer_key": "1"
+        },
+        {
+            "trial": "trial_001",
+            "images": {"target":["datasets/high/viewpoint_invariance/trial_001/viewpoint_01_apple5-066-027_80209ac7.png"],
+            "option_1":["datasets/high/viewpoint_invariance/trial_001/viewpoint_01a_apple5-066-063_cdc166ca.png"],
+            "option_2":["datasets/high/viewpoint_invariance/trial_001/viewpoint_01b_apple7-066-027_a7435a92.png"]},
+            "answer_key": "1"
+        },
+        {
+            "trial": "trial_002",
+            "images": {"target":["datasets/high/viewpoint_invariance/trial_002/viewpoint_02_apple9-035-225_9cf8fce3.png"],
+            "option_1":["datasets/high/viewpoint_invariance/trial_002/viewpoint_02a_apple9-090-225_ed4ff9e7.png"],
+            "option_2":["datasets/high/viewpoint_invariance/trial_002/viewpoint_02b_apple10-035-225_57733837.png"]},
+            "answer_key": "1"
+        },
+        {
+            "trial": "trial_003",
+            "images": {"target":["datasets/high/viewpoint_invariance/trial_003/viewpoint_03_apple8-035-135_076aeb78.png"],
+            "option_1":["datasets/high/viewpoint_invariance/trial_003/viewpoint_03a_apple8-090-068_0a17a7ac.png"],
+            "option_2":["datasets/high/viewpoint_invariance/trial_003/viewpoint_03b_apple3-035-135_4f137de1.png"]},
+            "answer_key": "1"
+        },
+        {
+            "trial": "trial_004",
+            "images": {"target":["datasets/high/viewpoint_invariance/trial_004/viewpoint_04_car9-045-090_7994a049.png"],
+            "option_1":["datasets/high/viewpoint_invariance/trial_004/viewpoint_04a_car3-045-090_4f85042d.png"],
+            "option_2":["datasets/high/viewpoint_invariance/trial_004/viewpoint_04b_car9-068-180_39aee1c7.png"]},
+            "answer_key": "2"
+        },
+        {
+            "trial": "trial_005",
+            "images": {"target":["datasets/high/viewpoint_invariance/trial_005/viewpoint_05_car1-035-045_93745097.png"],
+            "option_1":["datasets/high/viewpoint_invariance/trial_005/viewpoint_05a_car1-090-045_1ed6fdf2.png"],
+            "option_2":["datasets/high/viewpoint_invariance/trial_005/viewpoint_05b_car2-035-045_c24886b4.png"]},
+            "answer_key": "1"
+        },
+        {
+            "trial": "trial_006",
+            "images": {"target":["datasets/high/viewpoint_invariance/trial_006/viewpoint_06_car12-090-090_e8e1a81f.png"],
+            "option_1":["datasets/high/viewpoint_invariance/trial_006/viewpoint_06a_car14-090-090_f6a39173.png"],
+            "option_2":["datasets/high/viewpoint_invariance/trial_006/viewpoint_06b_car12-090-112_24a4883e.png"]},
+            "answer_key": "2"
+        },
+        {
+            "trial": "trial_007",
+            "images": {"target":["datasets/high/viewpoint_invariance/trial_007/viewpoint_07_car7-066-117_61afd528.png"],
+            "option_1":["datasets/high/viewpoint_invariance/trial_007/viewpoint_07a_car7-090-000_379cab1a.png"],
+            "option_2":["datasets/high/viewpoint_invariance/trial_007/viewpoint_07b_car14-066-117_73d8c78d.png"]},
+            "answer_key": "1"
+        },
+        {
+            "trial": "trial_008",
+            "images": {"target":["datasets/high/viewpoint_invariance/trial_008/viewpoint_08_cow1-035-045_65049cf3.png"],
+            "option_1":["datasets/high/viewpoint_invariance/trial_008/viewpoint_08a_cow1-035-135_32678a77.png"],
+            "option_2":["datasets/high/viewpoint_invariance/trial_008/viewpoint_08b_cow6-035-045_48f10dbd.png"]},
+            "answer_key": "1"
+        },
+        {
+            "trial": "trial_009",
+            "images": {"target":["datasets/high/viewpoint_invariance/trial_009/viewpoint_09_cow8-068-000_489b2166.png"],
+            "option_1":["datasets/high/viewpoint_invariance/trial_009/viewpoint_09a_cow10-068-000_0491391a.png"],
+            "option_2":["datasets/high/viewpoint_invariance/trial_009/viewpoint_09b_cow8-068-090_07fc5ffe.png"]},
+            "answer_key": "2"
+        },
+        {
+            "trial": "trial_010",
+            "images": {"target":["datasets/high/viewpoint_invariance/trial_010/viewpoint_010_cow9-090-090_cf896af2.png"],
+            "option_1":["datasets/high/viewpoint_invariance/trial_010/viewpoint_010a_cow9-068-000_7a26098f.png"],
+            "option_2":["datasets/high/viewpoint_invariance/trial_010/viewpoint_010b_cow4-090-090_1f56267b.png"]},
+            "answer_key": "1"
+        },
+        {
+            "trial": "trial_011",
+            "images": {"target":["datasets/high/viewpoint_invariance/trial_011/viewpoint_011_cow6-045-090_850c599a.png"],
+            "option_1":["datasets/high/viewpoint_invariance/trial_011/viewpoint_011a_cow6-090-112_8a36b2dd.png"],
+            "option_2":["datasets/high/viewpoint_invariance/trial_011/viewpoint_011b_cow7-045-090_be561567.png"]},
+            "answer_key": "1"
+        },
+        {
+            "trial": "trial_012",
+            "images": {"target":["datasets/high/viewpoint_invariance/trial_012/viewpoint_012_cup1-090-090_cfe65905.png"],
+            "option_1":["datasets/high/viewpoint_invariance/trial_012/viewpoint_012a_cup7-090-090_e83b2f25.png"],
+            "option_2":["datasets/high/viewpoint_invariance/trial_012/viewpoint_012b_cup1-066-027_285c61a2.png"]},
+            "answer_key": "2"
+        },
+        {
+            "trial": "trial_013",
+            "images": {"target":["datasets/high/viewpoint_invariance/trial_013/viewpoint_013_cup3-068-180_f021faf7.png"],
+            "option_1":["datasets/high/viewpoint_invariance/trial_013/viewpoint_013a_cup3-066-153_f8bfa1d0.png"],
+            "option_2":["datasets/high/viewpoint_invariance/trial_013/viewpoint_013b_cup4-068-180_7326aa95.png"]},
+            "answer_key": "1"
+        },
+        {
+            "trial": "trial_014",
+            "images": {"target":["datasets/high/viewpoint_invariance/trial_014/viewpoint_014_cup5-090-112_f1d07801.png"],
+            "option_1":["datasets/high/viewpoint_invariance/trial_014/viewpoint_014a_cup9-090-112_0b6fb8f9.png"],
+            "option_2":["datasets/high/viewpoint_invariance/trial_014/viewpoint_014b_cup5-066-153_868ba43b.png"]},
+            "answer_key": "2"
+        },
+        {
+            "trial": "trial_015",
+            "images": {"target":["datasets/high/viewpoint_invariance/trial_015/viewpoint_015_cup10-066-117_1273b9fd.png"],
+            "option_1":["datasets/high/viewpoint_invariance/trial_015/viewpoint_015a_cup2-066-117_5c972537.png"],
+            "option_2":["datasets/high/viewpoint_invariance/trial_015/viewpoint_015b_cup10-090-045_a0d88ea7.png"]},
+            "answer_key": "2"
+        },
+        {
+            "trial": "trial_016",
+            "images": {"target":["datasets/high/viewpoint_invariance/trial_016/viewpoint_016_dog9-090-338_b55febd9.png"],
+            "option_1":["datasets/high/viewpoint_invariance/trial_016/viewpoint_016a_dog10-090-338_ce910744.png"],
+            "option_2":["datasets/high/viewpoint_invariance/trial_016/viewpoint_016b_dog9-090-315_63ab73a9.png"]},
+            "answer_key": "2"
+        },
+        {
+            "trial": "trial_017",
+            "images": {"target":["datasets/high/viewpoint_invariance/trial_017/viewpoint_017_dog6-066-063_19368fd4.png"],
+            "option_1":["datasets/high/viewpoint_invariance/trial_017/viewpoint_017a_dog6-090-000_1fd996f2.png"],
+            "option_2":["datasets/high/viewpoint_invariance/trial_017/viewpoint_017b_dog9-066-063_d7cd2d27.png"]},
+            "answer_key": "1"
+        },
+        {
+            "trial": "trial_018",
+            "images": {"target":["datasets/high/viewpoint_invariance/trial_018/viewpoint_018_dog5-045-180_aa280889.png"],
+            "option_1":["datasets/high/viewpoint_invariance/trial_018/viewpoint_018a_dog10-045-180_f4c9524b.png"],
+            "option_2":["datasets/high/viewpoint_invariance/trial_018/viewpoint_018b_dog5-066-117_e8884434.png"]},
+            "answer_key": "2"
+        },
+        {
+            "trial": "trial_019",
+            "images": {"target":["datasets/high/viewpoint_invariance/trial_019/viewpoint_019_dog1-035-225_ece64123.png"],
+            "option_1":["datasets/high/viewpoint_invariance/trial_019/viewpoint_019a_dog1-066-243_6489655b.png"],
+            "option_2":["datasets/high/viewpoint_invariance/trial_019/viewpoint_019b_dog4-035-225_dc94aee8.png"]},
+            "answer_key": "1"
+        },
+        {
+            "trial": "trial_020",
+            "images": {"target":["datasets/high/viewpoint_invariance/trial_020/viewpoint_020_horse1-068-090_8ee3aee4.png"],
+            "option_1":["datasets/high/viewpoint_invariance/trial_020/viewpoint_020a_horse1-090-090_952c44fa.png"],
+            "option_2":["datasets/high/viewpoint_invariance/trial_020/viewpoint_020b_horse5-068-090_cf8765c7.png"]},
+            "answer_key": "1"
+        },
+        {
+            "trial": "trial_021",
+            "images": {"target":["datasets/high/viewpoint_invariance/trial_021/viewpoint_021_horse6-066-207_7b5d07e8.png"],
+            "option_1":["datasets/high/viewpoint_invariance/trial_021/viewpoint_021a_horse3-066-207_bcdecb82.png"],
+            "option_2":["datasets/high/viewpoint_invariance/trial_021/viewpoint_021b_horse6-035-135_db81ba93.png"]},
+            "answer_key": "2"
+        },
+        {
+            "trial": "trial_022",
+            "images": {"target":["datasets/high/viewpoint_invariance/trial_022/viewpoint_022_horse5-066-153_a33c9c20.png"],
+            "option_1":["datasets/high/viewpoint_invariance/trial_022/viewpoint_022a_horse5-066-117_752fde73.png"],
+            "option_2":["datasets/high/viewpoint_invariance/trial_022/viewpoint_022b_horse4-066-153_96b98c19.png"]},
+            "answer_key": "1"
+        },
+        {
+            "trial": "trial_023",
+            "images": {"target":["datasets/high/viewpoint_invariance/trial_023/viewpoint_023_horse10-066-027_f67a1d7d.png"],
+            "option_1":["datasets/high/viewpoint_invariance/trial_023/viewpoint_023a_horse10-090-000_08820296.png"],
+            "option_2":["datasets/high/viewpoint_invariance/trial_023/viewpoint_023b_horse9-066-027_a16db769.png"]},
+            "answer_key": "1"
+        },
+        {
+            "trial": "trial_024",
+            "images": {"target":["datasets/high/viewpoint_invariance/trial_024/viewpoint_024_pear2-068-270_3f6ae7ae.png"],
+            "option_1":["datasets/high/viewpoint_invariance/trial_024/viewpoint_024a_pear2-090-338_3cd0f503.png"],
+            "option_2":["datasets/high/viewpoint_invariance/trial_024/viewpoint_024b_pear9-068-270_8bcee6ee.png"]},
+            "answer_key": "1"
+        },
+        {
+            "trial": "trial_025",
+            "images": {"target":["datasets/high/viewpoint_invariance/trial_025/viewpoint_025_pear5-045-090_0403b73f.png"],
+            "option_1":["datasets/high/viewpoint_invariance/trial_025/viewpoint_025a_pear6-045-090_7de27a13.png"],
+            "option_2":["datasets/high/viewpoint_invariance/trial_025/viewpoint_025b_pear5-045-180_d3f94614.png"]},
+            "answer_key": "2"
+        },
+        {
+            "trial": "trial_026",
+            "images": {"target":["datasets/high/viewpoint_invariance/trial_026/viewpoint_026_pear10-090-338_16f3412b.png"],
+            "option_1":["datasets/high/viewpoint_invariance/trial_026/viewpoint_026a_pear10-066-333_da53e428.png"],
+            "option_2":["datasets/high/viewpoint_invariance/trial_026/viewpoint_026b_pear6-090-338_d2be9a16.png"]},
+            "answer_key": "1"
+        },
+        {
+            "trial": "trial_027",
+            "images": {"target":["datasets/high/viewpoint_invariance/trial_027/viewpoint_027_pear2-035-135_ff595e2b.png"],
+            "option_1":["datasets/high/viewpoint_invariance/trial_027/viewpoint_027a_pear2-066-153_e92302a3.png"],
+            "option_2":["datasets/high/viewpoint_invariance/trial_027/viewpoint_027b_pear3-035-135_27d0fd6a.png"]},
+            "answer_key": "1"
+        },
+        {
+            "trial": "trial_028",
+            "images": {"target":["datasets/high/viewpoint_invariance/trial_028/viewpoint_028_tomato10-090-315_5a2f1ca5.png"],
+            "option_1":["datasets/high/viewpoint_invariance/trial_028/viewpoint_028a_tomato10-066-297_c5844490.png"],
+            "option_2":["datasets/high/viewpoint_invariance/trial_028/viewpoint_028b_tomato5-090-315_2ec0253e.png"]},
+            "answer_key": "1"
+        },
+        {
+            "trial": "trial_029",
+            "images": {"target":["datasets/high/viewpoint_invariance/trial_029/viewpoint_029_tomato2-090-135_a605711d.png"],
+            "option_1":["datasets/high/viewpoint_invariance/trial_029/viewpoint_029a_tomato7-090-135_10f0a971.png"],
+            "option_2":["datasets/high/viewpoint_invariance/trial_029/viewpoint_029b_tomato2-090-112_8dc29741.png"]},
+            "answer_key": "2"
+        },
+        {
+            "trial": "trial_030",
+            "images": {"target":["datasets/high/viewpoint_invariance/trial_030/viewpoint_030_tomato1-045-000_c5ba5572.png"],
+            "option_1":["datasets/high/viewpoint_invariance/trial_030/viewpoint_030a_tomato1-066-027_ff2a2c74.png"],
+            "option_2":["datasets/high/viewpoint_invariance/trial_030/viewpoint_030b_tomato10-045-000_2280cfff.png"]},
+            "answer_key": "1"
+        },
+        {
+            "trial": "trial_031",
+            "images": {"target":["datasets/high/viewpoint_invariance/trial_031/viewpoint_031_tomato5-066-063_bf5650e1.png"],
+            "option_1":["datasets/high/viewpoint_invariance/trial_031/viewpoint_031a_tomato6-066-063_789bd3c0.png"],
+            "option_2":["datasets/high/viewpoint_invariance/trial_031/viewpoint_031b_tomato5-090-045_629fc893.png"]},
+            "answer_key": "2"
+        }
+    ]
+}

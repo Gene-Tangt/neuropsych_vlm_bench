@@ -1,0 +1,48 @@
+[
+    {
+        "stage": "low",
+        "task_paths": [
+            "test_specs/low/borb_orientation_meta.json",
+            "test_specs/low/borb_line_length_comparison_meta.json",
+            "test_specs/low/borb_size_comparison_meta.json",
+            "test_specs/low/borb_position_of_gap_meta.json",
+            "test_specs/low/mindset_weber_law_meta.json"
+        ]
+    },
+    {
+        "stage": "mid",
+        "task_paths": [
+            "test_specs/mid/borb_overlapped_letters_meta.json",
+            "test_specs/mid/borb_overlapped_shapes_meta.json",
+            "test_specs/mid/left_embedded_figures_meta.json",
+            "test_specs/mid/mindset_2D_transformations_meta.json",
+            "test_specs/mid/mindset_NAP_vs_MP_2D_lines_meta.json",
+            "test_specs/mid/mindset_NAP_vs_MP_3D_geons_meta.json",
+            "test_specs/mid/mindset_amodal_completion_meta.json",
+            "test_specs/mid/mindset_decomposition_meta.json",
+            "test_specs/mid/mindset_dotted_linedrawings_meta.json",
+            "test_specs/mid/mindset_geometric_elements_comparison_meta.json",
+            "test_specs/mid/mindset_global_change_linedrawings_fragmented_meta.json",
+            "test_specs/mid/mindset_global_change_linedrawings_frankenstein_meta.json",
+            "test_specs/mid/mindset_global_change_silhouettes_fragmented_meta.json",
+            "test_specs/mid/mindset_global_change_silhouettes_frankenstein_meta.json",
+            "test_specs/mid/mindset_relational_vs_coordinate_meta.json",
+            "test_specs/mid/mindset_segmented_images_meta.json",
+            "test_specs/mid/mindset_texturized_blobs_meta.json",
+            "test_specs/mid/mindset_texturized_linedrawings_chars_meta.json",
+            "test_specs/mid/mindset_texturized_linedrawings_lines_meta.json"
+        ]
+    },
+    {
+        "stage": "high",
+        "task_paths": [
+            "test_specs/high/borb_triplet_letters_meta.json",
+            "test_specs/high/borb_triplet_shapes_meta.json",
+            "test_specs/high/mindset_global_change_linedrawings_original_meta.json",
+            "test_specs/high/mindset_global_change_silhouettes_original_meta.json",
+            "test_specs/high/mindset_linedrawings_meta.json",
+            "test_specs/high/mindset_silhouettes_meta.json",
+            "test_specs/high/mindset_viewpoint_invariance_meta.json"
+        ]
+    }
+]

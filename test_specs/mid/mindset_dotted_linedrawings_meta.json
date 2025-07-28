@@ -1,0 +1,190 @@
+{
+    "stage": "mid",
+    "process": "straightforward_visual_recognition",
+    "task": "mindset_dotted_linedrawings",
+    "task_type": "naming",
+    "num_stim": "one",
+    "prompt": "Here's a task. Could you please name the item in this image? Please provide your answer in {}.",
+    "trials": [
+        {
+            "trial": "trial_001",
+            "images": {"target":["datasets/mid/mindset_dotted_linedrawings/dl_African_crocodile_African_crocodile.png"]},
+            "answer_key": "crocodile"
+        },
+        {
+            "trial": "trial_002",
+            "images": {"target":["datasets/mid/mindset_dotted_linedrawings/dl_airship_airship.png"]},
+            "answer_key": "airship"
+        },
+        {
+            "trial": "trial_003",
+            "images": {"target":["datasets/mid/mindset_dotted_linedrawings/dl_armadillo_armadillo.png"]},
+            "answer_key": "armadillo"
+        },
+        {
+            "trial": "trial_004",
+            "images": {"target":["datasets/mid/mindset_dotted_linedrawings/dl_banana_banana.png"]},
+            "answer_key": "banana"
+        },
+        {
+            "trial": "trial_005",
+            "images": {"target":["datasets/mid/mindset_dotted_linedrawings/dl_beer_bottle_beer_bottle.png"]},
+            "answer_key": "beer bottle"
+        },
+        {
+            "trial": "trial_006",
+            "images": {"target":["datasets/mid/mindset_dotted_linedrawings/dl_bow_tie_bow_tie.png"]},
+            "answer_key": "bow tie"
+        },
+        {
+            "trial": "trial_007",
+            "images": {"target":["datasets/mid/mindset_dotted_linedrawings/dl_bullfrog_bullfrog.png"]},
+            "answer_key": "bullfrog"
+        },
+        {
+            "trial": "trial_008",
+            "images": {"target":["datasets/mid/mindset_dotted_linedrawings/dl_cello_cello.png"]},
+            "answer_key": "cello"
+        },
+        {
+            "trial": "trial_009",
+            "images": {"target":["datasets/mid/mindset_dotted_linedrawings/dl_coffee_mug_coffee_mug.png"]},
+            "answer_key": "coffee mug"
+        },
+        {
+            "trial": "trial_010",
+            "images": {"target":["datasets/mid/mindset_dotted_linedrawings/dl_dragonfly_dragonfly.png"]},
+            "answer_key": "dragonfly"
+        },
+        {
+            "trial": "trial_011",
+            "images": {"target":["datasets/mid/mindset_dotted_linedrawings/dl_hammer_hammer.png"]},
+            "answer_key": "hammer"
+        },
+        {
+            "trial": "trial_012",
+            "images": {"target":["datasets/mid/mindset_dotted_linedrawings/dl_hare_hare.png"]},
+            "answer_key": "hare"
+        },
+        {
+            "trial": "trial_013",
+            "images": {"target":["datasets/mid/mindset_dotted_linedrawings/dl_ibex_ibex.png"]},
+            "answer_key": "ibex"
+        },
+        {
+            "trial": "trial_014",
+            "images": {"target":["datasets/mid/mindset_dotted_linedrawings/dl_ice_bear_ice_bear.png"]},
+            "answer_key": "ice bear"
+        },
+        {
+            "trial": "trial_015",
+            "images": {"target":["datasets/mid/mindset_dotted_linedrawings/dl_jigsaw_puzzle_jigsaw_puzzle.png"]},
+            "answer_key": "jigsaw puzzle"
+        },
+        {
+            "trial": "trial_016",
+            "images": {"target":["datasets/mid/mindset_dotted_linedrawings/dl_king_penguin_king_penguin.png"]},
+            "answer_key": "king penguin"
+        },
+        {
+            "trial": "trial_017",
+            "images": {"target":["datasets/mid/mindset_dotted_linedrawings/dl_lawn_mower_lawn_mower.png"]},
+            "answer_key": "lawn mower"
+        },
+        {
+            "trial": "trial_018",
+            "images": {"target":["datasets/mid/mindset_dotted_linedrawings/dl_lion_lion.png"]},
+            "answer_key": "lion"
+        },
+        {
+            "trial": "trial_019",
+            "images": {"target":["datasets/mid/mindset_dotted_linedrawings/dl_llama_llama.png"]},
+            "answer_key": "llama"
+        },
+        {
+            "trial": "trial_020",
+            "images": {"target":["datasets/mid/mindset_dotted_linedrawings/dl_lynx_lynx.png"]},
+            "answer_key": "lynx"
+        },
+        {
+            "trial": "trial_021",
+            "images": {"target":["datasets/mid/mindset_dotted_linedrawings/dl_paintbrush_paintbrush.png"]},
+            "answer_key": "paintbrush"
+        },
+        {
+            "trial": "trial_022",
+            "images": {"target":["datasets/mid/mindset_dotted_linedrawings/dl_peacock_peacock.png"]},
+            "answer_key": "peacock"
+        },
+        {
+            "trial": "trial_023",
+            "images": {"target":["datasets/mid/mindset_dotted_linedrawings/dl_pretzel_pretzel.png"]},
+            "answer_key": "pretzel"
+        },
+        {
+            "trial": "trial_024",
+            "images": {"target":["datasets/mid/mindset_dotted_linedrawings/dl_revolver_revolver.png"]},
+            "answer_key": "revolver"
+        },
+        {
+            "trial": "trial_025",
+            "images": {"target":["datasets/mid/mindset_dotted_linedrawings/dl_running_shoe_running_shoe.png"]},
+            "answer_key": "running shoe"
+        },
+        {
+            "trial": "trial_026",
+            "images": {"target":["datasets/mid/mindset_dotted_linedrawings/dl_sewing_machine_sewing_machine.png"]},
+            "answer_key": "sewing machine"
+        },
+        {
+            "trial": "trial_027",
+            "images": {"target":["datasets/mid/mindset_dotted_linedrawings/dl_snail_snail.png"]},
+            "answer_key": "snail"
+        },
+        {
+            "trial": "trial_028",
+            "images": {"target":["datasets/mid/mindset_dotted_linedrawings/dl_space_shuttle_space_shuttle.png"]},
+            "answer_key": "space shuttle"
+        },
+        {
+            "trial": "trial_029",
+            "images": {"target":["datasets/mid/mindset_dotted_linedrawings/dl_standard_poodle_standard_poodle.png"]},
+            "answer_key": "poodle"
+        },
+        {
+            "trial": "trial_030",
+            "images": {"target":["datasets/mid/mindset_dotted_linedrawings/dl_sulphur_butterfly_sulphur_butterfly.png"]},
+            "answer_key": "butterfly"
+        },
+        {
+            "trial": "trial_031",
+            "images": {"target":["datasets/mid/mindset_dotted_linedrawings/dl_teapot_teapot.png"]},
+            "answer_key": "teapot"
+        },
+        {
+            "trial": "trial_032",
+            "images": {"target":["datasets/mid/mindset_dotted_linedrawings/dl_tiger_tiger.png"]},
+            "answer_key": "tiger"
+        },
+        {
+            "trial": "trial_033",
+            "images": {"target":["datasets/mid/mindset_dotted_linedrawings/dl_toucan_toucan.png"]},
+            "answer_key": "toucan"
+        },
+        {
+            "trial": "trial_034",
+            "images": {"target":["datasets/mid/mindset_dotted_linedrawings/dl_trombone_trombone.png"]},
+            "answer_key": "trombone"
+        },
+        {
+            "trial": "trial_035",
+            "images": {"target":["datasets/mid/mindset_dotted_linedrawings/dl_white_wolf_white_wolf.png"]},
+            "answer_key": "white wolf"
+        },
+        {
+            "trial": "trial_036",
+            "images": {"target":["datasets/mid/mindset_dotted_linedrawings/dl_zebra_zebra.png"]},
+            "answer_key": "zebra"
+        }
+    ]
+}

@@ -1,0 +1,208 @@
+{
+    "stage": "mid",
+    "process": "property_biases",
+    "task": "mindset_NAP_vs_MP_3D_geons",
+    "task_type": "match_to_sample",
+    "num_stim": "three",
+    "prompt": "Here's a task. I will present you with three pictures. The first one is the target/reference image. The following two are the options. Your task is to choose which of the options most closely resembles the target/reference image. Please provide one final answer even if you are unsure. Please provide your answer in {}. For example, if you choose option 1, please provide your answer as {1}.",
+    "trials": [
+        {
+            "trial": "trial_000",
+            "images": {
+                "target": ["datasets/mid/mindset_NAP_vs_MP_3D_geons/trial_000/3D_1.png"],
+                "option_1": ["datasets/mid/mindset_NAP_vs_MP_3D_geons/trial_000/3D_a1_1.png"],
+                "option_2": ["datasets/mid/mindset_NAP_vs_MP_3D_geons/trial_000/3D_b1_2.png"]
+            },
+            "answer_key": "1"
+        },
+        {
+            "trial": "trial_001",
+            "images": {
+                "target": ["datasets/mid/mindset_NAP_vs_MP_3D_geons/trial_001/3D_2.png"],
+                "option_1": ["datasets/mid/mindset_NAP_vs_MP_3D_geons/trial_001/3D_a2_2.png"],
+                "option_2": ["datasets/mid/mindset_NAP_vs_MP_3D_geons/trial_001/3D_b2_1.png"]
+            },
+            "answer_key": "2"
+        },
+        {
+            "trial": "trial_002",
+            "images": {
+                "target": ["datasets/mid/mindset_NAP_vs_MP_3D_geons/trial_002/3D_5.png"],
+                "option_1": ["datasets/mid/mindset_NAP_vs_MP_3D_geons/trial_002/3D_a5_2.png"],
+                "option_2": ["datasets/mid/mindset_NAP_vs_MP_3D_geons/trial_002/3D_b5_1.png"]
+            },
+            "answer_key": "2"
+        },
+        {
+            "trial": "trial_003",
+            "images": {
+                "target": ["datasets/mid/mindset_NAP_vs_MP_3D_geons/trial_003/3D_7.png"],
+                "option_1": ["datasets/mid/mindset_NAP_vs_MP_3D_geons/trial_003/3D_a7_1.png"],
+                "option_2": ["datasets/mid/mindset_NAP_vs_MP_3D_geons/trial_003/3D_b7_2.png"]
+            },
+            "answer_key": "1"
+        },
+        {
+            "trial": "trial_004",
+            "images": {
+                "target": ["datasets/mid/mindset_NAP_vs_MP_3D_geons/trial_004/3D_8.png"],
+                "option_1": ["datasets/mid/mindset_NAP_vs_MP_3D_geons/trial_004/3D_a8_2.png"],
+                "option_2": ["datasets/mid/mindset_NAP_vs_MP_3D_geons/trial_004/3D_b8_1.png"]
+            },
+            "answer_key": "2"
+        },
+        {
+            "trial": "trial_005",
+            "images": {
+                "target": ["datasets/mid/mindset_NAP_vs_MP_3D_geons/trial_005/3D_9.png"],
+                "option_1": ["datasets/mid/mindset_NAP_vs_MP_3D_geons/trial_005/3D_a9_1.png"],
+                "option_2": ["datasets/mid/mindset_NAP_vs_MP_3D_geons/trial_005/3D_b9_2.png"]
+            },
+            "answer_key": "1"
+        },
+        {
+            "trial": "trial_006",
+            "images": {
+                "target": ["datasets/mid/mindset_NAP_vs_MP_3D_geons/trial_006/3D_10.png"],
+                "option_1": ["datasets/mid/mindset_NAP_vs_MP_3D_geons/trial_006/3D_a10_2.png"],
+                "option_2": ["datasets/mid/mindset_NAP_vs_MP_3D_geons/trial_006/3D_b10_1.png"]
+            },
+            "answer_key": "2"
+        },
+        {
+            "trial": "trial_007",
+            "images": {
+                "target": ["datasets/mid/mindset_NAP_vs_MP_3D_geons/trial_007/3D_12.png"],
+                "option_1": ["datasets/mid/mindset_NAP_vs_MP_3D_geons/trial_007/3D_a12_1.png"],
+                "option_2": ["datasets/mid/mindset_NAP_vs_MP_3D_geons/trial_007/3D_b12_2.png"]
+            },
+            "answer_key": "1"
+        },
+        {
+            "trial": "trial_008",
+            "images": {
+                "target": ["datasets/mid/mindset_NAP_vs_MP_3D_geons/trial_008/3D_16.png"],
+                "option_1": ["datasets/mid/mindset_NAP_vs_MP_3D_geons/trial_008/3D_a16_2.png"],
+                "option_2": ["datasets/mid/mindset_NAP_vs_MP_3D_geons/trial_008/3D_b16_1.png"]
+            },
+            "answer_key": "2"
+        },
+        {
+            "trial": "trial_009",
+            "images": {
+                "target": ["datasets/mid/mindset_NAP_vs_MP_3D_geons/trial_009/3D_17.png"],
+                "option_1": ["datasets/mid/mindset_NAP_vs_MP_3D_geons/trial_009/3D_a17_1.png"],
+                "option_2": ["datasets/mid/mindset_NAP_vs_MP_3D_geons/trial_009/3D_b17_2.png"]
+            },
+            "answer_key": "1"
+        },
+        {
+            "trial": "trial_010",
+            "images": {
+                "target": ["datasets/mid/mindset_NAP_vs_MP_3D_geons/trial_010/3D_18.png"],
+                "option_1": ["datasets/mid/mindset_NAP_vs_MP_3D_geons/trial_010/3D_a18_2.png"],
+                "option_2": ["datasets/mid/mindset_NAP_vs_MP_3D_geons/trial_010/3D_b18_1.png"]
+            },
+            "answer_key": "2"
+        },
+        {
+            "trial": "trial_011",
+            "images": {
+                "target": ["datasets/mid/mindset_NAP_vs_MP_3D_geons/trial_011/3D_21.png"],
+                "option_1": ["datasets/mid/mindset_NAP_vs_MP_3D_geons/trial_011/3D_a21_1.png"],
+                "option_2": ["datasets/mid/mindset_NAP_vs_MP_3D_geons/trial_011/3D_b21_2.png"]
+            },
+            "answer_key": "1"
+        },
+        {
+            "trial": "trial_012",
+            "images": {
+                "target": ["datasets/mid/mindset_NAP_vs_MP_3D_geons/trial_012/3D_22.png"],
+                "option_1": ["datasets/mid/mindset_NAP_vs_MP_3D_geons/trial_012/3D_a22_2.png"],
+                "option_2": ["datasets/mid/mindset_NAP_vs_MP_3D_geons/trial_012/3D_b22_1.png"]
+            },
+            "answer_key": "2"
+        },
+        {
+            "trial": "trial_013",
+            "images": {
+                "target": ["datasets/mid/mindset_NAP_vs_MP_3D_geons/trial_013/3D_24.png"],
+                "option_1": ["datasets/mid/mindset_NAP_vs_MP_3D_geons/trial_013/3D_a24_1.png"],
+                "option_2": ["datasets/mid/mindset_NAP_vs_MP_3D_geons/trial_013/3D_b24_2.png"]
+            },
+            "answer_key": "1"
+        },
+        {
+            "trial": "trial_014",
+            "images": {
+                "target": ["datasets/mid/mindset_NAP_vs_MP_3D_geons/trial_014/3D_25.png"],
+                "option_1": ["datasets/mid/mindset_NAP_vs_MP_3D_geons/trial_014/3D_a25_2.png"],
+                "option_2": ["datasets/mid/mindset_NAP_vs_MP_3D_geons/trial_014/3D_b25_1.png"]
+            },
+            "answer_key": "2"
+        },
+        {
+            "trial": "trial_015",
+            "images": {
+                "target": ["datasets/mid/mindset_NAP_vs_MP_3D_geons/trial_015/3D_27.png"],
+                "option_1": ["datasets/mid/mindset_NAP_vs_MP_3D_geons/trial_015/3D_a27_1.png"],
+                "option_2": ["datasets/mid/mindset_NAP_vs_MP_3D_geons/trial_015/3D_b27_2.png"]
+            },
+            "answer_key": "1"
+        },
+        {
+            "trial": "trial_016",
+            "images": {
+                "target": ["datasets/mid/mindset_NAP_vs_MP_3D_geons/trial_016/3D_28.png"],
+                "option_1": ["datasets/mid/mindset_NAP_vs_MP_3D_geons/trial_016/3D_a28_2.png"],
+                "option_2": ["datasets/mid/mindset_NAP_vs_MP_3D_geons/trial_016/3D_b28_1.png"]
+            },
+            "answer_key": "2"
+        },
+        {
+            "trial": "trial_017",
+            "images": {
+                "target": ["datasets/mid/mindset_NAP_vs_MP_3D_geons/trial_017/3D_30.png"],
+                "option_1": ["datasets/mid/mindset_NAP_vs_MP_3D_geons/trial_017/3D_a30_1.png"],
+                "option_2": ["datasets/mid/mindset_NAP_vs_MP_3D_geons/trial_017/3D_b30_2.png"]
+            },
+            "answer_key": "1"
+        },
+        {
+            "trial": "trial_018",
+            "images": {
+                "target": ["datasets/mid/mindset_NAP_vs_MP_3D_geons/trial_018/3D_31.png"],
+                "option_1": ["datasets/mid/mindset_NAP_vs_MP_3D_geons/trial_018/3D_a31_1.png"],
+                "option_2": ["datasets/mid/mindset_NAP_vs_MP_3D_geons/trial_018/3D_b31_2.png"]
+            },
+            "answer_key": "1"
+        },
+        {
+            "trial": "trial_019",
+            "images": {
+                "target": ["datasets/mid/mindset_NAP_vs_MP_3D_geons/trial_019/3D_32.png"],
+                "option_1": ["datasets/mid/mindset_NAP_vs_MP_3D_geons/trial_019/3D_a32_2.png"],
+                "option_2": ["datasets/mid/mindset_NAP_vs_MP_3D_geons/trial_019/3D_b32_1.png"]
+            },
+            "answer_key": "2"
+        },
+        {
+            "trial": "trial_020",
+            "images": {
+                "target": ["datasets/mid/mindset_NAP_vs_MP_3D_geons/trial_020/3D_33.png"],
+                "option_1": ["datasets/mid/mindset_NAP_vs_MP_3D_geons/trial_020/3D_a33_1.png"],
+                "option_2": ["datasets/mid/mindset_NAP_vs_MP_3D_geons/trial_020/3D_b33_2.png"]
+            },
+            "answer_key": "1"
+        },
+        {
+            "trial": "trial_021",
+            "images": {
+                "target": ["datasets/mid/mindset_NAP_vs_MP_3D_geons/trial_021/3D_34.png"],
+                "option_1": ["datasets/mid/mindset_NAP_vs_MP_3D_geons/trial_021/3D_a34_2.png"],
+                "option_2": ["datasets/mid/mindset_NAP_vs_MP_3D_geons/trial_021/3D_b34_1.png"]
+            },
+            "answer_key": "2"
+        }
+    ]
+}

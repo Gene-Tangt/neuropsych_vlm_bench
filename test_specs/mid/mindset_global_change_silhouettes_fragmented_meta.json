@@ -1,0 +1,190 @@
+{
+    "stage": "mid",
+    "process": "robustness_across_different_configurations",
+    "task": "mindset_global_change_silhouettes_fragmented",
+    "task_type": "naming",
+    "num_stim": "one",
+    "prompt": "Here's a task. Could you please name the item in this image? Please provide your answer in {}.",
+    "trials": [
+        {
+            "trial": "trial_001",
+            "images": {"target":["datasets/mid/mindset_global_change_silhouettes_fragmented/silouettes_fragmented_bear12_c80887dc.png"]},
+            "answer_key": "bear"
+        },
+        {
+            "trial": "trial_002",
+            "images": {"target":["datasets/mid/mindset_global_change_silhouettes_fragmented/silouettes_fragmented_bear1_31a9281d.png"]},
+            "answer_key": "bear"
+        },
+        {
+            "trial": "trial_003",
+            "images": {"target":["datasets/mid/mindset_global_change_silhouettes_fragmented/silouettes_fragmented_bear3_fa9a85cc.png"]},
+            "answer_key": "bear"
+        },
+        {
+            "trial": "trial_004",
+            "images": {"target":["datasets/mid/mindset_global_change_silhouettes_fragmented/silouettes_fragmented_bear6_218d4e01.png"]},
+            "answer_key": "bear"
+        },
+        {
+            "trial": "trial_005",
+            "images": {"target":["datasets/mid/mindset_global_change_silhouettes_fragmented/silouettes_fragmented_bunny21_2c357750.png"]},
+            "answer_key": "bunny"
+        },
+        {
+            "trial": "trial_006",
+            "images": {"target":["datasets/mid/mindset_global_change_silhouettes_fragmented/silouettes_fragmented_bunny29_24514423.png"]},
+            "answer_key": "bunny"
+        },
+        {
+            "trial": "trial_007",
+            "images": {"target":["datasets/mid/mindset_global_change_silhouettes_fragmented/silouettes_fragmented_bunny3_6a48b5b2.png"]},
+            "answer_key": "bunny"
+        },
+        {
+            "trial": "trial_008",
+            "images": {"target":["datasets/mid/mindset_global_change_silhouettes_fragmented/silouettes_fragmented_bunny4_17c0b381.png"]},
+            "answer_key": "bunny"
+        },
+        {
+            "trial": "trial_009",
+            "images": {"target":["datasets/mid/mindset_global_change_silhouettes_fragmented/silouettes_fragmented_cat13_ed8bb879.png"]},
+            "answer_key": "cat"
+        },
+        {
+            "trial": "trial_010",
+            "images": {"target":["datasets/mid/mindset_global_change_silhouettes_fragmented/silouettes_fragmented_cat15_d91c06ad.png"]},
+            "answer_key": "cat"
+        },
+        {
+            "trial": "trial_011",
+            "images": {"target":["datasets/mid/mindset_global_change_silhouettes_fragmented/silouettes_fragmented_cat20_72e559c0.png"]},
+            "answer_key": "cat"
+        },
+        {
+            "trial": "trial_012",
+            "images": {"target":["datasets/mid/mindset_global_change_silhouettes_fragmented/silouettes_fragmented_cat4_50065eff.png"]},
+            "answer_key": "cat"
+        },
+        {
+            "trial": "trial_013",
+            "images": {"target":["datasets/mid/mindset_global_change_silhouettes_fragmented/silouettes_fragmented_elephant11_ced33f49.png"]},
+            "answer_key": "elephant"
+        },
+        {
+            "trial": "trial_014",
+            "images": {"target":["datasets/mid/mindset_global_change_silhouettes_fragmented/silouettes_fragmented_elephant29_1660fcd1.png"]},
+            "answer_key": "elephant"
+        },
+        {
+            "trial": "trial_015",
+            "images": {"target":["datasets/mid/mindset_global_change_silhouettes_fragmented/silouettes_fragmented_elephant3_1d3a91e0.png"]},
+            "answer_key": "elephant"
+        },
+        {
+            "trial": "trial_016",
+            "images": {"target":["datasets/mid/mindset_global_change_silhouettes_fragmented/silouettes_fragmented_elephant5_7b02aecb.png"]},
+            "answer_key": "elephant"
+        },
+        {
+            "trial": "trial_017",
+            "images": {"target":["datasets/mid/mindset_global_change_silhouettes_fragmented/silouettes_fragmented_frog10_462440cd.png"]},
+            "answer_key": "frog"
+        },
+        {
+            "trial": "trial_018",
+            "images": {"target":["datasets/mid/mindset_global_change_silhouettes_fragmented/silouettes_fragmented_frog18_c5e4cb2c.png"]},
+            "answer_key": "frog"
+        },
+        {
+            "trial": "trial_019",
+            "images": {"target":["datasets/mid/mindset_global_change_silhouettes_fragmented/silouettes_fragmented_frog1_7e4f4037.png"]},
+            "answer_key": "frog"
+        },
+        {
+            "trial": "trial_020",
+            "images": {"target":["datasets/mid/mindset_global_change_silhouettes_fragmented/silouettes_fragmented_frog34_88490469.png"]},
+            "answer_key": "frog"
+        },
+        {
+            "trial": "trial_021",
+            "images": {"target":["datasets/mid/mindset_global_change_silhouettes_fragmented/silouettes_fragmented_lizard10_810ab407.png"]},
+            "answer_key": "lizard"
+        },
+        {
+            "trial": "trial_022",
+            "images": {"target":["datasets/mid/mindset_global_change_silhouettes_fragmented/silouettes_fragmented_lizard12_6eb54492.png"]},
+            "answer_key": "lizard"
+        },
+        {
+            "trial": "trial_023",
+            "images": {"target":["datasets/mid/mindset_global_change_silhouettes_fragmented/silouettes_fragmented_lizard13_dc22533f.png"]},
+            "answer_key": "lizard"
+        },
+        {
+            "trial": "trial_024",
+            "images": {"target":["datasets/mid/mindset_global_change_silhouettes_fragmented/silouettes_fragmented_lizard2_44eb8d26.png"]},
+            "answer_key": "lizard"
+        },
+        {
+            "trial": "trial_025",
+            "images": {"target":["datasets/mid/mindset_global_change_silhouettes_fragmented/silouettes_fragmented_tiger11_8d1b19df.png"]},
+            "answer_key": "tiger"
+        },
+        {
+            "trial": "trial_026",
+            "images": {"target":["datasets/mid/mindset_global_change_silhouettes_fragmented/silouettes_fragmented_tiger13_9d9f9ea1.png"]},
+            "answer_key": "tiger"
+        },
+        {
+            "trial": "trial_027",
+            "images": {"target":["datasets/mid/mindset_global_change_silhouettes_fragmented/silouettes_fragmented_tiger1_8d908cee.png"]},
+            "answer_key": "tiger"
+        },
+        {
+            "trial": "trial_028",
+            "images": {"target":["datasets/mid/mindset_global_change_silhouettes_fragmented/silouettes_fragmented_tiger2_39a8e857.png"]},
+            "answer_key": "tiger"
+        },
+        {
+            "trial": "trial_029",
+            "images": {"target":["datasets/mid/mindset_global_change_silhouettes_fragmented/silouettes_fragmented_turtle14_e712e543.png"]},
+            "answer_key": "turtle"
+        },
+        {
+            "trial": "trial_030",
+            "images": {"target":["datasets/mid/mindset_global_change_silhouettes_fragmented/silouettes_fragmented_turtle1_21e17471.png"]},
+            "answer_key": "turtle"
+        },
+        {
+            "trial": "trial_031",
+            "images": {"target":["datasets/mid/mindset_global_change_silhouettes_fragmented/silouettes_fragmented_turtle20_efc1b53f.png"]},
+            "answer_key": "turtle"
+        },
+        {
+            "trial": "trial_032",
+            "images": {"target":["datasets/mid/mindset_global_change_silhouettes_fragmented/silouettes_fragmented_turtle2_dfa365bf.png"]},
+            "answer_key": "turtle"
+        },
+        {
+            "trial": "trial_033",
+            "images": {"target":["datasets/mid/mindset_global_change_silhouettes_fragmented/silouettes_fragmented_wolf1_09c8decb.png"]},
+            "answer_key": "wolf"
+        },
+        {
+            "trial": "trial_034",
+            "images": {"target":["datasets/mid/mindset_global_change_silhouettes_fragmented/silouettes_fragmented_wolf23_e137a177.png"]},
+            "answer_key": "wolf"
+        },
+        {
+            "trial": "trial_035",
+            "images": {"target":["datasets/mid/mindset_global_change_silhouettes_fragmented/silouettes_fragmented_wolf2_7b91bc07.png"]},
+            "answer_key": "wolf"
+        },
+        {
+            "trial": "trial_036",
+            "images": {"target":["datasets/mid/mindset_global_change_silhouettes_fragmented/silouettes_fragmented_wolf32_b3e01d8a.png"]},
+            "answer_key": "wolf"
+        }
+    ]
+}

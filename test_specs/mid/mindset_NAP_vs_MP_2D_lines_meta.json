@@ -1,0 +1,244 @@
+{
+    "stage": "mid",
+    "process": "property_biases",
+    "task": "mindset_NAP_vs_MP_2D_lines",
+    "task_type": "match_to_sample",
+    "num_stim": "three",
+    "prompt": "Here's a task. I will present you with three pictures. The first one is the target/reference image. The following two are the options. Your task is to choose which of the options most closely resembles the target/reference image. Please provide one final answer even if you are unsure. Please provide your answer in {}. For example, if you choose option 1, please provide your answer as {1}.",
+    "trials": [
+        {
+            "trial": "trial_000",
+            "images": {
+                "target": ["datasets/mid/mindset_NAP_vs_MP_2D_lines/trial_000/2D_52.png"],
+                "option_1": ["datasets/mid/mindset_NAP_vs_MP_2D_lines/trial_000/2D_a0.png"],
+                "option_2": ["datasets/mid/mindset_NAP_vs_MP_2D_lines/trial_000/2D_b26.png"]
+            },
+            "answer_key": "1"
+        },
+        {
+            "trial": "trial_001",
+            "images": {
+                "target": ["datasets/mid/mindset_NAP_vs_MP_2D_lines/trial_001/2D_53.png"],
+                "option_1": ["datasets/mid/mindset_NAP_vs_MP_2D_lines/trial_001/2D_a1.png"],
+                "option_2": ["datasets/mid/mindset_NAP_vs_MP_2D_lines/trial_001/2D_b27.png"]
+            },
+            "answer_key": "1"
+        },
+        {
+            "trial": "trial_002",
+            "images": {
+                "target": ["datasets/mid/mindset_NAP_vs_MP_2D_lines/trial_002/2D_54.png"],
+                "option_1": ["datasets/mid/mindset_NAP_vs_MP_2D_lines/trial_002/2D_a2.png"],
+                "option_2": ["datasets/mid/mindset_NAP_vs_MP_2D_lines/trial_002/2D_b28.png"]
+            },
+            "answer_key": "1"
+        },
+        {
+            "trial": "trial_003",
+            "images": {
+                "target": ["datasets/mid/mindset_NAP_vs_MP_2D_lines/trial_003/2D_55.png"],
+                "option_1": ["datasets/mid/mindset_NAP_vs_MP_2D_lines/trial_003/2D_a29.png"],
+                "option_2": ["datasets/mid/mindset_NAP_vs_MP_2D_lines/trial_003/2D_b3.png"]
+            },
+            "answer_key": "2"
+        },
+        {
+            "trial": "trial_004",
+            "images": {
+                "target": ["datasets/mid/mindset_NAP_vs_MP_2D_lines/trial_004/2D_56.png"],
+                "option_1": ["datasets/mid/mindset_NAP_vs_MP_2D_lines/trial_004/2D_a4.png"],
+                "option_2": ["datasets/mid/mindset_NAP_vs_MP_2D_lines/trial_004/2D_b30.png"]
+            },
+            "answer_key": "1"
+        },
+        {
+            "trial": "trial_005",
+            "images": {
+                "target": ["datasets/mid/mindset_NAP_vs_MP_2D_lines/trial_005/2D_57.png"],
+                "option_1": ["datasets/mid/mindset_NAP_vs_MP_2D_lines/trial_005/2D_a5.png"],
+                "option_2": ["datasets/mid/mindset_NAP_vs_MP_2D_lines/trial_005/2D_b31.png"]
+            },
+            "answer_key": "1"
+        },
+        {
+            "trial": "trial_006",
+            "images": {
+                "target": ["datasets/mid/mindset_NAP_vs_MP_2D_lines/trial_006/2D_58.png"],
+                "option_1": ["datasets/mid/mindset_NAP_vs_MP_2D_lines/trial_006/2D_a32.png"],
+                "option_2": ["datasets/mid/mindset_NAP_vs_MP_2D_lines/trial_006/2D_b6.png"]
+            },
+            "answer_key": "2"
+        },
+        {
+            "trial": "trial_007",
+            "images": {
+                "target": ["datasets/mid/mindset_NAP_vs_MP_2D_lines/trial_007/2D_59.png"],
+                "option_1": ["datasets/mid/mindset_NAP_vs_MP_2D_lines/trial_007/2D_a33.png"],
+                "option_2": ["datasets/mid/mindset_NAP_vs_MP_2D_lines/trial_007/2D_b7.png"]
+            },
+            "answer_key": "2"
+        },
+        {
+            "trial": "trial_008",
+            "images": {
+                "target": ["datasets/mid/mindset_NAP_vs_MP_2D_lines/trial_008/2D_60.png"],
+                "option_1": ["datasets/mid/mindset_NAP_vs_MP_2D_lines/trial_008/2D_a34.png"],
+                "option_2": ["datasets/mid/mindset_NAP_vs_MP_2D_lines/trial_008/2D_b8.png"]
+            },
+            "answer_key": "2"
+        },
+        {
+            "trial": "trial_009",
+            "images": {
+                "target": ["datasets/mid/mindset_NAP_vs_MP_2D_lines/trial_009/2D_61.png"],
+                "option_1": ["datasets/mid/mindset_NAP_vs_MP_2D_lines/trial_009/2D_a35.png"],
+                "option_2": ["datasets/mid/mindset_NAP_vs_MP_2D_lines/trial_009/2D_b9.png"]
+            },
+            "answer_key": "2"
+        },
+        {
+            "trial": "trial_010",
+            "images": {
+                "target": ["datasets/mid/mindset_NAP_vs_MP_2D_lines/trial_010/2D_62.png"],
+                "option_1": ["datasets/mid/mindset_NAP_vs_MP_2D_lines/trial_010/2D_a10.png"],
+                "option_2": ["datasets/mid/mindset_NAP_vs_MP_2D_lines/trial_010/2D_b36.png"]
+            },
+            "answer_key": "1"
+        },
+        {
+            "trial": "trial_011",
+            "images": {
+                "target": ["datasets/mid/mindset_NAP_vs_MP_2D_lines/trial_011/2D_63.png"],
+                "option_1": ["datasets/mid/mindset_NAP_vs_MP_2D_lines/trial_011/2D_a11.png"],
+                "option_2": ["datasets/mid/mindset_NAP_vs_MP_2D_lines/trial_011/2D_b37.png"]
+            },
+            "answer_key": "1"
+        },
+        {
+            "trial": "trial_012",
+            "images": {
+                "target": ["datasets/mid/mindset_NAP_vs_MP_2D_lines/trial_012/2D_64.png"],
+                "option_1": ["datasets/mid/mindset_NAP_vs_MP_2D_lines/trial_012/2D_a38.png"],
+                "option_2": ["datasets/mid/mindset_NAP_vs_MP_2D_lines/trial_012/2D_b12.png"]
+            },
+            "answer_key": "2"
+        },
+        {
+            "trial": "trial_013",
+            "images": {
+                "target": ["datasets/mid/mindset_NAP_vs_MP_2D_lines/trial_013/2D_65.png"],
+                "option_1": ["datasets/mid/mindset_NAP_vs_MP_2D_lines/trial_013/2D_a13.png"],
+                "option_2": ["datasets/mid/mindset_NAP_vs_MP_2D_lines/trial_013/2D_b39.png"]
+            },
+            "answer_key": "1"
+        },
+        {
+            "trial": "trial_014",
+            "images": {
+                "target": ["datasets/mid/mindset_NAP_vs_MP_2D_lines/trial_014/2D_66.png"],
+                "option_1": ["datasets/mid/mindset_NAP_vs_MP_2D_lines/trial_014/2D_a40.png"],
+                "option_2": ["datasets/mid/mindset_NAP_vs_MP_2D_lines/trial_014/2D_b14.png"]
+            },
+            "answer_key": "2"
+        },
+        {
+            "trial": "trial_015",
+            "images": {
+                "target": ["datasets/mid/mindset_NAP_vs_MP_2D_lines/trial_015/2D_67.png"],
+                "option_1": ["datasets/mid/mindset_NAP_vs_MP_2D_lines/trial_015/2D_a15.png"],
+                "option_2": ["datasets/mid/mindset_NAP_vs_MP_2D_lines/trial_015/2D_b41.png"]
+            },
+            "answer_key": "1"
+        },
+        {
+            "trial": "trial_016",
+            "images": {
+                "target": ["datasets/mid/mindset_NAP_vs_MP_2D_lines/trial_016/2D_68.png"],
+                "option_1": ["datasets/mid/mindset_NAP_vs_MP_2D_lines/trial_016/2D_a16.png"],
+                "option_2": ["datasets/mid/mindset_NAP_vs_MP_2D_lines/trial_016/2D_b42.png"]
+            },
+            "answer_key": "1"
+        },
+        {
+            "trial": "trial_017",
+            "images": {
+                "target": ["datasets/mid/mindset_NAP_vs_MP_2D_lines/trial_017/2D_69.png"],
+                "option_1": ["datasets/mid/mindset_NAP_vs_MP_2D_lines/trial_017/2D_a43.png"],
+                "option_2": ["datasets/mid/mindset_NAP_vs_MP_2D_lines/trial_017/2D_b17.png"]
+            },
+            "answer_key": "2"
+        },
+        {
+            "trial": "trial_018",
+            "images": {
+                "target": ["datasets/mid/mindset_NAP_vs_MP_2D_lines/trial_018/2D_70.png"],
+                "option_1": ["datasets/mid/mindset_NAP_vs_MP_2D_lines/trial_018/2D_a18.png"],
+                "option_2": ["datasets/mid/mindset_NAP_vs_MP_2D_lines/trial_018/2D_b44.png"]
+            },
+            "answer_key": "1"
+        },
+        {
+            "trial": "trial_019",
+            "images": {
+                "target": ["datasets/mid/mindset_NAP_vs_MP_2D_lines/trial_019/2D_71.png"],
+                "option_1": ["datasets/mid/mindset_NAP_vs_MP_2D_lines/trial_019/2D_a19.png"],
+                "option_2": ["datasets/mid/mindset_NAP_vs_MP_2D_lines/trial_019/2D_b45.png"]
+            },
+            "answer_key": "1"
+        },
+        {
+            "trial": "trial_020",
+            "images": {
+                "target": ["datasets/mid/mindset_NAP_vs_MP_2D_lines/trial_020/2D_72.png"],
+                "option_1": ["datasets/mid/mindset_NAP_vs_MP_2D_lines/trial_020/2D_a20.png"],
+                "option_2": ["datasets/mid/mindset_NAP_vs_MP_2D_lines/trial_020/2D_b46.png"]
+            },
+            "answer_key": "1"
+        },
+        {
+            "trial": "trial_021",
+            "images": {
+                "target": ["datasets/mid/mindset_NAP_vs_MP_2D_lines/trial_021/2D_73.png"],
+                "option_1": ["datasets/mid/mindset_NAP_vs_MP_2D_lines/trial_021/2D_a47.png"],
+                "option_2": ["datasets/mid/mindset_NAP_vs_MP_2D_lines/trial_021/2D_b21.png"]
+            },
+            "answer_key": "2"
+        },
+        {
+            "trial": "trial_022",
+            "images": {
+                "target": ["datasets/mid/mindset_NAP_vs_MP_2D_lines/trial_022/2D_74.png"],
+                "option_1": ["datasets/mid/mindset_NAP_vs_MP_2D_lines/trial_022/2D_a48.png"],
+                "option_2": ["datasets/mid/mindset_NAP_vs_MP_2D_lines/trial_022/2D_b22.png"]
+            },
+            "answer_key": "2"
+        },
+        {
+            "trial": "trial_023",
+            "images": {
+                "target": ["datasets/mid/mindset_NAP_vs_MP_2D_lines/trial_023/2D_75.png"],
+                "option_1": ["datasets/mid/mindset_NAP_vs_MP_2D_lines/trial_023/2D_a23.png"],
+                "option_2": ["datasets/mid/mindset_NAP_vs_MP_2D_lines/trial_023/2D_b49.png"]
+            },
+            "answer_key": "1"
+        },
+        {
+            "trial": "trial_024",
+            "images": {
+                "target": ["datasets/mid/mindset_NAP_vs_MP_2D_lines/trial_024/2D_76.png"],
+                "option_1": ["datasets/mid/mindset_NAP_vs_MP_2D_lines/trial_024/2D_a50.png"],
+                "option_2": ["datasets/mid/mindset_NAP_vs_MP_2D_lines/trial_024/2D_b24.png"]
+            },
+            "answer_key": "2"
+        },
+        {
+            "trial": "trial_025",
+            "images": {
+                "target": ["datasets/mid/mindset_NAP_vs_MP_2D_lines/trial_025/2D_77.png"],
+                "option_1": ["datasets/mid/mindset_NAP_vs_MP_2D_lines/trial_025/2D_a25.png"],
+                "option_2": ["datasets/mid/mindset_NAP_vs_MP_2D_lines/trial_025/2D_b51.png"]
+            },
+            "answer_key": "1"
+        }
+    ]
+}

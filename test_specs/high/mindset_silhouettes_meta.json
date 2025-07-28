@@ -1,0 +1,170 @@
+{
+    "stage": "high",
+    "process": "straightforward_visual_recognition",
+    "task": "mindset_silhouettes",
+    "task_type": "naming",
+    "num_stim": "one",
+    "prompt": "Here's a task. Could you please name the item in this image? Please provide your answer in {}.",
+    "trials": [
+        {
+            "trial": "trial_001",
+            "images": {"target":["datasets/high/mindset_silhouettes/silhouettes_African_crocodile_African_crocodile_a242ed69.png"]},
+            "answer_key": "crocodile"
+        },
+        {
+            "trial": "trial_002",
+            "images": {"target":["datasets/high/mindset_silhouettes/silhouettes_airship_airship_89098b6f.png"]},
+            "answer_key": "airship"
+        },
+        {
+            "trial": "trial_003",
+            "images": {"target":["datasets/high/mindset_silhouettes/silhouettes_armadillo_armadillo_ee775058.png"]},
+            "answer_key": "armadillo"
+        },
+        {
+            "trial": "trial_004",
+            "images": {"target":["datasets/high/mindset_silhouettes/silhouettes_banana_banana_a77c0eda.png"]},
+            "answer_key": "banana"
+        },
+        {
+            "trial": "trial_005",
+            "images": {"target":["datasets/high/mindset_silhouettes/silhouettes_beer_bottle_beer_bottle_9288d86f.png"]},
+            "answer_key": "beer bottle"
+        },
+        {
+            "trial": "trial_006",
+            "images": {"target":["datasets/high/mindset_silhouettes/silhouettes_bow_tie_bow_tie_4ed1cefd.png"]},
+            "answer_key": "bow tie"
+        },
+        {
+            "trial": "trial_007",
+            "images": {"target":["datasets/high/mindset_silhouettes/silhouettes_bullfrog_bullfrog_74c645cd.png"]},
+            "answer_key": "bullfrog"
+        },
+        {
+            "trial": "trial_008",
+            "images": {"target":["datasets/high/mindset_silhouettes/silhouettes_cello_cello_a8b05725.png"]},
+            "answer_key": "cello"
+        },
+        {
+            "trial": "trial_009",
+            "images": {"target":["datasets/high/mindset_silhouettes/silhouettes_coffee_mug_coffee_mug_9ee877b3.png"]},
+            "answer_key": "coffee mug"
+        },
+        {
+            "trial": "trial_010",
+            "images": {"target":["datasets/high/mindset_silhouettes/silhouettes_dragonfly_dragonfly_60db2081.png"]},
+            "answer_key": "dragonfly"
+        },
+        {
+            "trial": "trial_011",
+            "images": {"target":["datasets/high/mindset_silhouettes/silhouettes_hare_hare_7bae4ec8.png"]},
+            "answer_key": "hare"
+        },
+        {
+            "trial": "trial_012",
+            "images": {"target":["datasets/high/mindset_silhouettes/silhouettes_ibex_ibex_e34612ec.png"]},
+            "answer_key": "ibex"
+        },
+        {
+            "trial": "trial_013",
+            "images": {"target":["datasets/high/mindset_silhouettes/silhouettes_ice_bear_ice_bear_53b45cd4.png"]},
+            "answer_key": "ice bear"
+        },
+        {
+            "trial": "trial_014",
+            "images": {"target":["datasets/high/mindset_silhouettes/silhouettes_jigsaw_puzzle_jigsaw_puzzle_78ccbbf1.png"]},
+            "answer_key": "jigsaw puzzle"
+        },
+        {
+            "trial": "trial_015",
+            "images": {"target":["datasets/high/mindset_silhouettes/silhouettes_lawn_mower_lawn_mower_68cba428.png"]},
+            "answer_key": "lawn mower"
+        },
+        {
+            "trial": "trial_016",
+            "images": {"target":["datasets/high/mindset_silhouettes/silhouettes_lion_lion_86a060dd.png"]},
+            "answer_key": "lion"
+        },
+        {
+            "trial": "trial_017",
+            "images": {"target":["datasets/high/mindset_silhouettes/silhouettes_llama_llama_55a53833.png"]},
+            "answer_key": "llama"
+        },
+        {
+            "trial": "trial_018",
+            "images": {"target":["datasets/high/mindset_silhouettes/silhouettes_lynx_lynx_c88b59ef.png"]},
+            "answer_key": "lynx"
+        },
+        {
+            "trial": "trial_019",
+            "images": {"target":["datasets/high/mindset_silhouettes/silhouettes_paintbrush_paintbrush_faa0f7dc.png"]},
+            "answer_key": "paintbrush"
+        },
+        {
+            "trial": "trial_020",
+            "images": {"target":["datasets/high/mindset_silhouettes/silhouettes_peacock_peacock_ec89cd5f.png"]},
+            "answer_key": "peacock"
+        },
+        {
+            "trial": "trial_021",
+            "images": {"target":["datasets/high/mindset_silhouettes/silhouettes_pretzel_pretzel_44dac949.png"]},
+            "answer_key": "pretzel"
+        },
+        {
+            "trial": "trial_022",
+            "images": {"target":["datasets/high/mindset_silhouettes/silhouettes_revolver_revolver_a32dea45.png"]},
+            "answer_key": "revolver"
+        },
+        {
+            "trial": "trial_023",
+            "images": {"target":["datasets/high/mindset_silhouettes/silhouettes_running_shoe_running_shoe_916503ef.png"]},
+            "answer_key": "running shoe"
+        },
+        {
+            "trial": "trial_024",
+            "images": {"target":["datasets/high/mindset_silhouettes/silhouettes_sewing_machine_sewing_machine_5b3bc503.png"]},
+            "answer_key": "sewing machine"
+        },
+        {
+            "trial": "trial_025",
+            "images": {"target":["datasets/high/mindset_silhouettes/silhouettes_snail_snail_25994733.png"]},
+            "answer_key": "snail"
+        },
+        {
+            "trial": "trial_026",
+            "images": {"target":["datasets/high/mindset_silhouettes/silhouettes_space_shuttle_space_shuttle_c8e9a47a.png"]},
+            "answer_key": "space shuttle"
+        },
+        {
+            "trial": "trial_027",
+            "images": {"target":["datasets/high/mindset_silhouettes/silhouettes_standard_poodle_standard_poodle_feed90e1.png"]},
+            "answer_key": "poodle"
+        },
+        {
+            "trial": "trial_028",
+            "images": {"target":["datasets/high/mindset_silhouettes/silhouettes_sulphur_butterfly_sulphur_butterfly_ac155db8.png"]},
+            "answer_key": "butterfly"
+        },
+        {
+            "trial": "trial_029",
+            "images": {"target":["datasets/high/mindset_silhouettes/silhouettes_tiger_tiger_0478b863.png"]},
+            "answer_key": "tiger"
+        },
+        {
+            "trial": "trial_030",
+            "images": {"target":["datasets/high/mindset_silhouettes/silhouettes_trombone_trombone_700058ee.png"]},
+            "answer_key": "trombone"
+        },
+        {
+            "trial": "trial_031",
+            "images": {"target":["datasets/high/mindset_silhouettes/silhouettes_white_wolf_white_wolf_02e1d9b9.png"]},
+            "answer_key": "white wolf"
+        },
+        {
+            "trial": "trial_032",
+            "images": {"target":["datasets/high/mindset_silhouettes/silhouettes_zebra_zebra_b13ee785.png"]},
+            "answer_key": "zebra"
+        }
+    ]
+}

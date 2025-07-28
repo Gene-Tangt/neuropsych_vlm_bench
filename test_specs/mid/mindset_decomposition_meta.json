@@ -1,0 +1,280 @@
+{
+    "stage": "mid",
+    "process": "property_biases",
+    "task": "mindset_decomposition",
+    "task_type": "match_to_sample",
+    "num_stim": "three",
+    "prompt": "Here's a task. I will present you with three pictures. The first one is the target/reference image. The following two are the options. Your task is to choose which of the options most closely resembles the target/reference image. Please provide one final answer even if you are unsure. Please provide your answer in {}. For example, if you choose option 1, please provide your answer as {1}.",
+    "trials": [
+        {
+            "trial": "trial_000",
+            "images": {
+                "target": ["datasets/mid/mindset_decomposition/trial_000/decom_000.png"],
+                "option_1": ["datasets/mid/mindset_decomposition/trial_000/decom_a000n.png"],
+                "option_2": ["datasets/mid/mindset_decomposition/trial_000/decom_b000un.png"]
+            },
+            "answer_key": "1"
+        },
+        {
+            "trial": "trial_001",
+            "images": {
+                "target": ["datasets/mid/mindset_decomposition/trial_001/decom_001.png"],
+                "option_1": ["datasets/mid/mindset_decomposition/trial_001/decom_a001un.png"],
+                "option_2": ["datasets/mid/mindset_decomposition/trial_001/decom_b001n.png"]
+            },
+            "answer_key": "2"
+        },
+        {
+            "trial": "trial_002",
+            "images": {
+                "target": ["datasets/mid/mindset_decomposition/trial_002/decom_002.png"],
+                "option_1": ["datasets/mid/mindset_decomposition/trial_002/decom_a002n.png"],
+                "option_2": ["datasets/mid/mindset_decomposition/trial_002/decom_b002un.png"]
+            },
+            "answer_key": "1"
+        },
+        {
+            "trial": "trial_003",
+            "images": {
+                "target": ["datasets/mid/mindset_decomposition/trial_003/decom_003.png"],
+                "option_1": ["datasets/mid/mindset_decomposition/trial_003/decom_a003un.png"],
+                "option_2": ["datasets/mid/mindset_decomposition/trial_003/decom_b003n.png"]
+            },
+            "answer_key": "2"
+        },
+        {
+            "trial": "trial_004",
+            "images": {
+                "target": ["datasets/mid/mindset_decomposition/trial_004/decom_004.png"],
+                "option_1": ["datasets/mid/mindset_decomposition/trial_004/decom_a004n.png"],
+                "option_2": ["datasets/mid/mindset_decomposition/trial_004/decom_b004un.png"]
+            },
+            "answer_key": "1"
+        },
+        {
+            "trial": "trial_005",
+            "images": {
+                "target": ["datasets/mid/mindset_decomposition/trial_005/decom_005.png"],
+                "option_1": ["datasets/mid/mindset_decomposition/trial_005/decom_a005un.png"],
+                "option_2": ["datasets/mid/mindset_decomposition/trial_005/decom_b005n.png"]
+            },
+            "answer_key": "2"
+        },
+        {
+            "trial": "trial_006",
+            "images": {
+                "target": ["datasets/mid/mindset_decomposition/trial_006/decom_006.png"],
+                "option_1": ["datasets/mid/mindset_decomposition/trial_006/decom_a006n.png"],
+                "option_2": ["datasets/mid/mindset_decomposition/trial_006/decom_b006un.png"]
+            },
+            "answer_key": "1"
+        },
+        {
+            "trial": "trial_007",
+            "images": {
+                "target": ["datasets/mid/mindset_decomposition/trial_007/decom_007.png"],
+                "option_1": ["datasets/mid/mindset_decomposition/trial_007/decom_a007un.png"],
+                "option_2": ["datasets/mid/mindset_decomposition/trial_007/decom_b007n.png"]
+            },
+            "answer_key": "2"
+        },
+        {
+            "trial": "trial_008",
+            "images": {
+                "target": ["datasets/mid/mindset_decomposition/trial_008/decom_008.png"],
+                "option_1": ["datasets/mid/mindset_decomposition/trial_008/decom_a008n.png"],
+                "option_2": ["datasets/mid/mindset_decomposition/trial_008/decom_b008un.png"]
+            },
+            "answer_key": "1"
+        },
+        {
+            "trial": "trial_009",
+            "images": {
+                "target": ["datasets/mid/mindset_decomposition/trial_009/decom_009.png"],
+                "option_1": ["datasets/mid/mindset_decomposition/trial_009/decom_a009un.png"],
+                "option_2": ["datasets/mid/mindset_decomposition/trial_009/decom_b009n.png"]
+            },
+            "answer_key": "2"
+        },
+        {
+            "trial": "trial_010",
+            "images": {
+                "target": ["datasets/mid/mindset_decomposition/trial_010/decom_010.png"],
+                "option_1": ["datasets/mid/mindset_decomposition/trial_010/decom_a010n.png"],
+                "option_2": ["datasets/mid/mindset_decomposition/trial_010/decom_b010un.png"]
+            },
+            "answer_key": "1"
+        },
+        {
+            "trial": "trial_011",
+            "images": {
+                "target": ["datasets/mid/mindset_decomposition/trial_011/decom_011.png"],
+                "option_1": ["datasets/mid/mindset_decomposition/trial_011/decom_a011un.png"],
+                "option_2": ["datasets/mid/mindset_decomposition/trial_011/decom_b011n.png"]
+            },
+            "answer_key": "2"
+        },
+        {
+            "trial": "trial_012",
+            "images": {
+                "target": ["datasets/mid/mindset_decomposition/trial_012/decom_012.png"],
+                "option_1": ["datasets/mid/mindset_decomposition/trial_012/decom_a012n.png"],
+                "option_2": ["datasets/mid/mindset_decomposition/trial_012/decom_b012un.png"]
+            },
+            "answer_key": "1"
+        },
+        {
+            "trial": "trial_013",
+            "images": {
+                "target": ["datasets/mid/mindset_decomposition/trial_013/decom_013.png"],
+                "option_1": ["datasets/mid/mindset_decomposition/trial_013/decom_a013un.png"],
+                "option_2": ["datasets/mid/mindset_decomposition/trial_013/decom_b013n.png"]
+            },
+            "answer_key": "2"
+        },
+        {
+            "trial": "trial_014",
+            "images": {
+                "target": ["datasets/mid/mindset_decomposition/trial_014/decom_014.png"],
+                "option_1": ["datasets/mid/mindset_decomposition/trial_014/decom_a014n.png"],
+                "option_2": ["datasets/mid/mindset_decomposition/trial_014/decom_b014un.png"]
+            },
+            "answer_key": "1"
+        },
+        {
+            "trial": "trial_015",
+            "images": {
+                "target": ["datasets/mid/mindset_decomposition/trial_015/decom_015.png"],
+                "option_1": ["datasets/mid/mindset_decomposition/trial_015/decom_a015un.png"],
+                "option_2": ["datasets/mid/mindset_decomposition/trial_015/decom_b015n.png"]
+            },
+            "answer_key": "2"
+        },
+        {
+            "trial": "trial_016",
+            "images": {
+                "target": ["datasets/mid/mindset_decomposition/trial_016/decom_016.png"],
+                "option_1": ["datasets/mid/mindset_decomposition/trial_016/decom_a016un.png"],
+                "option_2": ["datasets/mid/mindset_decomposition/trial_016/decom_b016n.png"]
+            },
+            "answer_key": "2"
+        },
+        {
+            "trial": "trial_017",
+            "images": {
+                "target": ["datasets/mid/mindset_decomposition/trial_017/decom_017.png"],
+                "option_1": ["datasets/mid/mindset_decomposition/trial_017/decom_a017n.png"],
+                "option_2": ["datasets/mid/mindset_decomposition/trial_017/decom_b017un.png"]
+            },
+            "answer_key": "1"
+        },
+        {
+            "trial": "trial_018",
+            "images": {
+                "target": ["datasets/mid/mindset_decomposition/trial_018/decom_018.png"],
+                "option_1": ["datasets/mid/mindset_decomposition/trial_018/decom_a018un.png"],
+                "option_2": ["datasets/mid/mindset_decomposition/trial_018/decom_b018n.png"]
+            },
+            "answer_key": "2"
+        },
+        {
+            "trial": "trial_019",
+            "images": {
+                "target": ["datasets/mid/mindset_decomposition/trial_019/decom_019.png"],
+                "option_1": ["datasets/mid/mindset_decomposition/trial_019/decom_a019n.png"],
+                "option_2": ["datasets/mid/mindset_decomposition/trial_019/decom_b019un.png"]
+            },
+            "answer_key": "1"
+        },
+        {
+            "trial": "trial_020",
+            "images": {
+                "target": ["datasets/mid/mindset_decomposition/trial_020/decom_020.png"],
+                "option_1": ["datasets/mid/mindset_decomposition/trial_020/decom_a020n.png"],
+                "option_2": ["datasets/mid/mindset_decomposition/trial_020/decom_b020un.png"]
+            },
+            "answer_key": "1"
+        },
+        {
+            "trial": "trial_021",
+            "images": {
+                "target": ["datasets/mid/mindset_decomposition/trial_021/decom_021.png"],
+                "option_1": ["datasets/mid/mindset_decomposition/trial_021/decom_a021un.png"],
+                "option_2": ["datasets/mid/mindset_decomposition/trial_021/decom_b021n.png"]
+            },
+            "answer_key": "2"
+        },
+        {
+            "trial": "trial_022",
+            "images": {
+                "target": ["datasets/mid/mindset_decomposition/trial_022/decom_022.png"],
+                "option_1": ["datasets/mid/mindset_decomposition/trial_022/decom_a022n.png"],
+                "option_2": ["datasets/mid/mindset_decomposition/trial_022/decom_b022un.png"]
+            },
+            "answer_key": "1"
+        },
+        {
+            "trial": "trial_023",
+            "images": {
+                "target": ["datasets/mid/mindset_decomposition/trial_023/decom_023.png"],
+                "option_1": ["datasets/mid/mindset_decomposition/trial_023/decom_a023n.png"],
+                "option_2": ["datasets/mid/mindset_decomposition/trial_023/decom_b023un.png"]
+            },
+            "answer_key": "1"
+        },
+        {
+            "trial": "trial_024",
+            "images": {
+                "target": ["datasets/mid/mindset_decomposition/trial_024/decom_024.png"],
+                "option_1": ["datasets/mid/mindset_decomposition/trial_024/decom_a024n.png"],
+                "option_2": ["datasets/mid/mindset_decomposition/trial_024/decom_b024un.png"]
+            },
+            "answer_key": "1"
+        },
+        {
+            "trial": "trial_025",
+            "images": {
+                "target": ["datasets/mid/mindset_decomposition/trial_025/decom_025.png"],
+                "option_1": ["datasets/mid/mindset_decomposition/trial_025/decom_a025un.png"],
+                "option_2": ["datasets/mid/mindset_decomposition/trial_025/decom_b025n.png"]
+            },
+            "answer_key": "2"
+        },
+        {
+            "trial": "trial_026",
+            "images": {
+                "target": ["datasets/mid/mindset_decomposition/trial_026/decom_026.png"],
+                "option_1": ["datasets/mid/mindset_decomposition/trial_026/decom_a026un.png"],
+                "option_2": ["datasets/mid/mindset_decomposition/trial_026/decom_b026n.png"]
+            },
+            "answer_key": "2"
+        },
+        {
+            "trial": "trial_027",
+            "images": {
+                "target": ["datasets/mid/mindset_decomposition/trial_027/decom_027.png"],
+                "option_1": ["datasets/mid/mindset_decomposition/trial_027/decom_a027n.png"],
+                "option_2": ["datasets/mid/mindset_decomposition/trial_027/decom_b027un.png"]
+            },
+            "answer_key": "1"
+        },
+        {
+            "trial": "trial_028",
+            "images": {
+                "target": ["datasets/mid/mindset_decomposition/trial_028/decom_028.png"],
+                "option_1": ["datasets/mid/mindset_decomposition/trial_028/decom_a028un.png"],
+                "option_2": ["datasets/mid/mindset_decomposition/trial_028/decom_b028n.png"]
+            },
+            "answer_key": "2"
+        },
+        {
+            "trial": "trial_029",
+            "images": {
+                "target": ["datasets/mid/mindset_decomposition/trial_029/decom_029.png"],
+                "option_1": ["datasets/mid/mindset_decomposition/trial_029/decom_a029un.png"],
+                "option_2": ["datasets/mid/mindset_decomposition/trial_029/decom_b029n.png"]
+            },
+            "answer_key": "2"
+        }
+    ]
+}
