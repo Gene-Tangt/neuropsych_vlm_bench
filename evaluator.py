@@ -48,6 +48,15 @@ class Evaluator:
 
         return self.result_table
 
+    def save_as_csv(self, path):
+
+        if path is None:
+            self.result_table.to_csv("results.csv", index=False)
+            
+
+        self.result_table.to_csv(path, index=False)
+
+
 
     def _mark_exact(self, data):
 

@@ -1,10 +1,24 @@
 # Neuropsych MiniBench
 
-A comprehensive evaluation framework for testing vision-language models on neuropsychological tasks.
+VLMs evaluation framework based on neuropsychological and experimental psychology tasks.
+Read more in: [text](https://arxiv.org/abs/2504.10786v1)
 
 ## Overview
 
-This benchmark evaluates model performance across various visual-cognitive tasks inspired by neuropsychological assessments. Tasks span multiple difficulty stages and cognitive processes including visual recognition, spatial reasoning, and perceptual analysis.
+This benchmark evaluates model performance across various visual-cognitive tasks based on neuropsychological assessments and psychological tasks.
+Tasks used here are based on open-source datasets used in the paper. Neuropsychological tasks used here were re-rendered. 
+
+
+## Project Structure
+
+- **`loaders.py`** - Task loader to get payloads for model evaluation
+- **`runner.py`** - Model runners (currently only OpenAI API integration. More to be added)
+- **`evaluator.py`** - Evaluation logic with task-specific scoring
+- **`evaluator_config.json`** - Task categorization based on their evaluation logic
+- **`naming_aliases.json`** - Shape and object name aliases for flexible matching in naming tasks
+- **`test_specs/`** - Task metadata and answer keys
+- **`datasets/`** - Task images (* need to be downloaded separately from [text](https://drive.google.com/drive/folders/1qcAQBB9C1vf3PdaSPer4kNVBOrC7ORf4?usp=sharing) or run `get_dataset.py` to download) 
+
 
 ## Quick Start
 
@@ -19,68 +33,16 @@ from loaders import TaskLoader
 from runner import OpenAIModelRunner
 from evaluator import Evaluator
 
-# Load a task
-loader = TaskLoader("test_specs/high/borb_triplet_shapes_meta.json")
-
+# Evaluating a single task
+loader = TaskLoader("test_specs/high/borb_triplet_shapes_meta.json") # get task payload
+ 
 # Run model evaluation
 runner = OpenAIModelRunner(api_key="your-api-key", model_name="gpt-4o")
-data = runner.generate_response(loader)
+data = runner.generate_response(loader) # generate model responses and append to the payload
 
 # Evaluate results
 evaluator = Evaluator()
-evaluator.evaluate(data)
-results = evaluator.get_result()
+evaluator.evaluate(data) # evaluate the results
+results = evaluator.get_result() # returns a pandas DataFrame
+results = evaluator.save_to_csv("results.csv") # saves the results to a CSV file
 ```
-
-## Project Structure
-
-- **`loaders.py`** - Universal task loader for benchmark tasks
-- **`runner.py`** - Model runners (OpenAI API integration)
-- **`evaluator.py`** - Evaluation logic with task-specific scoring
-- **`evaluator_config.json`** - Task categorization and evaluation methods
-- **`naming_aliases.json`** - Shape and object name aliases for flexible matching
-- **`datasets/`** - Task images organized by difficulty stage
-- **`test_specs/`** - Task metadata and answer keys
-
-## Task Categories
-
-### Exact Match Tasks
-- Orientation detection, size comparison, position analysis
-- Requires precise string matching
-
-### Naming Tasks  
-- Object and shape recognition with alias support
-- Handles alternative names (e.g., "rectangle" ↔ "square")
-
-### Overlapping Tasks
-- **Letters**: Character frequency matching
-- **Shapes**: Shape frequency matching with aliases
-
-### Triplet Tasks
-- **Shapes**: Position-aware shape sequence matching
-- Order matters, supports shape aliases
-
-## Evaluation Features
-
-- **Alias Support**: Flexible name matching via `naming_aliases.json`
-- **Robust Parsing**: Handles malformed responses, None values
-- **Task-Specific Logic**: Different scoring methods per task type
-- **Detailed Logging**: Debug output for model vs. expected answers
-
-## Configuration
-
-Edit `evaluator_config.json` to:
-- Add new tasks to evaluation categories
-- Modify task groupings
-- Configure evaluation methods
-
-Edit `naming_aliases.json` to:
-- Add shape/object name variations
-- Support multilingual terms
-- Handle common model output patterns
-
-## Requirements
-
-- Python 3.7+
-- OpenAI API key for model evaluation
-- Dependencies: `numpy`, `pandas`, `openai`, `tqdm`
