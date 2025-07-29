@@ -1,7 +1,7 @@
 # Neuropsych MiniBench
 
 VLMs evaluation framework based on neuropsychological and experimental psychology tasks.
-Read more in: [text](https://arxiv.org/abs/2504.10786v1)
+Read more in: https://arxiv.org/abs/2504.10786v1
 
 ## Overview
 
@@ -17,7 +17,7 @@ Tasks used here are based on open-source datasets used in the paper. Neuropsycho
 - **`evaluator_config.json`** - Task categorization based on their evaluation logic
 - **`naming_aliases.json`** - Shape and object name aliases for flexible matching in naming tasks
 - **`test_specs/`** - Task metadata and answer keys
-- **`datasets/`** - Task images (* need to be downloaded separately from [text](https://drive.google.com/drive/folders/1qcAQBB9C1vf3PdaSPer4kNVBOrC7ORf4?usp=sharing) or run `get_dataset.py` to download) 
+- **`datasets/`** - Task images (* need to be downloaded separately from [here](https://drive.google.com/drive/folders/1qcAQBB9C1vf3PdaSPer4kNVBOrC7ORf4?usp=sharing) or run `get_dataset.py` to download) 
 
 
 ## Quick Start

@@ -4,10 +4,10 @@ import json
 import re
 from collections import Counter
 
-with open("evaluator_config.json", "r") as f:
+with open("utils/evaluator_config.json", "r") as f:
     evaluator_config = json.load(f)
 
-with open("naming_aliases.json", "r") as f:
+with open("utils/naming_aliases.json", "r") as f:
     naming_aliases = json.load(f)
 
 class Evaluator:
