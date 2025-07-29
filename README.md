@@ -1,5 +1,4 @@
-# Neuropsych MiniBench
-
+# VLM Neuropsych Minibench
 VLMs evaluation framework based on neuropsychological and experimental psychology tasks.
 Read more in: https://arxiv.org/abs/2504.10786v1
 
