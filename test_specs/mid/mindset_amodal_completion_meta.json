@@ -13,7 +13,7 @@
                 "option_1": ["datasets/mid/mindset_amodal_completion/trial_000/amodal_a000d.png"],
                 "option_2": ["datasets/mid/mindset_amodal_completion/trial_000/amodal_b000n.png"]
             },
-            "answer_key": "2"
+            "answer_key": "1"
         },
         {
             "trial": "trial_001",
@@ -22,7 +22,7 @@
                 "option_1": ["datasets/mid/mindset_amodal_completion/trial_001/amodal_a001n.png"],
                 "option_2": ["datasets/mid/mindset_amodal_completion/trial_001/amodal_b001d.png"]
             },
-            "answer_key": "1"
+            "answer_key": "2"
         },
         {
             "trial": "trial_002",
@@ -31,7 +31,7 @@
                 "option_1": ["datasets/mid/mindset_amodal_completion/trial_002/amodal_a002d.png"],
                 "option_2": ["datasets/mid/mindset_amodal_completion/trial_002/amodal_b002n.png"]
             },
-            "answer_key": "2"
+            "answer_key": "1"
         },
         {
             "trial": "trial_003",
@@ -40,7 +40,7 @@
                 "option_1": ["datasets/mid/mindset_amodal_completion/trial_003/amodal_a003n.png"],
                 "option_2": ["datasets/mid/mindset_amodal_completion/trial_003/amodal_b003d.png"]
             },
-            "answer_key": "1"
+            "answer_key": "2"
         },
         {
             "trial": "trial_004",
@@ -49,7 +49,7 @@
                 "option_1": ["datasets/mid/mindset_amodal_completion/trial_004/amodal_a004d.png"],
                 "option_2": ["datasets/mid/mindset_amodal_completion/trial_004/amodal_b004n.png"]
             },
-            "answer_key": "2"
+            "answer_key": "1"
         },
         {
             "trial": "trial_005",
@@ -58,7 +58,7 @@
                 "option_1": ["datasets/mid/mindset_amodal_completion/trial_005/amodal_a005d.png"],
                 "option_2": ["datasets/mid/mindset_amodal_completion/trial_005/amodal_b005n.png"]
             },
-            "answer_key": "2"
+            "answer_key": "1"
         },
         {
             "trial": "trial_006",
@@ -67,7 +67,7 @@
                 "option_1": ["datasets/mid/mindset_amodal_completion/trial_006/amodal_a006n.png"],
                 "option_2": ["datasets/mid/mindset_amodal_completion/trial_006/amodal_b006d.png"]
             },
-            "answer_key": "1"
+            "answer_key": "2"
         },
         {
             "trial": "trial_007",
@@ -76,7 +76,7 @@
                 "option_1": ["datasets/mid/mindset_amodal_completion/trial_007/amodal_a007n.png"],
                 "option_2": ["datasets/mid/mindset_amodal_completion/trial_007/amodal_b007d.png"]
             },
-            "answer_key": "1"
+            "answer_key": "2"
         },
         {
             "trial": "trial_008",
@@ -85,7 +85,7 @@
                 "option_1": ["datasets/mid/mindset_amodal_completion/trial_008/amodal_a008n.png"],
                 "option_2": ["datasets/mid/mindset_amodal_completion/trial_008/amodal_b008d.png"]
             },
-            "answer_key": "1"
+            "answer_key": "2"
         },
         {
             "trial": "trial_009",
@@ -94,7 +94,7 @@
                 "option_1": ["datasets/mid/mindset_amodal_completion/trial_009/amodal_a009n.png"],
                 "option_2": ["datasets/mid/mindset_amodal_completion/trial_009/amodal_b009d.png"]
             },
-            "answer_key": "1"
+            "answer_key": "2"
         },
         {
             "trial": "trial_010",
@@ -103,7 +103,7 @@
                 "option_1": ["datasets/mid/mindset_amodal_completion/trial_010/amodal_a010d.png"],
                 "option_2": ["datasets/mid/mindset_amodal_completion/trial_010/amodal_b010n.png"]
             },
-            "answer_key": "2"
+            "answer_key": "1"
         },
         {
             "trial": "trial_011",
@@ -112,7 +112,7 @@
                 "option_1": ["datasets/mid/mindset_amodal_completion/trial_011/amodal_a011n.png"],
                 "option_2": ["datasets/mid/mindset_amodal_completion/trial_011/amodal_b011d.png"]
             },
-            "answer_key": "1"
+            "answer_key": "2"
         },
         {
             "trial": "trial_012",
@@ -121,7 +121,7 @@
                 "option_1": ["datasets/mid/mindset_amodal_completion/trial_012/amodal_a012n.png"],
                 "option_2": ["datasets/mid/mindset_amodal_completion/trial_012/amodal_b012d.png"]
             },
-            "answer_key": "1"
+            "answer_key": "2"
         },
         {
             "trial": "trial_013",
@@ -130,7 +130,7 @@
                 "option_1": ["datasets/mid/mindset_amodal_completion/trial_013/amodal_a013n.png"],
                 "option_2": ["datasets/mid/mindset_amodal_completion/trial_013/amodal_b013d.png"]
             },
-            "answer_key": "1"
+            "answer_key": "2"
         },
         {
             "trial": "trial_014",
@@ -139,7 +139,7 @@
                 "option_1": ["datasets/mid/mindset_amodal_completion/trial_014/amodal_a014n.png"],
                 "option_2": ["datasets/mid/mindset_amodal_completion/trial_014/amodal_b014d.png"]
             },
-            "answer_key": "1"
+            "answer_key": "2"
         },
         {
             "trial": "trial_015",
@@ -148,7 +148,7 @@
                 "option_1": ["datasets/mid/mindset_amodal_completion/trial_015/amodal_a015d.png"],
                 "option_2": ["datasets/mid/mindset_amodal_completion/trial_015/amodal_b015n.png"]
             },
-            "answer_key": "2"
+            "answer_key": "1"
         },
         {
             "trial": "trial_016",
@@ -157,7 +157,7 @@
                 "option_1": ["datasets/mid/mindset_amodal_completion/trial_016/amodal_a016n.png"],
                 "option_2": ["datasets/mid/mindset_amodal_completion/trial_016/amodal_b016d.png"]
             },
-            "answer_key": "1"
+            "answer_key": "2"
         },
         {
             "trial": "trial_017",
@@ -166,7 +166,7 @@
                 "option_1": ["datasets/mid/mindset_amodal_completion/trial_017/amodal_a017d.png"],
                 "option_2": ["datasets/mid/mindset_amodal_completion/trial_017/amodal_b017n.png"]
             },
-            "answer_key": "2"
+            "answer_key": "1"
         },
         {
             "trial": "trial_018",
@@ -175,7 +175,7 @@
                 "option_1": ["datasets/mid/mindset_amodal_completion/trial_018/amodal_a018d.png"],
                 "option_2": ["datasets/mid/mindset_amodal_completion/trial_018/amodal_b018n.png"]
             },
-            "answer_key": "2"
+            "answer_key": "1"
         },
         {
             "trial": "trial_019",
@@ -184,7 +184,7 @@
                 "option_1": ["datasets/mid/mindset_amodal_completion/trial_019/amodal_a019d.png"],
                 "option_2": ["datasets/mid/mindset_amodal_completion/trial_019/amodal_b019n.png"]
             },
-            "answer_key": "2"
+            "answer_key": "1"
         },
         {
             "trial": "trial_020",
@@ -193,7 +193,7 @@
                 "option_1": ["datasets/mid/mindset_amodal_completion/trial_020/amodal_a020n.png"],
                 "option_2": ["datasets/mid/mindset_amodal_completion/trial_020/amodal_b020d.png"]
             },
-            "answer_key": "1"
+            "answer_key": "2"
         },
         {
             "trial": "trial_021",
@@ -202,7 +202,7 @@
                 "option_1": ["datasets/mid/mindset_amodal_completion/trial_021/amodal_a021d.png"],
                 "option_2": ["datasets/mid/mindset_amodal_completion/trial_021/amodal_b021n.png"]
             },
-            "answer_key": "2"
+            "answer_key": "1"
         },
         {
             "trial": "trial_022",
@@ -211,7 +211,7 @@
                 "option_1": ["datasets/mid/mindset_amodal_completion/trial_022/amodal_a022d.png"],
                 "option_2": ["datasets/mid/mindset_amodal_completion/trial_022/amodal_b022n.png"]
             },
-            "answer_key": "2"
+            "answer_key": "1"
         },
         {
             "trial": "trial_023",
@@ -220,7 +220,7 @@
                 "option_1": ["datasets/mid/mindset_amodal_completion/trial_023/amodal_a023n.png"],
                 "option_2": ["datasets/mid/mindset_amodal_completion/trial_023/amodal_b023d.png"]
             },
-            "answer_key": "1"
+            "answer_key": "2"
         },
         {
             "trial": "trial_024",
@@ -229,7 +229,7 @@
                 "option_1": ["datasets/mid/mindset_amodal_completion/trial_024/amodal_a024d.png"],
                 "option_2": ["datasets/mid/mindset_amodal_completion/trial_024/amodal_b024n.png"]
             },
-            "answer_key": "2"
+            "answer_key": "1"
         },
         {
             "trial": "trial_025",
@@ -238,7 +238,7 @@
                 "option_1": ["datasets/mid/mindset_amodal_completion/trial_025/amodal_a025d.png"],
                 "option_2": ["datasets/mid/mindset_amodal_completion/trial_025/amodal_b025n.png"]
             },
-            "answer_key": "2"
+            "answer_key": "1"
         },
         {
             "trial": "trial_026",
@@ -247,7 +247,7 @@
                 "option_1": ["datasets/mid/mindset_amodal_completion/trial_026/amodal_a026n.png"],
                 "option_2": ["datasets/mid/mindset_amodal_completion/trial_026/amodal_b026d.png"]
             },
-            "answer_key": "1"
+            "answer_key": "2"
         },
         {
             "trial": "trial_027",
@@ -256,7 +256,7 @@
                 "option_1": ["datasets/mid/mindset_amodal_completion/trial_027/amodal_a027d.png"],
                 "option_2": ["datasets/mid/mindset_amodal_completion/trial_027/amodal_b027n.png"]
             },
-            "answer_key": "2"
+            "answer_key": "1"
         },
         {
             "trial": "trial_028",
@@ -265,7 +265,7 @@
                 "option_1": ["datasets/mid/mindset_amodal_completion/trial_028/amodal_a028n.png"],
                 "option_2": ["datasets/mid/mindset_amodal_completion/trial_028/amodal_b028d.png"]
             },
-            "answer_key": "1"
+            "answer_key": "2"
         },
         {
             "trial": "trial_029",
@@ -274,7 +274,7 @@
                 "option_1": ["datasets/mid/mindset_amodal_completion/trial_029/amodal_a029n.png"],
                 "option_2": ["datasets/mid/mindset_amodal_completion/trial_029/amodal_b029d.png"]
             },
-            "answer_key": "1"
+            "answer_key": "2"
         }
     ]
 }

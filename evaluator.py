@@ -193,7 +193,6 @@ class Evaluator:
             model_answer_raw = brace_matches[0].strip().lower()
             model_shapes = [normalize_shape(shape) for shape in model_answer_raw.split(',')]
 
-            print(f"Model answer: {Counter(model_shapes)}, Answer key: {Counter(trial['answer_key'])}, pts: {1 if Counter(model_shapes) == Counter(trial['answer_key']) else 0}")
 
             if Counter(model_shapes) == Counter(trial['answer_key']):
                 task_score += 1
@@ -244,8 +243,6 @@ class Evaluator:
             # Normalize answer key shapes
             answer_key_shapes = [normalize_shape(shape) for shape in trial["answer_key"]]
 
-            print(f"Model answer: {model_shapes}, Answer key: {answer_key_shapes}, pts: {1 if model_shapes == answer_key_shapes else 0}")
-
             # Compare normalized lists (position matters)
             if model_shapes == answer_key_shapes:
                 task_score += 1
@@ -281,8 +278,6 @@ class Evaluator:
             # Parse model answer as comma-separated list
             model_answer = list(brace_matches[0].strip().lower())
             answer_key = list(trial["answer_key"].lower())
-
-            print(f"Model answer: {Counter(model_answer)}, Answer key: {Counter(answer_key)}, pts: {1 if Counter(model_answer) == Counter(answer_key) else 0}")
 
             if Counter(model_answer) == Counter(answer_key):
                 task_score += 1

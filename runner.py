@@ -182,9 +182,33 @@ class AnthropicModelRunner(BaseModelRunner):
     
     def _format_conversation(self, instruction: str, images: List[str]) -> Dict:
         """Format conversation for Anthropic API."""
-        content = [{"type": "text", "text": instruction}]
-
-        pass # TODO implement with Anthropic API syntax
+        content = [{"type": "text", "text": instruction}] # always start with the instruction
+        
+        # add text cues for multi-image trials
+        if self.task_info["num_stim"] == 'three':
+            content.append({"type": "text", "text": "Here's the target image"})
+            content.append({"type": "image", "source": {"type": "base64", "media_type": "image/png", "data": images[0]}})
+            content.append({"type": "text", "text": "Here's the first option"})
+            content.append({"type": "image", "source": {"type": "base64", "media_type": "image/png", "data": images[1]}})
+            content.append({"type": "text", "text": "Here's the second option"})
+            content.append({"type": "image", "source": {"type": "base64", "media_type": "image/png", "data": images[2]}})
+            
+        elif self.task_info["num_stim"] == 'four':
+            content.append({"type": "text", "text": "Here's the target image"})
+            content.append({"type": "image", "source": {"type": "base64", "media_type": "image/png", "data": images[0]}})
+            content.append({"type": "text", "text": "Here's the first option"})
+            content.append({"type": "image", "source": {"type": "base64", "media_type": "image/png", "data": images[1]}})
+            content.append({"type": "text", "text": "Here's the second option"})
+            content.append({"type": "image", "source": {"type": "base64", "media_type": "image/png", "data": images[2]}})
+            content.append({"type": "text", "text": "Here's the third option"})
+            content.append({"type": "image", "source": {"type": "base64", "media_type": "image/png", "data": images[3]}})
+            
+        else:
+            # For 'one' and 'two' stimulus cases: these contain just images no text cues
+            for image in images:
+                content.append({"type": "image", "source": {"type": "base64", "media_type": "image/png", "data": image}})
+        
+        return [{"role": "user", "content": content}]
     
     def _make_api_call(self, conversation: Dict) -> str:
         """Make Anthropic API call."""
@@ -195,7 +219,7 @@ class AnthropicModelRunner(BaseModelRunner):
             model=self.config.model_name,
             max_tokens=self.config.max_tokens,
             temperature=self.config.temperature,
-            messages=[conversation],
+            messages= conversation,
             **self.config.additional_params
         )
         
@@ -211,28 +235,92 @@ class GoogleModelRunner(BaseModelRunner):
         try:
             import google.generativeai as genai
             genai.configure(api_key=self.config.api_key)
-            return genai.GenerativeModel(self.config.model_name)
+            
+            generation_config = {
+                "temperature": self.config.temperature,
+                "max_output_tokens": self.config.max_tokens,
+                "response_mime_type": "text/plain",
+                **self.config.additional_params
+            }
+            
+            return genai.GenerativeModel(
+                model_name=self.config.model_name,
+                generation_config=generation_config
+            )
         except ImportError:
             raise ImportError("google-generativeai package required for GoogleModelRunner")
     
     def _format_conversation(self, instruction: str, images: List[str]) -> List:
         """Format conversation for Google API."""
-        content = [instruction]
-
-        pass # TODO implement with Google API syntax
+        content = [instruction] # always start with the instruction
+        
+        # Convert base64 strings to proper format for Google API
+        encoded_images = []
+        for img_b64 in images:
+            encoded_images.append({
+                'mime_type': 'image/png',
+                'data': base64.b64decode(img_b64)
+            })
+        
+        # add text cues for multi-image trials
+        if self.task_info["num_stim"] == 'three':
+            content.append("Here's the target image")
+            content.append(encoded_images[0])
+            content.append("Here's the first option")
+            content.append(encoded_images[1])
+            content.append("Here's the second option")
+            content.append(encoded_images[2])
+            
+        elif self.task_info["num_stim"] == 'four':
+            content.append("Here's the target image")
+            content.append(encoded_images[0])
+            content.append("Here's the first option")
+            content.append(encoded_images[1])
+            content.append("Here's the second option")
+            content.append(encoded_images[2])
+            content.append("Here's the third option")
+            content.append(encoded_images[3])
+            
+        else:
+            # For 'one' and 'two' stimulus cases: these contain just images no text cues
+            for image in encoded_images:
+                content.append(image)
+        
+        return content
     
     def _make_api_call(self, conversation: List) -> str:
         """Make Google API call."""
         if not hasattr(self, 'client'):
             self.client = self._initialize_client()
             
-        response = self.client.generate_content(
-            conversation,
-            generation_config={
-                'max_output_tokens': self.config.max_tokens,
-                'temperature': self.config.temperature,
-                **self.config.additional_params
-            }
-        )
+        # Generate content directly with the conversation list
+        response = self.client.generate_content(conversation)
         
         return response.text
+
+
+### ========================================= Factory Function ========================================= ###
+
+def create_runner(provider: str, config: ModelConfig) -> BaseModelRunner:
+    """Factory function to create model runners.
+    
+    Args:
+        provider: Provider name ('openai', 'anthropic', 'google')
+        config: ModelConfig object with provider settings
+        
+    Returns:
+        BaseModelRunner: Appropriate runner instance
+        
+    Raises:
+        ValueError: If provider is not supported
+    """
+    provider = provider.lower()
+    
+    if provider == "openai":
+        return OpenAIModelRunner(config)
+    elif provider == "anthropic":
+        return AnthropicModelRunner(config)
+    elif provider == "google":
+        return GoogleModelRunner(config)
+    else:
+        raise ValueError(f"Unsupported provider: {provider}. Supported providers: openai, anthropic, google")
