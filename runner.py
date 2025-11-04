@@ -1,6 +1,21 @@
 """
-Universal runner for the neuropsych minibench tasks.
-Supports multiple VLM providers through a common interface.
+Universal VLM Runner for Neuropsych Benchmark Tasks.
+
+This module provides a unified interface for running neuropsychological benchmark
+tasks across multiple Vision-Language Model (VLM) providers including OpenAI,
+Anthropic Claude, and Google Gemini.
+
+Architecture:
+    - BaseModelRunner: Abstract base class using template method pattern
+    - Provider-specific implementations: OpenAIModelRunner, AnthropicModelRunner, GoogleModelRunner
+    - ModelConfig: Configuration dataclass for provider-agnostic settings
+    - create_runner(): Factory function for instantiating runners
+
+Example:
+    >>> from runner import create_runner, ModelConfig
+    >>> config = ModelConfig(model_name="gpt-4o", api_key="your-key")
+    >>> runner = create_runner("openai", config)
+    >>> results = runner.generate_response(task_loader)
 """
 
 import os
@@ -14,12 +29,27 @@ from tqdm import tqdm
 
 @dataclass
 class ModelConfig:
-    """Configuration for model parameters."""
+    """Configuration for VLM model parameters.
+    
+    Attributes:
+        model_name (str): Model identifier (e.g., 'gpt-4o', 'claude-3-5-sonnet-20241022', 'gemini-1.5-pro').
+        max_tokens (int): Maximum tokens in model response. Default: 100.
+        temperature (float): Sampling temperature (0.0-2.0). Higher = more random. Default: 1.0.
+        api_key (Optional[str]): API key for authentication.
+        additional_params (Dict[str, Any]): Provider-specific parameters (e.g., top_p, top_k).
+    
+    Example:
+        >>> config = ModelConfig(
+        ...     model_name="gpt-4o",
+        ...     max_tokens=150,
+        ...     temperature=0.7,
+        ...     api_key=os.getenv("OPENAI_API_KEY")
+        ... )
+    """
     model_name: str
     max_tokens: int = 100
     temperature: float = 1.0
     api_key: Optional[str] = None
-    base_url: Optional[str] = None
     additional_params: Dict[str, Any] = None
 
     def __post_init__(self):
@@ -27,7 +57,26 @@ class ModelConfig:
             self.additional_params = {}
 
 class BaseModelRunner(ABC):
-    """Abstract base class for VLM runners."""
+    """Blueprint for VLM runners using template method pattern.
+    
+    This class defines the common workflow for running neuropsych benchmark tasks
+    across different VLM providers. Subclasses must implement provider-specific
+    methods for client initialization, conversation formatting, and API calls.
+    
+    Template Method Pattern:
+        generate_response() orchestrates the workflow:
+        1. Load task info and trials
+        2. For each trial: prepare images → format conversation → make API call
+        3. Store responses in trial data
+    
+    Attributes:
+        config (ModelConfig): Model configuration settings.
+        task_info (Optional[Dict]): Task metadata (num_stim, task_name, etc.).
+        task (Optional[List[Dict]]): List of trial dictionaries with prompts and images.
+    
+    Subclass Requirements:
+        Must implement: _initialize_client(), _format_conversation(), _make_api_call()
+    """
     
     def __init__(self, config: ModelConfig):
         self.config = config
@@ -36,35 +85,78 @@ class BaseModelRunner(ABC):
         
     @abstractmethod
     def _initialize_client(self) -> Any:
-        """Initialize the API client for the specific provider."""
+        """Initialize the API client for the specific provider.
+        
+        Returns:
+            Any: Provider-specific client object (e.g., openai.OpenAI, anthropic.Anthropic).
+        """
         pass
     
     @abstractmethod
     def _format_conversation(self, instruction: str, images: List[str]) -> Any:
-        """Format the conversation for the specific provider's API."""
+        """Format the conversation for the specific provider's API.
+        
+        Converts task instruction and base64-encoded images into the provider's
+        expected message format. Handles multi-image trials with text cues for
+        'three' and 'four' stimulus configurations.
+        
+        Args:
+            instruction (str): Task prompt/instruction text.
+            images (List[str]): Base64-encoded image strings.
+            
+        Returns:
+            Provider-specific conversation format.
+
+        Note:
+            Relies on self.task_info["num_stim"] to determine image layout.
+        """
         pass
     
     @abstractmethod
     def _make_api_call(self, conversation: Any) -> str:
-        """Make the API call and return the response text."""
+        """Make the API call and return the response text.
+        
+        Args:
+            conversation (Any): Formatted conversation from _format_conversation().
+            
+        Returns:
+            str: Model's text response content.
+            
+        """
         pass
     
     @staticmethod
-    def encode_image_file(image_path: str):
-        """Encode a local image file to base64 string."""
+    def encode_image_file(image_path: str) -> str:
+        """Encode a local image file to base64 string.
+        
+        Args:
+            image_path (str): Absolute or relative path to image file.
+            
+        Returns:
+            str: Base64-encoded image string (UTF-8).
+        """
         with open(image_path, "rb") as img_file:
             return base64.b64encode(img_file.read()).decode("utf-8")
     
     def _prepare_images(self, trial: Dict) -> List[str]:
-        """
-        Prepare and encode images based on stimulus configuration.
-        Stimulus configuration is stored in self.task_info, indicating the number of images used in a task
-
+        """Prepare and encode images based on stimulus configuration.
+        
+        Reads image paths from trial data and encodes them to base64 strings.
+        The number and order of images depends on task_info["num_stim"]:
+        
+        - 'one': Single target image
+        - 'two': Two option images
+        - 'three': Target + 2 options
+        - 'four': Target + 3 options
+        
         Args:
-            trial: A dictionary containing the trial information.
-
+            trial (Dict): Trial dictionary containing 'images' key with paths.
+        
         Returns:
-            List[str]: A list of base64 encoded image strings.
+            List[str]: Base64-encoded image strings in presentation order.
+            
+        Note:
+            Requires self.task_info to be set before calling.
         """
         images = []
         
@@ -91,12 +183,17 @@ class BaseModelRunner(ABC):
     def generate_response(self, loader) -> tuple:
         """Generate responses using the configured VLM provider.
         
+        Main entry point for running benchmark tasks. Iterates through all trials,
+        prepares images, formats conversations, and collects model responses.
+        
         Args:
             loader: TaskLoader object containing the task information and trials.
-            Taskloader reads the task information and trials from a JSON file.
+                TaskLoader reads the task information and trials from a JSON file.
         
         Returns:
-            tuple: A tuple containing the task information and the generated responses.
+            tuple: A tuple containing:
+                - task_info (Dict): Task metadata including num_stim, task_name, etc.
+                - task (List[Dict]): List of trials with added 'conversation' and 'model_response' fields.
         """
         self.task_info = loader.get_task_info()
         self.task = loader.get_trials()
@@ -116,14 +213,31 @@ class BaseModelRunner(ABC):
 ### ========================================= OpenAI Model Runner ========================================= ###
 
 class OpenAIModelRunner(BaseModelRunner):
-    """OpenAI API implementation of the model runner."""
+    """OpenAI API implementation of the model runner.
+    
+    Supports OpenAI models (GPT-4, GPT-4o, GPT-5, etc.) and OpenAI-compatible APIs.
+    Uses the official openai Python package.
+    
+    API Format:
+        - Messages: List of dicts with 'role' and 'content'
+        - Images: Embedded as base64 data URLs with detail level
+        
+    Note:
+        Requires OPENAI_API_KEY environment variable or config.api_key.
+    """
     
     def _initialize_client(self) -> openai.OpenAI:
         """Initialize OpenAI client."""
         return openai.OpenAI(api_key=self.config.api_key)
     
     def _format_conversation(self, instruction: str, images: List[str]) -> List[Dict]:
-        """Format conversation for OpenAI API."""
+        """Format conversation for OpenAI API.
+        
+        Args:
+            instruction (str): Task instruction text.
+            images (List[str]): Base64-encoded image strings.
+            
+        """
         content = [{"type": "text", "text": instruction}] # always start with the instruction
         
         # add text cues for multi-image trials
@@ -153,7 +267,14 @@ class OpenAIModelRunner(BaseModelRunner):
         return [{"role": "user", "content": content}]
     
     def _make_api_call(self, conversation: List[Dict]) -> str:
-        """Make OpenAI API call."""
+        """Make OpenAI API call.
+        
+        Args:
+            conversation (List[Dict]): Formatted OpenAI messages.
+            
+        Returns:
+            str: Model response text content.
+        """
         if not hasattr(self, 'client'):
             self.client = self._initialize_client()
             
@@ -170,18 +291,47 @@ class OpenAIModelRunner(BaseModelRunner):
 ### ========================================= Anthropic Model Runner ========================================= ###
 
 class AnthropicModelRunner(BaseModelRunner):
-    """Anthropic Claude API implementation."""
+    """Anthropic Claude API implementation.
+    
+    Supports Claude models (Claude Opus, Sonnet, Haiku, etc.).
+    Requires the anthropic Python package.
+    
+    API Format:
+        - Messages: List of dicts with 'role' and 'content'
+        - Images: Base64 data with explicit media_type
+        
+    Installation:
+        pip install anthropic
+        
+    Note:
+        Requires ANTHROPIC_API_KEY environment variable.
+    """
     
     def _initialize_client(self):
-        """Initialize Anthropic client."""
+        """Initialize Anthropic client.
+        
+        Returns:
+            anthropic.Anthropic: Configured Anthropic client instance.
+            
+        Raises:
+            ImportError: If anthropic package is not installed.
+        """
         try:
             import anthropic
             return anthropic.Anthropic(api_key=self.config.api_key)
         except ImportError:
             raise ImportError("anthropic package required for AnthropicModelRunner")
     
-    def _format_conversation(self, instruction: str, images: List[str]) -> Dict:
-        """Format conversation for Anthropic API."""
+    def _format_conversation(self, instruction: str, images: List[str]) -> List[Dict]:
+        """Format conversation for Anthropic API.
+        
+        Args:
+            instruction (str): Task instruction text.
+            images (List[str]): Base64-encoded image strings.
+            
+        Returns:
+            List[Dict]: Anthropic message format with role='user' and multimodal content.
+        """
         content = [{"type": "text", "text": instruction}] # always start with the instruction
         
         # add text cues for multi-image trials
@@ -210,8 +360,15 @@ class AnthropicModelRunner(BaseModelRunner):
         
         return [{"role": "user", "content": content}]
     
-    def _make_api_call(self, conversation: Dict) -> str:
-        """Make Anthropic API call."""
+    def _make_api_call(self, conversation: List[Dict]) -> str:
+        """Make Anthropic API call.
+        
+        Args:
+            conversation (List[Dict]): Formatted Anthropic messages.
+            
+        Returns:
+            str: Model response text content.
+        """
         if not hasattr(self, 'client'):
             self.client = self._initialize_client()
             
@@ -228,10 +385,31 @@ class AnthropicModelRunner(BaseModelRunner):
 ### ========================================= Google Model Runner ========================================= ###
 
 class GoogleModelRunner(BaseModelRunner):
-    """Google Gemini API implementation."""
+    """Google Gemini API implementation.
+    
+    Supports Gemini models (Gemini 1.5 Pro, Flash, etc.).
+    Requires the google-generativeai Python package.
+    
+    API Format:
+        - Content: Flat list of alternating text strings and image dicts
+        - Images: Decoded base64 bytes with mime_type
+        
+    Installation:
+        pip install google-generativeai
+        
+    Note:
+        Requires GOOGLE_API_KEY environment variable or config.api_key.
+    """
     
     def _initialize_client(self):
-        """Initialize Google client."""
+        """Initialize Google Gemini client.
+        
+        Returns:
+            genai.GenerativeModel: Configured Gemini model instance.
+            
+        Raises:
+            ImportError: If google-generativeai package is not installed.
+        """
         try:
             import google.generativeai as genai
             genai.configure(api_key=self.config.api_key)
@@ -251,7 +429,15 @@ class GoogleModelRunner(BaseModelRunner):
             raise ImportError("google-generativeai package required for GoogleModelRunner")
     
     def _format_conversation(self, instruction: str, images: List[str]) -> List:
-        """Format conversation for Google API."""
+        """Format conversation for Google Gemini API.
+        
+        Args:
+            instruction (str): Task instruction text.
+            images (List[str]): Base64-encoded image strings.
+            
+        Returns:
+            List: Flat list of text strings and image dicts for Gemini API.
+        """
         content = [instruction] # always start with the instruction
         
         # Convert base64 strings to proper format for Google API
@@ -289,7 +475,14 @@ class GoogleModelRunner(BaseModelRunner):
         return content
     
     def _make_api_call(self, conversation: List) -> str:
-        """Make Google API call."""
+        """Make Google Gemini API call.
+        
+        Args:
+            conversation (List): Formatted Gemini content list.
+            
+        Returns:
+            str: Model response text content.
+        """
         if not hasattr(self, 'client'):
             self.client = self._initialize_client()
             
@@ -305,14 +498,24 @@ def create_runner(provider: str, config: ModelConfig) -> BaseModelRunner:
     """Factory function to create model runners.
     
     Args:
-        provider: Provider name ('openai', 'anthropic', 'google')
-        config: ModelConfig object with provider settings
+        provider (str): Provider name ('openai', 'anthropic', 'google').
+            Case-insensitive.
+        config (ModelConfig): ModelConfig object with provider settings.
         
     Returns:
-        BaseModelRunner: Appropriate runner instance
+        BaseModelRunner: Appropriate runner instance for the provider.
         
     Raises:
-        ValueError: If provider is not supported
+        ValueError: If provider is not supported.
+        
+    Example:
+        >>> config = ModelConfig(model_name="gpt-4o", api_key="sk-...")
+        >>> runner = create_runner("openai", config)
+        >>> # Or for Anthropic:
+        >>> runner = create_runner("anthropic", ModelConfig(
+        ...     model_name="claude-3-5-sonnet-20241022",
+        ...     api_key="sk-ant-..."
+        ... ))
     """
     provider = provider.lower()
     

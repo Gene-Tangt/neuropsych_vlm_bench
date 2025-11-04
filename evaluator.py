@@ -1,4 +1,28 @@
-import numpy as np
+"""Evaluator for Neuropsych Benchmark Task Responses.
+
+This module provides evaluation functionality for VLM responses to neuropsychological
+benchmark tasks. The Evaluator class scores model responses using task-specific
+marking schemes and generates performance tables.
+
+Evaluation Methods:
+    - Exact match: Direct string comparison for multiple-choice tasks
+    - Naming tasks: Flexible matching with aliases for object/shape naming
+    - Overlapping shapes: Set-based comparison for shape identification (order invariant)
+    - Overlapping letters: Set-based comparison for letter identification (order invariant)
+    - BORB triplet shapes: Order-sensitive shape sequence matching
+
+Configuration:
+    Requires two JSON configuration files in the utils/ directory:
+    - evaluator_config.json: Maps tasks to evaluation methods
+    - naming_aliases.json: Defines acceptable aliases for naming tasks
+
+Example:
+    >>> evaluator = Evaluator() 
+    >>> evaluator.evaluate(results) # results is a list of dictionaries outputted from runner.generate_response()
+    >>> results = evaluator.get_result()
+    >>> evaluator.save_as_csv("results.csv")
+"""
+
 import pandas as pd
 import json
 import re
@@ -11,6 +35,30 @@ with open("utils/naming_aliases.json", "r") as f:
     naming_aliases = json.load(f)
 
 class Evaluator:
+    """Evaluator for scoring VLM responses on neuropsych benchmark tasks.
+    
+    Automatically scores model responses using task-appropriate evaluation methods.
+    Maintains a results table with raw scores and percentage scores for each task.
+    
+    Attributes:
+        result_table (pd.DataFrame): Results table with columns:
+            - task (str): Task name
+            - task_type (str): Type of task
+            - stage (str): Coarse-grained visual processing stage the task designed to tap into
+            - process (str): Finer-grained cognitive process the task designed to tap into
+            - num_trials (int): Number of trials in task
+            - raw_score (int): Number of correct responses
+            - percent_score (float): Proportion correct (0.0-1.0)
+        List of tasks sharing the same evaluation method:
+            exact_match_tasks (list): Tasks using exact string matching
+            naming_tasks (list): Tasks using flexible naming with aliases
+            overlapping_letters (list): Tasks identifying overlapping letters
+            overlapping_shapes (list): Tasks identifying overlapping shapes
+            borb_triplet_shapes (list): Tasks requiring ordered shape sequences
+            aliases (dict): Naming aliases for objects and shapes
+    
+    """
+    
     def __init__(self):
 
         self.result_table = pd.DataFrame(columns=[
@@ -25,6 +73,16 @@ class Evaluator:
         self.aliases = naming_aliases
 
     def evaluate(self, data):
+
+        """
+        Evaluate the model responses against the answer key stored on the task metadata in the test_specs folder.
+        
+        Args:
+            data (list): List of dictionaries containing task metadata and model responses.
+
+        Note:
+            The data is a dictionary outputted from runner.generate_response().
+        """
 
         if data[0]["task"] in self.exact_match_tasks:
             self._mark_exact(data)
@@ -46,9 +104,20 @@ class Evaluator:
 
     def get_result(self):
 
+        """
+        Returns the result table.
+        """
+
         return self.result_table
 
     def save_as_csv(self, path):
+
+        """
+        Save the result table to a CSV file.
+        
+        Args:
+            path (str): Path to save the CSV file.
+        """
 
         if path is None:
             self.result_table.to_csv("results.csv", index=False)

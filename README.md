@@ -1,26 +1,51 @@
+# Neuropsych VLM Benchmark Repo
+
+This is the official repository for the paper "Visual Language Models show widespread visual deficits on neuropsychological tests" [[Link]](https://arxiv.org/abs/2504.10786v1).
+The repository contains the code for running and evaluating the benchmarks for the open-source subset of tests (33 tests) used in the paper. Tests within this subset comprises of author's adaptation of some tests from Birmingham Object Recognition Battery (BORB), stimuli from the Leuven Embedded Figure Test (LEFT) [[FigShare Link]](https://figshare.com/articles/dataset/Leuven_Embedded_Figures_Test_Target_Shapes/3807885), and stimuli generated from the *MindSet: Vision* pipeline [[Paper]](https://arxiv.org/abs/2404.05290)[[Code]](https://github.com/ValerioB88/mindset-vision).
+
+## Directory Structure
+
+```
+neuropsych_vlm_bench/
+├── datasets/
+├── test_specs/
+├── utils/
+├── normative_data_for_comparison/
+├── run_all.py
+├── demo_openai.ipynb
+├── runner.py
+├── evaluator.py
+├── loaders.py
+├── get_dataset.py
+└── README.md
+```
+## Folders
+
+
+* **`datasets/`** is a folder containing test images. The tests are categorized based on one of the three visual processes they tap into- low, mid, and high-level visual processes. Datasets images can be downloaded using the `get_dataset.py` script.
+* **`test_specs/`** is a folder containing test specifications and configurations (Test metadata). Each test has a corresponding json file in this folder which contains information about the test such as the task type, stimuli path, the prompt, as well as the answer key. These metadata is used by the {} to run the tests.
+* **`utils/`** is a folder containing utility files. For instance, it contains the naming aliases for the stimuli used in evaluation and information on the evaluation method of each test.
+* **`normative_data_for_comparison/`** is a folder containing normative data for comparison. This subset of normative data is extracted from the normative data of the tests used in the paper [[OSF Link]](https://osf.io/ysxvg/overview).
+
 ## Core Files
 
-* **`runner.py`** - VLM runner supporting OpenAI, Anthropic, and Google providers
-* **`evaluator.py`** - Scoring system
-* **`loaders.py`** - Task data loading functions
-* **`get_dataset.py`** - Dataset retrieval script
-* **`run_all.py`** - Main execution script for running benchmarks
-* **`demo_openai.ipynb`** - Jupyter notebook demonstrating usage
+* **`runner.py`** - VLM runner supporting OpenAI, Anthropic, and Google providers. Runner is a wrapper around the VLM providers and handles the API calls. This wrapper ensures that the API settings and prompt format are consistent with that used in the original paper.  
+* **`loaders.py`** - This files contain the TaskLoader class that loads the task data from based on the task metadata in the test_specs folder. It also contains the function used to encode the stimuli images.
+* **`evaluator.py`** - This file contains the Evaluator class that evaluates the model responses against the answer key stored on the task metadata in the test_specs folder.
 
-## Directories
+* **`get_dataset.py`** - Dataset retrieval script. *See instructions below for downloading the dataset.*
+* **`run_all.py`** - Main execution script for running the models used in the paper on the provided datasets.
+* **`demo_openai.ipynb`** - Jupyter notebook demonstrating usage. *See end-to-end walkthrough here*
 
-* **`datasets/`** - Task datasets
-* **`test_specs/`** - Test specifications and configurations (Test metadata)
-* **`utils/`** - Configuration files
-* **`normative_data_for_comparison/`** - Reference data for comparison
 
-## Setup
+# Getting Started
+## Set up the environment
 
 ```bash
 python -m venv venv
 pip install -r requirements.txt
 ```
-## Get Dataset
+## Download the dataset using provided script
 This will download the dataset to the `datasets` directory.
 
 ```bash
@@ -29,7 +54,8 @@ python get_dataset.py
 
 ## Run models used in the paper
 
-Make sure to set the API keys in a .json file.
+The default script of run_all.py will run the models used in the paper on the provided datasets.
+Please make sure to insert your API keys in `utils/api_keys.json` file.
 
 ```bash
 python run_all.py
