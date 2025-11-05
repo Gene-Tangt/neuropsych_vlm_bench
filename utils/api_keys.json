@@ -1,0 +1,5 @@
+{
+    "open_ai": "INSERT_OPENAI_API_KEY",
+    "anthropic": "INSERT_ANTHROPIC_API_KEY",
+    "google": "INSERT_GOOGLE_API_KEY"
+}

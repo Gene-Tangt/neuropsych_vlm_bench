@@ -1,0 +1,13 @@
+
+The `utils` folder contains the following files:
+
+- evaluator_config.json: Maps tasks to evaluation methods
+- naming_aliases.json: Defines acceptable answers for naming tasks
+- api_keys.json: A placeholder file for API keys. User should replace this file with their own API keys.
+
+
+The `normative_data_for_comparison/` folder contains a subset of the normative data used in the original paper corresponding to the tests used in this repository.
+User can use this data to compare the performance of the models used in the paper with the normative data.
+
+
+The authors of the paper have replicated the main results of the paper using the code in this repository. The replicated results are available in `replication_with_pipeline` folder on our OSF repository [[OSF Link]](https://osf.io/ysxvg/files).

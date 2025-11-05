@@ -1,7 +1,7 @@
 # Neuropsych VLM Benchmark Repo
 
 This is the official repository for the paper "Visual Language Models show widespread visual deficits on neuropsychological tests" [[Link]](https://arxiv.org/abs/2504.10786v1).
-The repository contains the code for running and evaluating the benchmarks for the open-source subset of tests (33 tests) used in the paper. Tests within this subset comprises of author's adaptation of some tests from Birmingham Object Recognition Battery (BORB), stimuli from the Leuven Embedded Figure Test (LEFT) [[FigShare Link]](https://figshare.com/articles/dataset/Leuven_Embedded_Figures_Test_Target_Shapes/3807885), and stimuli generated from the *MindSet: Vision* pipeline [[Paper]](https://arxiv.org/abs/2404.05290)[[Code]](https://github.com/ValerioB88/mindset-vision).
+The repository contains the code for running and evaluating the benchmarks for the open-source subset of tests (31 tests) used in the paper. Tests within this subset comprises of author's adaptation of some tests from Birmingham Object Recognition Battery (BORB), stimuli from the Leuven Embedded Figure Test (LEFT) [[FigShare Link]](https://figshare.com/articles/dataset/Leuven_Embedded_Figures_Test_Target_Shapes/3807885), and stimuli generated from the *MindSet: Vision* pipeline [[Paper]](https://arxiv.org/abs/2404.05290)[[Code]](https://github.com/ValerioB88/mindset-vision).
 
 ## Directory Structure
 
@@ -37,8 +37,10 @@ neuropsych_vlm_bench/
 * **`run_all.py`** - Main execution script for running the models used in the paper on the provided datasets.
 * **`demo_openai.ipynb`** - Jupyter notebook demonstrating usage. *See end-to-end walkthrough here*
 
+See `extra_info.txt` for more information on other files in the repository.
 
-# Getting Started
+
+# Quick Start
 ## Set up the environment
 
 ```bash
@@ -61,6 +63,6 @@ Please make sure to insert your API keys in `utils/api_keys.json` file.
 python run_all.py
 ```
 
-## Demo
-Demo the usage of the runner with OpenAI can be found in `demo_openai.ipynb`.
+# Detailed Walkthrough Can be Found Here
+Demo of the pipeline with OpenAI API can be found in `demo_openai.ipynb`.
 
