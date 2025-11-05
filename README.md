@@ -66,3 +66,6 @@ python run_all.py
 # Detailed Walkthrough Can be Found Here
 Demo of the pipeline with OpenAI API can be found in `demo_openai.ipynb`.
 
+# Interactive Diagram
+We also provide an AI-generatd (created with Windsurf), interactive diagram that might help users understand the pipeline better.
+Access link: https://tinyurl.com/yc7y6ke2
