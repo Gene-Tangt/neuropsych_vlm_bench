@@ -42,9 +42,15 @@ See `extra_info.txt` for more information on other files in the repository.
 
 # Quick Start
 ## Set up the environment
-
+**Python Virtual Environment**
 ```bash
 python -m venv venv
+pip install -r requirements.txt
+```
+**Conda Environment**
+```bash
+conda create -n neuropsych_vlm_bench python=3.12
+conda activate neuropsych_vlm_bench
 pip install -r requirements.txt
 ```
 ## Download the dataset using provided script
