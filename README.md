@@ -62,6 +62,19 @@ Please make sure to insert your API keys in `utils/api_keys.json` file.
 ```bash
 python run_all.py
 ```
+## Quickly testing on new models
+The quickest way to run all tests on a new model is to modify the `run_all.py` file. Keep the providers that you want to test in the `run_all.py` file and remove the rest (if applicable). Then simply replace the model name in the `ModelConfig` with the new model name.
+
+```python
+openai_config = ModelConfig(
+    model_name="<new_model_name>",
+    api_key=api_keys["open_ai"],
+    max_tokens=1000,
+    temperature=1.0
+)
+```
+The rest of the code remains the same.
+
 
 # Detailed Walkthrough Can be Found Here
 Demo of the pipeline with OpenAI API can be found in `demo_openai.ipynb`.
