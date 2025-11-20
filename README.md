@@ -1,7 +1,7 @@
 # Neuropsych VLM Benchmark Repo
 
 This is the official repository for the paper "Visual Language Models show widespread visual deficits on neuropsychological tests" [[Link]](https://arxiv.org/abs/2504.10786v1).
-The repository contains the code for running and evaluating the benchmarks for the open-source subset of tests (31 tests) used in the paper. Tests within this subset comprises of author's adaptation of some tests from Birmingham Object Recognition Battery (BORB), stimuli from the Leuven Embedded Figure Test (LEFT) [[FigShare Link]](https://figshare.com/articles/dataset/Leuven_Embedded_Figures_Test_Target_Shapes/3807885), and stimuli generated from the *MindSet: Vision* pipeline [[Paper]](https://arxiv.org/abs/2404.05290)[[Code]](https://github.com/ValerioB88/mindset-vision).
+The repository contains the code for running and evaluating the benchmarks for the open-source subset of tests (31 tests) used in the paper. Tests within this subset consisted of author's adaptation of some tests from Birmingham Object Recognition Battery (BORB), stimuli from the Leuven Embedded Figure Test (LEFT) [[FigShare Link]](https://figshare.com/articles/dataset/Leuven_Embedded_Figures_Test_Target_Shapes/3807885), and stimuli generated from the *MindSet: Vision* pipeline [[Paper]](https://arxiv.org/abs/2404.05290)[[Code]](https://github.com/ValerioB88/mindset-vision).
 
 ## Directory Structure
 
@@ -9,6 +9,7 @@ The repository contains the code for running and evaluating the benchmarks for t
 neuropsych_vlm_bench/
 ├── datasets/
 ├── test_specs/
+├── figures_utils/
 ├── utils/
 ├── normative_data_for_comparison/
 ├── run_all.py
@@ -16,6 +17,7 @@ neuropsych_vlm_bench/
 ├── runner.py
 ├── evaluator.py
 ├── loaders.py
+├── generate_result_figures.py
 ├── get_dataset.py
 └── README.md
 ```
@@ -24,6 +26,7 @@ neuropsych_vlm_bench/
 
 * **`datasets/`** is a folder containing test images. The tests are categorized based on one of the three visual processes they tap into- low, mid, and high-level visual processes. Datasets images can be downloaded using the `get_dataset.py` script.
 * **`test_specs/`** is a folder containing test specifications and configurations (Test metadata). Each test has a corresponding json file in this folder which contains information about the test such as the task type, stimuli path, the prompt, as well as the answer key. These metadata is used by the {} to run the tests.
+* **`figures_utils/`** is a folder containing utility files such as task labels, and plotting colors for generating result figures using `generate_result_figures.py`.
 * **`utils/`** is a folder containing utility files. For instance, it contains the naming aliases for the stimuli used in evaluation and information on the evaluation method of each test.
 * **`normative_data_for_comparison/`** is a folder containing normative data for comparison. This subset of normative data is extracted from the normative data of the tests used in the paper [[OSF Link]](https://osf.io/ysxvg/overview).
 
@@ -35,6 +38,8 @@ neuropsych_vlm_bench/
 
 * **`get_dataset.py`** - Dataset retrieval script. *See instructions below for downloading the dataset.*
 * **`run_all.py`** - Main execution script for running the models used in the paper on the provided datasets.
+* **`generate_result_figures.py`** - Script for generating result figures like those from the original paper (Supplementary Figure S2 and S3) from results CSV files. This also runs permutation tests used in the paper to compare the models. 
+
 * **`demo_openai.ipynb`** - Jupyter notebook demonstrating usage. *See end-to-end walkthrough here*
 
 See `extra_info.txt` for more information on other files in the repository.
@@ -81,6 +86,19 @@ openai_config = ModelConfig(
 ```
 The rest of the code remains the same.
 
+## Generate Result Figures
+
+Once the models have been run, .csv results files will be generated in the `results` directory. These can be used to generate result figures using `generate_result_figures.py`. 
+
+Please insert your .csv file at the bottom of the `generate_result_figures.py` script:
+
+```python
+RESULT_CSVS = [
+    "your_result_csv_1.csv",
+    "your_result_csv_2.csv",
+    "your_result_csv_3.csv",
+]
+```
 
 # Detailed Walkthrough Can be Found Here
 Demo of the pipeline with OpenAI API can be found in `demo_openai.ipynb`.

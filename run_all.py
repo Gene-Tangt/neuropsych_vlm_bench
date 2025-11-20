@@ -16,7 +16,6 @@ from runner import ModelConfig, OpenAIModelRunner, AnthropicModelRunner, GoogleM
 from loaders import TaskLoader
 import time
 
-
 # Get API keys
 with open("utils/api_keys.json", "r") as f:
     api_keys = json.load(f)
@@ -73,5 +72,6 @@ for runner in [openai_runner, anthropic_runner, google_runner]:
         print(f"✓ Completed: {results[0]['task']}")
         time.sleep(10) # Timer was inserted here as a buffer to avoid rate limiting for some API
     
-    batch_evaluator.save_as_csv(f"results_{runner.config.model_name}.csv") # Save results
+    os.makedirs("results", exist_ok=True)
+    batch_evaluator.save_as_csv(f"results/results_{runner.config.model_name}.csv") # Save results
         
