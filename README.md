@@ -98,7 +98,11 @@ RESULT_CSVS = [
     "your_result_csv_2.csv",
     "your_result_csv_3.csv",
 ]
+
 ```
+
+If you would like to generate figures replicating the paper results, please download results .csv results files for Claude 3.5 Sonnet, GPT4o, and Gemini 1.5 Pro from our OSF repository [[Link](https://osf.io/ysxvg/files/ck5sr)].
+
 
 # Detailed Walkthrough Can be Found Here
 Demo of the pipeline with OpenAI API can be found in `demo_openai.ipynb`.
