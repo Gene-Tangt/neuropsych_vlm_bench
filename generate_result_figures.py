@@ -64,7 +64,7 @@ def extract_model_name(filepath: str) -> str:
 
 def load_test_details() -> pd.DataFrame:
     """Load test details with metadata and filter to required columns."""
-    data = pd.read_csv('utils/test_details_data.csv')
+    data = pd.read_csv('figures_utils/test_details_data.csv')
     
     columns_to_keep = [
         "task", "display_name", "subtask_grouping", "stage", "full_score", "normative_score", "normative_SD", "normative_percent"
