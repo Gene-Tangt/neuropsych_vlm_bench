@@ -1,17 +1,20 @@
 # Neuropsych VLM Benchmark Repo
 
-This is the official repository for the paper "Visual Language Models show widespread visual deficits on neuropsychological tests" [[Link]](https://arxiv.org/abs/2504.10786v1).
+This is the Neuropsychology VLM Benchmark Repo. It is based on the paper "Visual Language Models show widespread visual deficits on neuropsychological tests" [[Link]](https://arxiv.org/abs/2504.10786v1).
 The repository contains the code for running and evaluating the benchmarks for the open-source subset of tests (31 tests) used in the paper. Tests within this subset consisted of author's adaptation of some tests from Birmingham Object Recognition Battery (BORB), stimuli from the Leuven Embedded Figure Test (LEFT) [[FigShare Link]](https://figshare.com/articles/dataset/Leuven_Embedded_Figures_Test_Target_Shapes/3807885), and stimuli generated from the *MindSet: Vision* pipeline [[Paper]](https://arxiv.org/abs/2404.05290)[[Code]](https://github.com/ValerioB88/mindset-vision).
+
+Please note that the paper's data is not included in this repository. The data can be downloaded from the OSF repository [[Link]](https://osf.io/ysxvg/overview).
 
 ## Directory Structure
 
 ```
 neuropsych_vlm_bench/
 ├── datasets/
+├── examples/
 ├── test_specs/
 ├── figures_utils/
 ├── utils/
-├── normative_data_for_comparison/
+├── normative_data/
 ├── run_all.py
 ├── demo_openai.ipynb
 ├── runner.py
@@ -27,9 +30,9 @@ neuropsych_vlm_bench/
 * **`datasets/`** is a folder containing test images. The tests are categorized based on one of the three visual processes they tap into- low, mid, and high-level visual processes. Datasets images can be downloaded using the `get_dataset.py` script.
 * **`test_specs/`** is a folder containing test specifications and configurations (Test metadata). Each test has a corresponding json file in this folder which contains information about the test such as the task type, stimuli path, the prompt, as well as the answer key. These metadata is used by the {} to run the tests.
 * **`figures_utils/`** is a folder containing utility files such as task labels, and plotting colors for generating result figures using `generate_result_figures.py`.
-* **`utils/`** is a folder containing utility files. For instance, it contains the naming aliases for the stimuli used in evaluation and information on the evaluation method of each test.
-* **`normative_data_for_comparison/`** is a folder containing normative data for comparison. This subset of normative data is extracted from the normative data of the tests used in the paper [[OSF Link]](https://osf.io/ysxvg/overview).
-
+* **`utils/`** is a folder containing utility files. For instance, it contains the naming aliases for the stimuli used in evaluation, the information on the evaluation method of each test, and the details of tests used in the paper for replicating the figures.
+* **`normative_data/`** is a folder containing normative data for reference. This subset of normative data is extracted from the normative data of the tests used in the paper [[OSF Link]](https://osf.io/ysxvg/overview).
+* **`examples/`** is a folder containing example result CSVs evaluated using this repository. This was used to test the pipeline (as demonstrated in Supplementary Figure S2 and S3).
 ## Core Files
 
 * **`runner.py`** - VLM runner supporting OpenAI, Anthropic, and Google providers. Runner is a wrapper around the VLM providers and handles the API calls. This wrapper ensures that the API settings and prompt format are consistent with that used in the original paper.  
@@ -94,14 +97,14 @@ Please insert your .csv file at the bottom of the `generate_result_figures.py` s
 
 ```python
 RESULT_CSVS = [
-    "your_result_csv_1.csv",
-    "your_result_csv_2.csv",
-    "your_result_csv_3.csv",
+    "examples/results_gpt4o.csv",
+    "examples/results_claude_3.5_sonnet.csv",
+    "examples/results_gemini_1.5_pro.csv",
 ]
 
 ```
 
-If you would like to generate figures replicating the paper results, please download results .csv results files for Claude 3.5 Sonnet, GPT4o, and Gemini 1.5 Pro from our OSF repository [[Link](https://osf.io/ysxvg/files/ck5sr)].
+If you would like to generate figures replicating the paper results, please use the example results .csv files for Claude 3.5 Sonnet, GPT4o, and Gemini 1.5 Pro. These files are also available on our OSF repository [[Link](https://osf.io/ysxvg/files/ck5sr)].
 
 
 # Detailed Walkthrough Can be Found Here

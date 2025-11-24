@@ -62,26 +62,15 @@ def extract_model_name(filepath: str) -> str:
     return filename
 
 
-def load_baseline_data(baseline_path: str) -> pd.DataFrame:
-    """Load and prepare baseline data with metadata and old model scores."""
-    data = pd.read_csv(baseline_path)
+def load_test_details() -> pd.DataFrame:
+    """Load test details with metadata and filter to required columns."""
+    data = pd.read_csv('utils/test_details_data.csv')
     
-    # Select and rename columns
     columns_to_keep = [
-        "task", "display_name", "subtask_grouping", "stage",
-        "GPT_performance_score", "Claude_performance_score", "Gemini_performance_score",
-        "full_score", "normative_score", "normative_SD"
+        "task", "display_name", "subtask_grouping", "stage", "full_score", "normative_score", "normative_SD", "normative_percent"
     ]
     
-    # This is the data from the original paper (for the 31 open-source subset)
-    data = data[columns_to_keep]
-    data = data.rename(columns={
-        "GPT_performance_score": "old_GPT_score",
-        "Claude_performance_score": "old_Claude_score",
-        "Gemini_performance_score": "old_Gemini_score"
-    })
-    
-    return data
+    return data[columns_to_keep]
 
 
 def load_result_data(result_paths: List[str]) -> Dict[str, pd.DataFrame]:
@@ -102,9 +91,9 @@ def load_result_data(result_paths: List[str]) -> Dict[str, pd.DataFrame]:
     return result_data
 
 
-def merge_data(baseline: pd.DataFrame, results: Dict[str, pd.DataFrame]) -> pd.DataFrame:
-    """Merge baseline and result data."""
-    data = baseline.copy()
+def merge_data(test_details: pd.DataFrame, results: Dict[str, pd.DataFrame]) -> pd.DataFrame:
+    """Merge test details with model result data."""
+    data = test_details.copy()
     
     # Merge each result dataset
     for model_name, result_df in results.items():
@@ -256,7 +245,6 @@ def plot_stage_comparison(data: pd.DataFrame, model_columns: List[str], output_p
         # Annotation positions
         h = y_max - 0.05 * y_range  # Height for lines
         
-        # Helper function to get significance marker (Bonferroni-corrected p-values)
         def get_sig_marker(p_val, n_comp):
             if p_val < 0.001 / n_comp:
                 return '***'
@@ -296,6 +284,11 @@ def plot_subtask_comparison(data: pd.DataFrame, model_columns: List[str], output
     subtask_palette = sns.color_palette(nine_colors)
     color_dict = dict(zip(SUBTASK_GROUPING_LABELS, subtask_palette))
     
+    model_names = []
+    for col in model_columns:
+        clean_name = col.replace('new_', '').replace('_human', '')
+        model_names.append(clean_name)
+    
     # Generate brightness factors dynamically based on number of models
     num_models = len(model_columns)
     brightness_factors = [1.0 - (i * 0.3) for i in range(num_models)]
@@ -303,6 +296,8 @@ def plot_subtask_comparison(data: pd.DataFrame, model_columns: List[str], output
     y_tick_positions = []
     y_tick_labels = []
     bar_count = 0
+    
+    legend_entries = {}
     
     for subtask, group in data.groupby('subtask_grouping', observed=True):
         model_colors = {
@@ -316,14 +311,17 @@ def plot_subtask_comparison(data: pd.DataFrame, model_columns: List[str], output
         y_tick_positions.extend(y_positions + bar_width)
         y_tick_labels.extend(group['display_name'])
         
-        for i, model in enumerate(model_columns):
+        for i, (model, model_name) in enumerate(zip(model_columns, model_names)):
             bars = ax.barh(
                 y_positions + i * bar_width,
                 group[model],
                 bar_width,
-                label=f"{subtask} - {model.split('_')[0]}",
                 color=model_colors[model],
             )
+            
+            legend_key = f"{subtask} - {model_name}"
+            if legend_key not in legend_entries:
+                legend_entries[legend_key] = bars[0]
             
             # Add significance markers
             for bar_idx, bar in enumerate(bars):
@@ -350,9 +348,8 @@ def plot_subtask_comparison(data: pd.DataFrame, model_columns: List[str], output
     ax.set_ylim(-1, bar_count)
     ax.invert_yaxis()
     
-    handles, labels = ax.get_legend_handles_labels()
-    by_label = dict(zip(labels, handles))
-    ax.legend(by_label.values(), by_label.keys(), bbox_to_anchor=(1.05, 1), loc='upper left')
+    ax.legend(legend_entries.values(), legend_entries.keys(), 
+              bbox_to_anchor=(1.05, 1), loc='upper left', fontsize=8)
     
     plt.tight_layout()
     fig.savefig(output_path, dpi=300, bbox_inches='tight')
@@ -360,12 +357,11 @@ def plot_subtask_comparison(data: pd.DataFrame, model_columns: List[str], output
     print(f"Saved subtask comparison plot to {output_path}")
 
 
-def main(baseline_csv: str, result_csvs: List[str], output_dir: str = './output', 
+def main(result_csvs: List[str], output_dir: str = './output', 
          output_format: str = 'svg', filename_prefix: str = ''):
     """Main execution function.
     
     Args:
-        baseline_csv: Path to baseline CSV file containing metadata and old model scores
         result_csvs: List of paths to result CSV files (with task and raw_score columns)
         output_dir: Directory to save output figures (default: './output')
         output_format: Output format for figures - 'png', 'svg', or 'pdf' (default: 'svg')
@@ -378,14 +374,13 @@ def main(baseline_csv: str, result_csvs: List[str], output_dir: str = './output'
     print("="*60)
     print("VLM Benchmark Result Figure Generator")
     print("="*60)
-    print(f"\nBaseline: {baseline_csv}")
     print(f"Results: {', '.join(result_csvs)}")
     print(f"Output directory: {output_dir}")
     print(f"Output format: {output_format}")
     
     # Load data
     print("\nLoading data...")
-    baseline_data = load_baseline_data(baseline_csv)
+    test_details = load_test_details()
     result_data = load_result_data(result_csvs)
     
     if not result_data:
@@ -394,51 +389,31 @@ def main(baseline_csv: str, result_csvs: List[str], output_dir: str = './output'
     
     # Merge data
     print("Merging datasets...")
-    data = merge_data(baseline_data, result_data)
+    data = merge_data(test_details, result_data)
     
     # Prepare data
     print("Preparing data...")
     data = prepare_data(data)
     
-    # Identify model columns for old and new
-    old_model_cols = [col for col in data.columns if col.startswith('old_') and col.endswith('_human')]
     new_model_cols = [col for col in data.columns if col.startswith('new_') and col.endswith('_human')]
     
-    # Generate plots for old models
-    if old_model_cols:
-        print("\n" + "="*60)
-        print("ANALYSIS: OLD MODELS")
-        print("="*60)
-        
-        # Permutation test
-        perm_results_old = permutation_test(data, old_model_cols)
-        
-        # Stage comparison plot
-        prefix = f"{filename_prefix}_" if filename_prefix else ""
-        stage_plot_path = output_dir_path / f"{prefix}stage_comparison_old.{output_format}"
-        plot_stage_comparison(data, old_model_cols, str(stage_plot_path), perm_results_old)
-        
-        # Subtask comparison plot
-        subtask_plot_path = output_dir_path / f"{prefix}subtask_comparison_old.{output_format}"
-        plot_subtask_comparison(data, old_model_cols, str(subtask_plot_path))
     
-    # Generate plots for new models
-    if new_model_cols:
-        print("\n" + "="*60)
-        print("ANALYSIS: NEW MODELS")
-        print("="*60)
-        
-        # Permutation test
-        perm_results_new = permutation_test(data, new_model_cols)
-        
-        # Stage comparison plot
-        prefix = f"{filename_prefix}_" if filename_prefix else ""
-        stage_plot_path = output_dir_path / f"{prefix}stage_comparison_new.{output_format}"
-        plot_stage_comparison(data, new_model_cols, str(stage_plot_path), perm_results_new)
-        
-        # Subtask comparison plot
-        subtask_plot_path = output_dir_path / f"{prefix}subtask_comparison_new.{output_format}"
-        plot_subtask_comparison(data, new_model_cols, str(subtask_plot_path))
+
+    print("\n" + "="*60)
+    print("ANALYSIS: NEW MODELS")
+    print("="*60)
+    
+    # Permutation test
+    perm_results_new = permutation_test(data, new_model_cols)
+    
+    # Stage comparison plot
+    prefix = f"{filename_prefix}_" if filename_prefix else ""
+    stage_plot_path = output_dir_path / f"{prefix}stage_comparison_new.{output_format}"
+    plot_stage_comparison(data, new_model_cols, str(stage_plot_path), perm_results_new)
+    
+    # Subtask comparison plot
+    subtask_plot_path = output_dir_path / f"{prefix}subtask_comparison_new.{output_format}"
+    plot_subtask_comparison(data, new_model_cols, str(subtask_plot_path))
     
     print("\n" + "="*60)
     print("COMPLETE")
@@ -447,15 +422,12 @@ def main(baseline_csv: str, result_csvs: List[str], output_dir: str = './output'
 
 
 if __name__ == "__main__":
-    # Specify your CSV files here
-    
-    BASELINE_CSV = "replication_with_pipeline/all_test_summary_main_open_source.csv"
     
     # Insert your result CSVs here
     RESULT_CSVS = [
-        "your_result_csv_1.csv",
-        "your_result_csv_2.csv",
-        "your_result_csv_3.csv",
+        "examples/results_gpt-4o.csv",
+        "examples/results_claude-3.5.csv",
+        "examples/results_gemini-1.5-pro.csv",
     ]
     
     OUTPUT_DIR = "./output"  # Directory to save figures
@@ -465,7 +437,6 @@ if __name__ == "__main__":
     
     
     main(
-        baseline_csv=BASELINE_CSV,
         result_csvs=RESULT_CSVS,
         output_dir=OUTPUT_DIR,
         output_format=OUTPUT_FORMAT,
