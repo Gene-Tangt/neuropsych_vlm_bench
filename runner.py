@@ -277,14 +277,26 @@ class OpenAIModelRunner(BaseModelRunner):
         """
         if not hasattr(self, 'client'):
             self.client = self._initialize_client()
-            
-        response = self.client.chat.completions.create(
-            model=self.config.model_name,
-            messages=conversation,
-            max_tokens=self.config.max_tokens,
-            temperature=self.config.temperature,
-            **self.config.additional_params
-        )
+        
+        try:
+            response = self.client.chat.completions.create(
+                model=self.config.model_name,
+                messages=conversation,
+                max_tokens=self.config.max_tokens,
+                temperature=self.config.temperature,
+                **self.config.additional_params
+            )
+        except TypeError as e: # Handle parameter name changes
+            if "max_tokens" in str(e):
+                response = self.client.chat.completions.create(
+                    model=self.config.model_name,
+                    messages=conversation,
+                    max_completion_tokens=self.config.max_tokens,
+                    temperature=self.config.temperature,
+                    **self.config.additional_params
+                )
+            else:
+                raise 
         
         return response.choices[0].message.content
 
