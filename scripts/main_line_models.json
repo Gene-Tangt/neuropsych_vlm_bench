@@ -1,0 +1,38 @@
+{
+  "openai_flagship": {
+    "label": "OpenAI flagship",
+    "results_dir": "results/longitudinal_openai",
+    "models": {
+      "gpt-4-turbo-2024-04-09": "2024-04-09",
+      "gpt-4o-2024-05-13": "2024-05-13",
+      "gpt-4o-2024-08-06": "2024-08-06",
+      "gpt-4o-2024-11-20": "2024-11-20",
+      "gpt-4.1-2025-04-14": "2025-04-14",
+      "gpt-5.1-2025-11-13": "2025-11-13",
+      "gpt-5.2-2025-12-11": "2025-12-11",
+      "gpt-5.4-2026-03-05": "2026-03-05",
+      "gpt-5.5-2026-04-23": "2026-04-23",
+      "gpt-5.6-sol": "2026-06-23",
+      "gpt-6-sol": "2026-09-14"
+    }
+  },
+  "claude_sonnet": {
+    "label": "Claude Sonnet",
+    "results_dir": "results/longitudinal_claude",
+    "models": {
+      "claude-sonnet-4-5-20250929": "2025-09-29",
+      "claude-sonnet-4-6": "2026-02-17",
+      "claude-sonnet-5": "2026-06-29",
+      "claude-sonnet-5-5": "2026-09-28"
+    }
+  },
+  "paper_runs": {
+    "citation": "Tangtartharakul & Storrs (2026)",
+    "models": {
+      "gpt-4o-2024-05-13": {"line": "openai_flagship", "release_date": "2024-05-13",
+                            "results": "examples/results_gpt-4o.csv"},
+      "claude-3-5-sonnet-20241022": {"line": "claude_sonnet", "release_date": "2024-10-22",
+                                     "results": "examples/results_claude-3.5.csv"}
+    }
+  }
+}

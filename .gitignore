@@ -1,4 +1,50 @@
-/minibench
-/__pycache__
+# ── Secrets & credentials ────────────────────────────────────────
+# Keys belong in .env (see .env.example); never commit real values.
+.env
+.env.*
+!.env.example
+*.env
+api_keys*.json
+*api_key*
+*apikey*
+*secret*
+*credentials*.json
+service_account*.json
+gcloud*.json
+*.pem
+*.key
+*.p12
+*.pfx
+.netrc
+.pypirc
+
+# ── Results & generated outputs (keep unpublished results private) ─
+/results
+/output
 /datasets
+/minibench
 /replication_with_pipeline
+*_responses.json
+*_responses.jsonl
+*.log
+logs/
+wandb/
+mlruns/
+
+# ── Python / environments ────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.venv/
+/venv
+.ipynb_checkpoints/
+.pytest_cache/
+
+# ── Editor / OS ──────────────────────────────────────────────────
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
