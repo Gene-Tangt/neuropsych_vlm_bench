@@ -20,11 +20,18 @@ dependencies = [
     "google-genai>=1.0.0",
     "python-dotenv>=1.0.0",
     "tqdm>=4.62.0",
-    "gdown>=5.2.0",
 ]
 
-[tool.setuptools]
-packages = ["neuropsych_bench"]
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+
+[tool.setuptools.packages.find]
+include = ["neuropsych_bench*"]
 
 [tool.setuptools.package-data]
-neuropsych_bench = ["data/*"]
+neuropsych_bench = ["resources/*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = ["live: calls a paid model API; run with pytest -m live"]
+addopts = "-m 'not live'"

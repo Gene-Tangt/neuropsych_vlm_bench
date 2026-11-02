@@ -21,7 +21,6 @@ gcloud*.json
 # ── Results & generated outputs (keep unpublished results private) ─
 /results
 /output
-/datasets
 /minibench
 /replication_with_pipeline
 *_responses.json
