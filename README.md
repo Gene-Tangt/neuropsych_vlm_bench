@@ -33,7 +33,7 @@ neuropsych_vlm_bench/
 │   │   └── generate_vendor_longitudinal.py  vendor lines over release date
 │   └── build/json_to_jsonl.py               how the JSONL was made from the old per-test JSON files
 ├── configs/                 model lists for the longitudinal figures
-├── tests/                   pytest suite; tests/live/ calls paid APIs (pytest -m live)
+├── tests/                   offline unit tests (pytest)
 ├── examples/                paper results (GPT-4o, Claude 3.5 Sonnet, Gemini 1.5 Pro)
 ├── notebooks/demo_openai.ipynb   walkthrough of the pipeline
 ├── docs/                    inclusion criteria for the longitudinal analysis

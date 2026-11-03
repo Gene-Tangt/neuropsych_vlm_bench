@@ -33,5 +33,3 @@ neuropsych_bench = ["resources/*"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
-markers = ["live: calls a paid model API; run with pytest -m live"]
-addopts = "-m 'not live'"

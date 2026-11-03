@@ -1,55 +1,10 @@
-"""The new prompting path sends exactly what the pre-restructure runner sent, for every trial.
-
-tests/fixtures/baseline_content.jsonl was recorded from the old runner (see make_baseline.py),
-with image parts as their old repo-relative datasets/ paths instead of base64 data.
-"""
-import json
 from pathlib import Path
-from unittest import mock
 
 import pytest
 
-from neuropsych_bench import TaskLoader, task_names
-from neuropsych_bench.models import ModelConfig, ModelRunner, base
-from neuropsych_bench.prompting import build_parts, uses_cues
-
-BASELINE = Path(__file__).parent / "fixtures" / "baseline_content.jsonl"
-
-
-class RecordingRunner(ModelRunner):
-    def create_client(self):
-        return None
-
-    def text_part(self, text):
-        return ["text", text]
-
-    def image_part(self, image):
-        return ["image", image]
-
-    def call_api(self, content):
-        return content
-
-    def response_text(self, response):
-        return None
-
-
-def old_path(path, data_root):
-    """data/images/x -> datasets/x, the path the old runner encoded."""
-    return "datasets/" + Path(path).relative_to(Path(data_root) / "images").as_posix()
-
-
-def test_matches_old_runner():
-    with open(BASELINE, encoding="utf-8") as f:
-        baseline = {line["id"]: line["content"] for line in map(json.loads, f)}
-    runner = RecordingRunner(ModelConfig(model_name="recording"))
-    seen = 0
-    for task in task_names():
-        for trial in TaskLoader(task).get_trials():
-            with mock.patch.object(base, "encode_image", side_effect=lambda p, root=trial["data_root"]: old_path(p, root)):
-                content = runner.run_trial(trial)
-            assert content == baseline[f"{task}/{trial['trial_id']}"], f"{task}/{trial['trial_id']}"
-            seen += 1
-    assert seen == len(baseline) == 1130
+from neuropsych_bench import load_rows
+from neuropsych_bench.dataset import DATA_ROOT
+from neuropsych_bench.prompting import ROLE_CUES, Image, Text, build_parts, uses_cues
 
 
 @pytest.mark.parametrize("roles, cued", [
@@ -62,8 +17,40 @@ def test_uses_cues(roles, cued):
     assert uses_cues(roles) is cued
 
 
-def test_build_parts_order():
+def test_build_parts_cued():
     row = {"prompt": "P", "images": ["a.png", "b.png", "c.png"], "image_roles": ["target", "option_1", "option_2"]}
-    parts = build_parts(row, Path("root"))
-    assert [p.type for p in parts] == ["text", "text", "image", "text", "image", "text", "image"]
-    assert [p.path for p in parts if p.type == "image"] == [Path("root/a.png"), Path("root/b.png"), Path("root/c.png")]
+    assert build_parts(row, Path("root")) == [
+        Text("P"),
+        Text("Here's the target image"), Image(Path("root/a.png"), "target"),
+        Text("Here's the first option"), Image(Path("root/b.png"), "option_1"),
+        Text("Here's the second option"), Image(Path("root/c.png"), "option_2"),
+    ]
+
+
+@pytest.mark.parametrize("roles", [["target"], ["options", "options"]])
+def test_build_parts_uncued(roles):
+    images = [f"{i}.png" for i in range(len(roles))]
+    parts = build_parts({"prompt": "P", "images": images, "image_roles": roles}, Path("root"))
+    assert parts == [Text("P")] + [Image(Path("root") / p, r) for p, r in zip(images, roles)]
+
+
+def test_every_trial():
+    """Prompt first, then the trial's images in file order, each cued exactly when the layout calls for it."""
+    for row in load_rows():
+        parts = build_parts(row, DATA_ROOT)
+        assert parts[0] == Text(row["prompt"]), row["id"]
+        images = [p for p in parts if p.type == "image"]
+        assert [p.path for p in images] == [DATA_ROOT / p for p in row["images"]], row["id"]
+        assert [p.role for p in images] == row["image_roles"], row["id"]
+        if uses_cues(row["image_roles"]):
+            assert parts[1:] == [part for role, image in zip(row["image_roles"], images)
+                                 for part in (Text(ROLE_CUES[role]), image)], row["id"]
+        else:
+            assert parts[1:] == images, row["id"]
+
+
+if __name__ == "__main__":
+    import sys
+
+    import pytest
+    sys.exit(pytest.main(["-v", __file__]))

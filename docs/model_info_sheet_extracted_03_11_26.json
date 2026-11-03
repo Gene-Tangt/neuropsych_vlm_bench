@@ -1,0 +1,1530 @@
+{
+  "extracted_at": "2026-11-03T06:11:06+00:00",
+  "providers": {
+    "anthropic": {
+      "n_models": 14,
+      "error": null
+    },
+    "openai": {
+      "n_models": 0,
+      "error": "OpenAIError: Missing credentials. Please pass an `api_key`, `workload_identity`, `admin_api_key`, or set the `OPENAI_API_KEY` or `OPENAI_ADMIN_KEY` environment variable."
+    },
+    "google": {
+      "n_models": 0,
+      "error": "ValueError: No API key was provided. Please pass a valid API key. Learn how to create an API key at https://ai.google.dev/gemini-api/docs/api-key."
+    }
+  },
+  "models": [
+    {
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-5-20250929",
+      "display_name": "Claude Sonnet 4.5",
+      "release_date": "2025-09-29",
+      "max_input_tokens": 200000,
+      "max_output_tokens": 64000,
+      "reasoning": true,
+      "reasoning_levels": {
+        "thinking_types": [
+          "disabled",
+          "enabled"
+        ],
+        "effort": []
+      },
+      "image_input": true,
+      "raw": {
+        "id": "claude-sonnet-4-5-20250929",
+        "capabilities": {
+          "batch": {
+            "supported": true
+          },
+          "citations": {
+            "supported": true
+          },
+          "code_execution": {
+            "supported": true
+          },
+          "context_management": {
+            "clear_thinking_20251015": {
+              "supported": true
+            },
+            "clear_tool_uses_20250919": {
+              "supported": true
+            },
+            "compact_20260112": {
+              "supported": false
+            },
+            "supported": true
+          },
+          "effort": {
+            "high": {
+              "supported": false
+            },
+            "low": {
+              "supported": false
+            },
+            "max": {
+              "supported": false
+            },
+            "medium": {
+              "supported": false
+            },
+            "supported": false,
+            "xhigh": {
+              "supported": false
+            }
+          },
+          "image_input": {
+            "supported": true
+          },
+          "pdf_input": {
+            "supported": true
+          },
+          "server_tools": {
+            "code_execution": {
+              "supported": true
+            },
+            "supported": true,
+            "web_search": {
+              "supported": true
+            }
+          },
+          "structured_outputs": {
+            "supported": true
+          },
+          "thinking": {
+            "supported": true,
+            "types": {
+              "adaptive": {
+                "supported": false
+              },
+              "between_tools": {
+                "supported": false
+              },
+              "disabled": {
+                "supported": true
+              },
+              "enabled": {
+                "supported": true
+              }
+            }
+          }
+        },
+        "created_at": "2025-09-29T00:00:00Z",
+        "deprecated_at": "2026-09-30T18:30:00Z",
+        "display_name": "Claude Sonnet 4.5",
+        "lifecycle": "deprecated",
+        "line": "sonnet",
+        "max_input_tokens": 200000,
+        "max_tokens": 64000,
+        "retires_at": "2026-11-30T17:00:00Z",
+        "type": "model"
+      }
+    },
+    {
+      "provider": "anthropic",
+      "model": "claude-haiku-4-5-20251001",
+      "display_name": "Claude Haiku 4.5",
+      "release_date": "2025-10-01",
+      "max_input_tokens": 200000,
+      "max_output_tokens": 64000,
+      "reasoning": true,
+      "reasoning_levels": {
+        "thinking_types": [
+          "disabled",
+          "enabled"
+        ],
+        "effort": []
+      },
+      "image_input": true,
+      "raw": {
+        "id": "claude-haiku-4-5-20251001",
+        "capabilities": {
+          "batch": {
+            "supported": true
+          },
+          "citations": {
+            "supported": true
+          },
+          "code_execution": {
+            "supported": false
+          },
+          "context_management": {
+            "clear_thinking_20251015": {
+              "supported": true
+            },
+            "clear_tool_uses_20250919": {
+              "supported": true
+            },
+            "compact_20260112": {
+              "supported": false
+            },
+            "supported": true
+          },
+          "effort": {
+            "high": {
+              "supported": false
+            },
+            "low": {
+              "supported": false
+            },
+            "max": {
+              "supported": false
+            },
+            "medium": {
+              "supported": false
+            },
+            "supported": false,
+            "xhigh": {
+              "supported": false
+            }
+          },
+          "image_input": {
+            "supported": true
+          },
+          "pdf_input": {
+            "supported": true
+          },
+          "server_tools": {
+            "code_execution": {
+              "supported": true
+            },
+            "supported": true,
+            "web_search": {
+              "supported": true
+            }
+          },
+          "structured_outputs": {
+            "supported": true
+          },
+          "thinking": {
+            "supported": true,
+            "types": {
+              "adaptive": {
+                "supported": false
+              },
+              "between_tools": {
+                "supported": false
+              },
+              "disabled": {
+                "supported": true
+              },
+              "enabled": {
+                "supported": true
+              }
+            }
+          }
+        },
+        "created_at": "2025-10-15T00:00:00Z",
+        "display_name": "Claude Haiku 4.5",
+        "lifecycle": "active",
+        "line": "haiku",
+        "max_input_tokens": 200000,
+        "max_tokens": 64000,
+        "type": "model"
+      }
+    },
+    {
+      "provider": "anthropic",
+      "model": "claude-opus-4-5-20251101",
+      "display_name": "Claude Opus 4.5",
+      "release_date": "2025-11-01",
+      "max_input_tokens": 200000,
+      "max_output_tokens": 64000,
+      "reasoning": true,
+      "reasoning_levels": {
+        "thinking_types": [
+          "disabled",
+          "enabled"
+        ],
+        "effort": [
+          "high",
+          "low",
+          "medium"
+        ]
+      },
+      "image_input": true,
+      "raw": {
+        "id": "claude-opus-4-5-20251101",
+        "capabilities": {
+          "batch": {
+            "supported": true
+          },
+          "citations": {
+            "supported": true
+          },
+          "code_execution": {
+            "supported": true
+          },
+          "context_management": {
+            "clear_thinking_20251015": {
+              "supported": true
+            },
+            "clear_tool_uses_20250919": {
+              "supported": true
+            },
+            "compact_20260112": {
+              "supported": false
+            },
+            "supported": true
+          },
+          "effort": {
+            "high": {
+              "supported": true
+            },
+            "low": {
+              "supported": true
+            },
+            "max": {
+              "supported": false
+            },
+            "medium": {
+              "supported": true
+            },
+            "supported": true,
+            "xhigh": {
+              "supported": false
+            }
+          },
+          "image_input": {
+            "supported": true
+          },
+          "pdf_input": {
+            "supported": true
+          },
+          "server_tools": {
+            "code_execution": {
+              "supported": true
+            },
+            "supported": true,
+            "web_search": {
+              "supported": true
+            }
+          },
+          "structured_outputs": {
+            "supported": true
+          },
+          "thinking": {
+            "supported": true,
+            "types": {
+              "adaptive": {
+                "supported": false
+              },
+              "between_tools": {
+                "supported": false
+              },
+              "disabled": {
+                "supported": true
+              },
+              "enabled": {
+                "supported": true
+              }
+            }
+          }
+        },
+        "created_at": "2025-11-24T00:00:00Z",
+        "display_name": "Claude Opus 4.5",
+        "lifecycle": "active",
+        "line": "opus",
+        "max_input_tokens": 200000,
+        "max_tokens": 64000,
+        "type": "model"
+      }
+    },
+    {
+      "provider": "anthropic",
+      "model": "claude-opus-4-6",
+      "display_name": "Claude Opus 4.6",
+      "release_date": "2026-02-04",
+      "max_input_tokens": 1000000,
+      "max_output_tokens": 128000,
+      "reasoning": true,
+      "reasoning_levels": {
+        "thinking_types": [
+          "adaptive",
+          "disabled",
+          "enabled"
+        ],
+        "effort": [
+          "high",
+          "low",
+          "max",
+          "medium"
+        ]
+      },
+      "image_input": true,
+      "raw": {
+        "id": "claude-opus-4-6",
+        "capabilities": {
+          "batch": {
+            "supported": true
+          },
+          "citations": {
+            "supported": true
+          },
+          "code_execution": {
+            "supported": true
+          },
+          "context_management": {
+            "clear_thinking_20251015": {
+              "supported": true
+            },
+            "clear_tool_uses_20250919": {
+              "supported": true
+            },
+            "compact_20260112": {
+              "supported": true
+            },
+            "supported": true
+          },
+          "effort": {
+            "high": {
+              "supported": true
+            },
+            "low": {
+              "supported": true
+            },
+            "max": {
+              "supported": true
+            },
+            "medium": {
+              "supported": true
+            },
+            "supported": true,
+            "xhigh": {
+              "supported": false
+            }
+          },
+          "image_input": {
+            "supported": true
+          },
+          "pdf_input": {
+            "supported": true
+          },
+          "server_tools": {
+            "code_execution": {
+              "supported": true
+            },
+            "supported": true,
+            "web_search": {
+              "supported": true
+            }
+          },
+          "structured_outputs": {
+            "supported": true
+          },
+          "thinking": {
+            "supported": true,
+            "types": {
+              "adaptive": {
+                "supported": true
+              },
+              "between_tools": {
+                "supported": false
+              },
+              "disabled": {
+                "supported": true
+              },
+              "enabled": {
+                "supported": true
+              }
+            }
+          }
+        },
+        "created_at": "2026-02-04T00:00:00Z",
+        "display_name": "Claude Opus 4.6",
+        "lifecycle": "active",
+        "line": "opus",
+        "max_input_tokens": 1000000,
+        "max_tokens": 128000,
+        "type": "model"
+      }
+    },
+    {
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6",
+      "display_name": "Claude Sonnet 4.6",
+      "release_date": "2026-02-17",
+      "max_input_tokens": 1000000,
+      "max_output_tokens": 128000,
+      "reasoning": true,
+      "reasoning_levels": {
+        "thinking_types": [
+          "adaptive",
+          "disabled",
+          "enabled"
+        ],
+        "effort": [
+          "high",
+          "low",
+          "max",
+          "medium"
+        ]
+      },
+      "image_input": true,
+      "raw": {
+        "id": "claude-sonnet-4-6",
+        "capabilities": {
+          "batch": {
+            "supported": true
+          },
+          "citations": {
+            "supported": true
+          },
+          "code_execution": {
+            "supported": true
+          },
+          "context_management": {
+            "clear_thinking_20251015": {
+              "supported": true
+            },
+            "clear_tool_uses_20250919": {
+              "supported": true
+            },
+            "compact_20260112": {
+              "supported": true
+            },
+            "supported": true
+          },
+          "effort": {
+            "high": {
+              "supported": true
+            },
+            "low": {
+              "supported": true
+            },
+            "max": {
+              "supported": true
+            },
+            "medium": {
+              "supported": true
+            },
+            "supported": true,
+            "xhigh": {
+              "supported": false
+            }
+          },
+          "image_input": {
+            "supported": true
+          },
+          "pdf_input": {
+            "supported": true
+          },
+          "server_tools": {
+            "code_execution": {
+              "supported": true
+            },
+            "supported": true,
+            "web_search": {
+              "supported": true
+            }
+          },
+          "structured_outputs": {
+            "supported": true
+          },
+          "thinking": {
+            "supported": true,
+            "types": {
+              "adaptive": {
+                "supported": true
+              },
+              "between_tools": {
+                "supported": false
+              },
+              "disabled": {
+                "supported": true
+              },
+              "enabled": {
+                "supported": true
+              }
+            }
+          }
+        },
+        "created_at": "2026-02-17T00:00:00Z",
+        "display_name": "Claude Sonnet 4.6",
+        "lifecycle": "active",
+        "line": "sonnet",
+        "max_input_tokens": 1000000,
+        "max_tokens": 128000,
+        "type": "model"
+      }
+    },
+    {
+      "provider": "anthropic",
+      "model": "claude-opus-4-7",
+      "display_name": "Claude Opus 4.7",
+      "release_date": "2026-04-14",
+      "max_input_tokens": 1000000,
+      "max_output_tokens": 128000,
+      "reasoning": true,
+      "reasoning_levels": {
+        "thinking_types": [
+          "adaptive",
+          "disabled"
+        ],
+        "effort": [
+          "high",
+          "low",
+          "max",
+          "medium",
+          "xhigh"
+        ]
+      },
+      "image_input": true,
+      "raw": {
+        "id": "claude-opus-4-7",
+        "capabilities": {
+          "batch": {
+            "supported": true
+          },
+          "citations": {
+            "supported": true
+          },
+          "code_execution": {
+            "supported": true
+          },
+          "context_management": {
+            "clear_thinking_20251015": {
+              "supported": true
+            },
+            "clear_tool_uses_20250919": {
+              "supported": true
+            },
+            "compact_20260112": {
+              "supported": true
+            },
+            "supported": true
+          },
+          "effort": {
+            "high": {
+              "supported": true
+            },
+            "low": {
+              "supported": true
+            },
+            "max": {
+              "supported": true
+            },
+            "medium": {
+              "supported": true
+            },
+            "supported": true,
+            "xhigh": {
+              "supported": true
+            }
+          },
+          "image_input": {
+            "supported": true
+          },
+          "pdf_input": {
+            "supported": true
+          },
+          "server_tools": {
+            "code_execution": {
+              "supported": true
+            },
+            "supported": true,
+            "web_search": {
+              "supported": true
+            }
+          },
+          "structured_outputs": {
+            "supported": true
+          },
+          "thinking": {
+            "supported": true,
+            "types": {
+              "adaptive": {
+                "supported": true
+              },
+              "between_tools": {
+                "supported": false
+              },
+              "disabled": {
+                "supported": true
+              },
+              "enabled": {
+                "supported": false
+              }
+            }
+          }
+        },
+        "created_at": "2026-04-14T00:00:00Z",
+        "display_name": "Claude Opus 4.7",
+        "lifecycle": "active",
+        "line": "opus",
+        "max_input_tokens": 1000000,
+        "max_tokens": 128000,
+        "type": "model"
+      }
+    },
+    {
+      "provider": "anthropic",
+      "model": "claude-opus-4-8",
+      "display_name": "Claude Opus 4.8",
+      "release_date": "2026-05-28",
+      "max_input_tokens": 1000000,
+      "max_output_tokens": 128000,
+      "reasoning": true,
+      "reasoning_levels": {
+        "thinking_types": [
+          "adaptive",
+          "disabled"
+        ],
+        "effort": [
+          "high",
+          "low",
+          "max",
+          "medium",
+          "xhigh"
+        ]
+      },
+      "image_input": true,
+      "raw": {
+        "id": "claude-opus-4-8",
+        "capabilities": {
+          "batch": {
+            "supported": true
+          },
+          "citations": {
+            "supported": true
+          },
+          "code_execution": {
+            "supported": true
+          },
+          "context_management": {
+            "clear_thinking_20251015": {
+              "supported": true
+            },
+            "clear_tool_uses_20250919": {
+              "supported": true
+            },
+            "compact_20260112": {
+              "supported": true
+            },
+            "supported": true
+          },
+          "effort": {
+            "high": {
+              "supported": true
+            },
+            "low": {
+              "supported": true
+            },
+            "max": {
+              "supported": true
+            },
+            "medium": {
+              "supported": true
+            },
+            "supported": true,
+            "xhigh": {
+              "supported": true
+            }
+          },
+          "image_input": {
+            "supported": true
+          },
+          "pdf_input": {
+            "supported": true
+          },
+          "server_tools": {
+            "code_execution": {
+              "supported": true
+            },
+            "supported": true,
+            "web_search": {
+              "supported": true
+            }
+          },
+          "structured_outputs": {
+            "supported": true
+          },
+          "thinking": {
+            "supported": true,
+            "types": {
+              "adaptive": {
+                "supported": true
+              },
+              "between_tools": {
+                "supported": false
+              },
+              "disabled": {
+                "supported": true
+              },
+              "enabled": {
+                "supported": false
+              }
+            }
+          }
+        },
+        "created_at": "2026-05-28T00:00:00Z",
+        "display_name": "Claude Opus 4.8",
+        "lifecycle": "active",
+        "line": "opus",
+        "max_input_tokens": 1000000,
+        "max_tokens": 128000,
+        "type": "model"
+      }
+    },
+    {
+      "provider": "anthropic",
+      "model": "claude-fable-5",
+      "display_name": "Claude Fable 5",
+      "release_date": "2026-06-07",
+      "max_input_tokens": 1000000,
+      "max_output_tokens": 128000,
+      "reasoning": true,
+      "reasoning_levels": {
+        "thinking_types": [
+          "adaptive"
+        ],
+        "effort": [
+          "high",
+          "low",
+          "max",
+          "medium",
+          "xhigh"
+        ]
+      },
+      "image_input": true,
+      "raw": {
+        "id": "claude-fable-5",
+        "capabilities": {
+          "batch": {
+            "supported": true
+          },
+          "citations": {
+            "supported": true
+          },
+          "code_execution": {
+            "supported": true
+          },
+          "context_management": {
+            "clear_thinking_20251015": {
+              "supported": true
+            },
+            "clear_tool_uses_20250919": {
+              "supported": true
+            },
+            "compact_20260112": {
+              "supported": true
+            },
+            "supported": true
+          },
+          "effort": {
+            "high": {
+              "supported": true
+            },
+            "low": {
+              "supported": true
+            },
+            "max": {
+              "supported": true
+            },
+            "medium": {
+              "supported": true
+            },
+            "supported": true,
+            "xhigh": {
+              "supported": true
+            }
+          },
+          "image_input": {
+            "supported": true
+          },
+          "pdf_input": {
+            "supported": true
+          },
+          "server_tools": {
+            "code_execution": {
+              "supported": true
+            },
+            "supported": true,
+            "web_search": {
+              "supported": true
+            }
+          },
+          "structured_outputs": {
+            "supported": true
+          },
+          "thinking": {
+            "supported": true,
+            "types": {
+              "adaptive": {
+                "supported": true
+              },
+              "between_tools": {
+                "supported": false
+              },
+              "disabled": {
+                "supported": false
+              },
+              "enabled": {
+                "supported": false
+              }
+            }
+          }
+        },
+        "created_at": "2026-06-07T00:00:00Z",
+        "display_name": "Claude Fable 5",
+        "lifecycle": "active",
+        "line": "fable",
+        "max_input_tokens": 1000000,
+        "max_tokens": 128000,
+        "type": "model"
+      }
+    },
+    {
+      "provider": "anthropic",
+      "model": "claude-sonnet-5",
+      "display_name": "Claude Sonnet 5",
+      "release_date": "2026-06-29",
+      "max_input_tokens": 1000000,
+      "max_output_tokens": 128000,
+      "reasoning": true,
+      "reasoning_levels": {
+        "thinking_types": [
+          "adaptive",
+          "disabled"
+        ],
+        "effort": [
+          "high",
+          "low",
+          "max",
+          "medium",
+          "xhigh"
+        ]
+      },
+      "image_input": true,
+      "raw": {
+        "id": "claude-sonnet-5",
+        "capabilities": {
+          "batch": {
+            "supported": true
+          },
+          "citations": {
+            "supported": true
+          },
+          "code_execution": {
+            "supported": true
+          },
+          "context_management": {
+            "clear_thinking_20251015": {
+              "supported": true
+            },
+            "clear_tool_uses_20250919": {
+              "supported": true
+            },
+            "compact_20260112": {
+              "supported": true
+            },
+            "supported": true
+          },
+          "effort": {
+            "high": {
+              "supported": true
+            },
+            "low": {
+              "supported": true
+            },
+            "max": {
+              "supported": true
+            },
+            "medium": {
+              "supported": true
+            },
+            "supported": true,
+            "xhigh": {
+              "supported": true
+            }
+          },
+          "image_input": {
+            "supported": true
+          },
+          "pdf_input": {
+            "supported": true
+          },
+          "server_tools": {
+            "code_execution": {
+              "supported": true
+            },
+            "supported": true,
+            "web_search": {
+              "supported": true
+            }
+          },
+          "structured_outputs": {
+            "supported": true
+          },
+          "thinking": {
+            "supported": true,
+            "types": {
+              "adaptive": {
+                "supported": true
+              },
+              "between_tools": {
+                "supported": false
+              },
+              "disabled": {
+                "supported": true
+              },
+              "enabled": {
+                "supported": false
+              }
+            }
+          }
+        },
+        "created_at": "2026-06-29T00:00:00Z",
+        "display_name": "Claude Sonnet 5",
+        "lifecycle": "active",
+        "line": "sonnet",
+        "max_input_tokens": 1000000,
+        "max_tokens": 128000,
+        "type": "model"
+      }
+    },
+    {
+      "provider": "anthropic",
+      "model": "claude-opus-5",
+      "display_name": "Claude Opus 5",
+      "release_date": "2026-07-24",
+      "max_input_tokens": 1000000,
+      "max_output_tokens": 128000,
+      "reasoning": true,
+      "reasoning_levels": {
+        "thinking_types": [
+          "adaptive",
+          "disabled"
+        ],
+        "effort": [
+          "high",
+          "low",
+          "max",
+          "medium",
+          "xhigh"
+        ]
+      },
+      "image_input": true,
+      "raw": {
+        "id": "claude-opus-5",
+        "capabilities": {
+          "batch": {
+            "supported": true
+          },
+          "citations": {
+            "supported": true
+          },
+          "code_execution": {
+            "supported": true
+          },
+          "context_management": {
+            "clear_thinking_20251015": {
+              "supported": true
+            },
+            "clear_tool_uses_20250919": {
+              "supported": true
+            },
+            "compact_20260112": {
+              "supported": true
+            },
+            "supported": true
+          },
+          "effort": {
+            "high": {
+              "supported": true
+            },
+            "low": {
+              "supported": true
+            },
+            "max": {
+              "supported": true
+            },
+            "medium": {
+              "supported": true
+            },
+            "supported": true,
+            "xhigh": {
+              "supported": true
+            }
+          },
+          "image_input": {
+            "supported": true
+          },
+          "pdf_input": {
+            "supported": true
+          },
+          "server_tools": {
+            "code_execution": {
+              "supported": true
+            },
+            "supported": true,
+            "web_search": {
+              "supported": true
+            }
+          },
+          "structured_outputs": {
+            "supported": true
+          },
+          "thinking": {
+            "supported": true,
+            "types": {
+              "adaptive": {
+                "supported": true
+              },
+              "between_tools": {
+                "supported": false
+              },
+              "disabled": {
+                "supported": true
+              },
+              "enabled": {
+                "supported": false
+              }
+            }
+          }
+        },
+        "created_at": "2026-07-24T00:00:00Z",
+        "display_name": "Claude Opus 5",
+        "lifecycle": "active",
+        "line": "opus",
+        "max_input_tokens": 1000000,
+        "max_tokens": 128000,
+        "type": "model"
+      }
+    },
+    {
+      "provider": "anthropic",
+      "model": "claude-fable-5-1",
+      "display_name": "Claude Fable 5.1",
+      "release_date": "2026-08-28",
+      "max_input_tokens": 1000000,
+      "max_output_tokens": 128000,
+      "reasoning": true,
+      "reasoning_levels": {
+        "thinking_types": [
+          "adaptive"
+        ],
+        "effort": [
+          "high",
+          "low",
+          "max",
+          "medium",
+          "xhigh"
+        ]
+      },
+      "image_input": true,
+      "raw": {
+        "id": "claude-fable-5-1",
+        "capabilities": {
+          "batch": {
+            "supported": true
+          },
+          "citations": {
+            "supported": true
+          },
+          "code_execution": {
+            "supported": true
+          },
+          "context_management": {
+            "clear_thinking_20251015": {
+              "supported": true
+            },
+            "clear_tool_uses_20250919": {
+              "supported": true
+            },
+            "compact_20260112": {
+              "supported": true
+            },
+            "supported": true
+          },
+          "effort": {
+            "high": {
+              "supported": true
+            },
+            "low": {
+              "supported": true
+            },
+            "max": {
+              "supported": true
+            },
+            "medium": {
+              "supported": true
+            },
+            "supported": true,
+            "xhigh": {
+              "supported": true
+            }
+          },
+          "image_input": {
+            "supported": true
+          },
+          "pdf_input": {
+            "supported": true
+          },
+          "server_tools": {
+            "code_execution": {
+              "supported": true
+            },
+            "supported": true,
+            "web_search": {
+              "supported": true
+            }
+          },
+          "structured_outputs": {
+            "supported": true
+          },
+          "thinking": {
+            "supported": true,
+            "types": {
+              "adaptive": {
+                "supported": true
+              },
+              "between_tools": {
+                "supported": false
+              },
+              "disabled": {
+                "supported": false
+              },
+              "enabled": {
+                "supported": false
+              }
+            }
+          }
+        },
+        "created_at": "2026-08-28T00:00:00Z",
+        "display_name": "Claude Fable 5.1",
+        "lifecycle": "active",
+        "line": "fable",
+        "max_input_tokens": 1000000,
+        "max_tokens": 128000,
+        "type": "model"
+      }
+    },
+    {
+      "provider": "anthropic",
+      "model": "claude-opus-5-5",
+      "display_name": "Claude Opus 5.5",
+      "release_date": "2026-09-21",
+      "max_input_tokens": 1000000,
+      "max_output_tokens": 128000,
+      "reasoning": true,
+      "reasoning_levels": {
+        "thinking_types": [
+          "adaptive"
+        ],
+        "effort": [
+          "high",
+          "low",
+          "max",
+          "medium",
+          "xhigh"
+        ]
+      },
+      "image_input": true,
+      "raw": {
+        "id": "claude-opus-5-5",
+        "capabilities": {
+          "batch": {
+            "supported": true
+          },
+          "citations": {
+            "supported": true
+          },
+          "code_execution": {
+            "supported": true
+          },
+          "context_management": {
+            "clear_thinking_20251015": {
+              "supported": true
+            },
+            "clear_tool_uses_20250919": {
+              "supported": true
+            },
+            "compact_20260112": {
+              "supported": true
+            },
+            "supported": true
+          },
+          "effort": {
+            "high": {
+              "supported": true
+            },
+            "low": {
+              "supported": true
+            },
+            "max": {
+              "supported": true
+            },
+            "medium": {
+              "supported": true
+            },
+            "supported": true,
+            "xhigh": {
+              "supported": true
+            }
+          },
+          "image_input": {
+            "supported": true
+          },
+          "pdf_input": {
+            "supported": true
+          },
+          "server_tools": {
+            "code_execution": {
+              "supported": true
+            },
+            "supported": true,
+            "web_search": {
+              "supported": true
+            }
+          },
+          "structured_outputs": {
+            "supported": true
+          },
+          "thinking": {
+            "supported": true,
+            "types": {
+              "adaptive": {
+                "supported": true
+              },
+              "between_tools": {
+                "supported": false
+              },
+              "disabled": {
+                "supported": false
+              },
+              "enabled": {
+                "supported": false
+              }
+            }
+          }
+        },
+        "created_at": "2026-09-21T16:24:00Z",
+        "display_name": "Claude Opus 5.5",
+        "lifecycle": "active",
+        "line": "opus",
+        "max_input_tokens": 1000000,
+        "max_tokens": 128000,
+        "type": "model"
+      }
+    },
+    {
+      "provider": "anthropic",
+      "model": "claude-sonnet-5-5",
+      "display_name": "Claude Sonnet 5.5",
+      "release_date": "2026-09-28",
+      "max_input_tokens": 1000000,
+      "max_output_tokens": 128000,
+      "reasoning": true,
+      "reasoning_levels": {
+        "thinking_types": [
+          "adaptive",
+          "between_tools"
+        ],
+        "effort": [
+          "high",
+          "low",
+          "max",
+          "medium",
+          "xhigh"
+        ]
+      },
+      "image_input": true,
+      "raw": {
+        "id": "claude-sonnet-5-5",
+        "capabilities": {
+          "batch": {
+            "supported": true
+          },
+          "citations": {
+            "supported": true
+          },
+          "code_execution": {
+            "supported": true
+          },
+          "context_management": {
+            "clear_thinking_20251015": {
+              "supported": true
+            },
+            "clear_tool_uses_20250919": {
+              "supported": true
+            },
+            "compact_20260112": {
+              "supported": true
+            },
+            "supported": true
+          },
+          "effort": {
+            "high": {
+              "supported": true
+            },
+            "low": {
+              "supported": true
+            },
+            "max": {
+              "supported": true
+            },
+            "medium": {
+              "supported": true
+            },
+            "supported": true,
+            "xhigh": {
+              "supported": true
+            }
+          },
+          "image_input": {
+            "supported": true
+          },
+          "pdf_input": {
+            "supported": true
+          },
+          "server_tools": {
+            "code_execution": {
+              "supported": true
+            },
+            "supported": true,
+            "web_search": {
+              "supported": true
+            }
+          },
+          "structured_outputs": {
+            "supported": true
+          },
+          "thinking": {
+            "supported": true,
+            "types": {
+              "adaptive": {
+                "supported": true
+              },
+              "between_tools": {
+                "supported": true
+              },
+              "disabled": {
+                "supported": false
+              },
+              "enabled": {
+                "supported": false
+              }
+            }
+          }
+        },
+        "created_at": "2026-09-28T00:00:00Z",
+        "display_name": "Claude Sonnet 5.5",
+        "lifecycle": "active",
+        "line": "sonnet",
+        "max_input_tokens": 1000000,
+        "max_tokens": 128000,
+        "type": "model"
+      }
+    },
+    {
+      "provider": "anthropic",
+      "model": "claude-haiku-5-5",
+      "display_name": "Claude Haiku 5.5",
+      "release_date": "2026-10-07",
+      "max_input_tokens": 1000000,
+      "max_output_tokens": 128000,
+      "reasoning": true,
+      "reasoning_levels": {
+        "thinking_types": [
+          "adaptive",
+          "disabled"
+        ],
+        "effort": [
+          "high",
+          "low",
+          "max",
+          "medium",
+          "xhigh"
+        ]
+      },
+      "image_input": true,
+      "raw": {
+        "id": "claude-haiku-5-5",
+        "capabilities": {
+          "batch": {
+            "supported": true
+          },
+          "citations": {
+            "supported": true
+          },
+          "code_execution": {
+            "supported": true
+          },
+          "context_management": {
+            "clear_thinking_20251015": {
+              "supported": true
+            },
+            "clear_tool_uses_20250919": {
+              "supported": true
+            },
+            "compact_20260112": {
+              "supported": true
+            },
+            "supported": true
+          },
+          "effort": {
+            "high": {
+              "supported": true
+            },
+            "low": {
+              "supported": true
+            },
+            "max": {
+              "supported": true
+            },
+            "medium": {
+              "supported": true
+            },
+            "supported": true,
+            "xhigh": {
+              "supported": true
+            }
+          },
+          "image_input": {
+            "supported": true
+          },
+          "pdf_input": {
+            "supported": true
+          },
+          "server_tools": {
+            "code_execution": {
+              "supported": true
+            },
+            "supported": true,
+            "web_search": {
+              "supported": true
+            }
+          },
+          "structured_outputs": {
+            "supported": true
+          },
+          "thinking": {
+            "supported": true,
+            "types": {
+              "adaptive": {
+                "supported": true
+              },
+              "between_tools": {
+                "supported": false
+              },
+              "disabled": {
+                "supported": true
+              },
+              "enabled": {
+                "supported": false
+              }
+            }
+          }
+        },
+        "created_at": "2026-10-07T18:00:00Z",
+        "display_name": "Claude Haiku 5.5",
+        "lifecycle": "active",
+        "line": "haiku",
+        "max_input_tokens": 1000000,
+        "max_tokens": 128000,
+        "type": "model"
+      }
+    }
+  ]
+}

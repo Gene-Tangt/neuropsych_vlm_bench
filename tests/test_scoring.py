@@ -48,3 +48,10 @@ def test_extract_answer():
 def test_unknown_task():
     with pytest.raises(ValueError):
         score("not_a_task", "yes", "{yes}")
+
+
+if __name__ == "__main__":
+    import sys
+
+    import pytest
+    sys.exit(pytest.main(["-v", __file__]))
